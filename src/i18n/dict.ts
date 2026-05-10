@@ -39,21 +39,26 @@ export const dict = {
       disclaimer: "Dịch vụ giải trí, không thay thế tư vấn chuyên môn.",
     },
     home: {
-      badge: "🇻🇳 Cộng đồng yêu Hàn Quốc · 🇰🇷 100% Miễn phí",
+      badge: "🇻🇳 Cộng đồng người Việt khám phá Hàn Quốc",
       titleA: "Khám phá tên Hàn Quốc của bạn",
       titleB: "và xem bói Tứ Trụ Saju",
       desc: "Đặt tên tiếng Hàn ý nghĩa theo phong cách K-pop, K-drama. Xem bói Tứ Trụ (사주) chuẩn truyền thống Hàn Quốc bằng tiếng Việt.",
       ctaName: "✨ Đặt tên tiếng Hàn",
       ctaSaju: "🔮 Xem bói Tứ Trụ",
+      ctaCouple: "💞 Saju cặp đôi",
       ctaFood: "🍜 Quiz món ăn Hàn",
       cardNameTitle: "Tên Hàn Quốc cho người Việt",
       cardNameDesc:
-        "Tạo tên tiếng Hàn theo phong cách hiện đại 2024 — thông minh, xinh đẹp, mạnh mẽ, may mắn... Mỗi tên đều có ý nghĩa Hán tự rõ ràng.",
+        "Tạo tên tiếng Hàn theo phong cách hiện đại 2026 — thông minh, xinh đẹp, mạnh mẽ, may mắn... Mỗi tên đều có ý nghĩa Hán tự rõ ràng.",
       cardNameCta: "Tạo tên ngay →",
       cardSajuTitle: "Bói Tứ Trụ Saju",
       cardSajuDesc:
         "Tứ Trụ (사주팔자) là phương pháp xem bói truyền thống của Hàn Quốc dựa vào năm-tháng-ngày-giờ sinh. Phân tích Ngũ Hành chi tiết.",
       cardSajuCta: "Xem bói ngay →",
+      cardCoupleTitle: "Saju cặp đôi",
+      cardCoupleDesc:
+        "Bạn và người ấy có hợp nhau không? Phân tích Saju của hai người và mức độ hợp nhau theo phong cách Hàn Quốc.",
+      cardCoupleCta: "Xem ngay →",
       cardFoodTitle: "Bạn hợp món Hàn nào? (Quiz MBTI)",
       cardFoodDesc:
         "12 câu hỏi nhanh — chúng tôi sẽ gợi ý 3 món hợp khẩu vị bạn nhất từ 47 món Hàn Quốc nổi tiếng.",
@@ -100,7 +105,7 @@ export const dict = {
       givenName: "Tên",
       meaning: "Ý nghĩa",
       vibes: {
-        trendy: "🔥 Hiện đại (2024)",
+        trendy: "🔥 Hiện đại (2026)",
         intelligent: "Thông minh",
         beautiful: "Xinh đẹp",
         strong: "Mạnh mẽ",
@@ -409,21 +414,26 @@ export const dict = {
       disclaimer: "오락용 서비스이며, 전문 상담을 대체하지 않습니다.",
     },
     home: {
-      badge: "🇻🇳 한국을 사랑하는 베트남 커뮤니티 · 🇰🇷 100% 무료",
+      badge: "🇻🇳 한국을 알아가는 베트남 커뮤니티",
       titleA: "당신만의 한국 이름을 찾아보세요",
       titleB: "그리고 사주팔자도 함께",
       desc: "K-팝, K-드라마 스타일의 의미 있는 한국 이름을 지어드립니다. 한국 전통 사주(四柱)를 베트남어로 풀이해드립니다.",
       ctaName: "✨ 한국 이름 짓기",
       ctaSaju: "🔮 사주풀이 보기",
+      ctaCouple: "💞 커플 사주",
       ctaFood: "🍜 한식 MBTI",
       cardNameTitle: "베트남인을 위한 한국 이름",
       cardNameDesc:
-        "2024년 요즘 스타일의 한국 이름을 만들어보세요 — 도윤·서아·하준 같은 진짜 인기 이름. 한자 의미와 함께 추천해드립니다.",
+        "2026년 요즘 스타일의 한국 이름을 만들어보세요 — 도윤·서아·하준 같은 진짜 인기 이름. 한자 의미와 함께 추천해드립니다.",
       cardNameCta: "지금 이름 만들기 →",
       cardSajuTitle: "사주팔자",
       cardSajuDesc:
         "사주팔자는 출생 연·월·일·시를 바탕으로 운명을 풀이하는 한국 전통 점술입니다. 오행 분석을 자세히 제공합니다.",
       cardSajuCta: "지금 보기 →",
+      cardCoupleTitle: "커플 사주",
+      cardCoupleDesc:
+        "두 사람의 사주를 함께 분석 — 일간 호흡·띠·오행 보완을 통해 얼마나 잘 맞는지 한국 전통 방식으로 풀어드립니다.",
+      cardCoupleCta: "지금 보기 →",
       cardFoodTitle: "당신에게 맞는 한식은? (MBTI 퀴즈)",
       cardFoodDesc:
         "12문항 퀴즈로 — 한국 인기 한식 47가지 중 당신에게 가장 잘 맞는 3가지를 추천해드립니다.",

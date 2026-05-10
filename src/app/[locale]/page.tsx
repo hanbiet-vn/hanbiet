@@ -35,13 +35,14 @@ export default async function Home({
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link href={p("/ten-han-quoc")} className="btn-primary">{t.home.ctaName}</Link>
             <Link href={p("/sau-han-quoc")} className="btn-outline">{t.home.ctaSaju}</Link>
+            <Link href={p("/saju-cap-doi")} className="btn-outline">{t.home.ctaCouple}</Link>
             <Link href={p("/mon-an-han-quoc")} className="btn-outline">{t.home.ctaFood}</Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <Link href={p("/ten-han-quoc")} className="card group transition hover:shadow-md">
             <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--brand-soft)] text-2xl">✨</div>
             <h2 className="text-xl font-bold text-zinc-900">{t.home.cardNameTitle}</h2>
@@ -56,6 +57,14 @@ export default async function Home({
             <p className="mt-2 text-zinc-600">{t.home.cardSajuDesc}</p>
             <span className="mt-4 inline-flex items-center text-sm font-semibold text-[var(--brand)] group-hover:underline">
               {t.home.cardSajuCta}
+            </span>
+          </Link>
+          <Link href={p("/saju-cap-doi")} className="card group transition hover:shadow-md">
+            <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--brand-soft)] text-2xl">💞</div>
+            <h2 className="text-xl font-bold text-zinc-900">{t.home.cardCoupleTitle}</h2>
+            <p className="mt-2 text-zinc-600">{t.home.cardCoupleDesc}</p>
+            <span className="mt-4 inline-flex items-center text-sm font-semibold text-[var(--brand)] group-hover:underline">
+              {t.home.cardCoupleCta}
             </span>
           </Link>
           <Link href={p("/mon-an-han-quoc")} className="card group transition hover:shadow-md">

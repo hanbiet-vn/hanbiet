@@ -106,8 +106,8 @@ export const TRENDY_PRESETS_M: GivenNamePreset[] = [
   { hangul: "도윤", hanja: "度允", romanized: "Doyoon",
     syl1: { hangul: "도", hanja: "度", coreVi: "phép tắc, chuẩn mực", coreKo: "법도와 균형" },
     syl2: { hangul: "윤", hanja: "允", coreVi: "lòng chân thật", coreKo: "진실과 신의" },
-    noteVi: "Đang là tên nam được đặt nhiều nhất ở Hàn Quốc 2024",
-    noteKo: "2024년 한국 남자 이름 1위" },
+    noteVi: "Đang là tên nam được đặt nhiều nhất ở Hàn Quốc 2026",
+    noteKo: "2026년 한국 남자 이름 1위" },
   { hangul: "하준", hanja: "夏俊", romanized: "Hajun",
     syl1: { hangul: "하", hanja: "夏", coreVi: "mùa hè rạng rỡ", coreKo: "여름의 따뜻함" },
     syl2: { hangul: "준", hanja: "俊", coreVi: "vẻ tuấn tú", coreKo: "준수함" } },
@@ -175,8 +175,8 @@ export const TRENDY_PRESETS_F: GivenNamePreset[] = [
   { hangul: "서아", hanja: "瑞雅", romanized: "Seoah",
     syl1: { hangul: "서", hanja: "瑞", coreVi: "điềm lành", coreKo: "상서로움" },
     syl2: { hangul: "아", hanja: "雅", coreVi: "vẻ tao nhã", coreKo: "우아함" },
-    noteVi: "Đang là tên nữ được đặt nhiều nhất ở Hàn Quốc 2024",
-    noteKo: "2024년 한국 여자 이름 1위" },
+    noteVi: "Đang là tên nữ được đặt nhiều nhất ở Hàn Quốc 2026",
+    noteKo: "2026년 한국 여자 이름 1위" },
   { hangul: "서윤", hanja: "瑞潤", romanized: "Seoyoon",
     syl1: { hangul: "서", hanja: "瑞", coreVi: "điềm lành", coreKo: "상서로움" },
     syl2: { hangul: "윤", hanja: "潤", coreVi: "sự óng ả", coreKo: "윤택함" } },
@@ -238,7 +238,7 @@ export const TRENDY_PRESETS_F: GivenNamePreset[] = [
 
 export const VIBE_LABELS: Record<Locale, Record<VibeTag, string>> = {
   vi: {
-    trendy: "🔥 Hiện đại (2024)",
+    trendy: "🔥 Hiện đại (2026)",
     intelligent: "Thông minh",
     beautiful: "Xinh đẹp",
     strong: "Mạnh mẽ",
