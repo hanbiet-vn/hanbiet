@@ -22,6 +22,7 @@ export default function Header({ locale }: { locale: Locale }) {
             <Link href={p("/ten-han-quoc")} className="hover:text-[var(--brand)]">{t.nav.name}</Link>
             <Link href={p("/sau-han-quoc")} className="hover:text-[var(--brand)]">{t.nav.saju}</Link>
             <Link href={p("/mon-an-han-quoc")} className="hover:text-[var(--brand)]">{t.nav.food}</Link>
+            <Link href={p("/bai-viet")} className="hover:text-[var(--brand)]">{t.nav.blog}</Link>
             <Link href={p("/gioi-thieu")} className="hover:text-[var(--brand)]">{t.nav.about}</Link>
           </nav>
 

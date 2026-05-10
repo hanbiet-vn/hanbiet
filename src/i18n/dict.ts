@@ -17,6 +17,7 @@ export const dict = {
       name: "Tên Hàn Quốc",
       saju: "Bói Tứ Trụ",
       food: "Món ăn",
+      blog: "Bài viết",
       about: "Giới thiệu",
     },
     footer: {
@@ -27,6 +28,7 @@ export const dict = {
       nameLink: "Đặt tên tiếng Hàn",
       sajuLink: "Xem bói Tứ Trụ Saju",
       foodLink: "Quiz món ăn Hàn Quốc",
+      blogLink: "Bài viết về Hàn Quốc",
       aboutLink: "Giới thiệu",
       privacyLink: "Chính sách bảo mật",
       termsLink: "Điều khoản sử dụng",
@@ -169,6 +171,15 @@ export const dict = {
       recommendationsTitle: "💡 Lời khuyên cho bạn",
       disclaimer: "* Kết quả mang tính tham khảo, không thay thế tư vấn chuyên môn.",
     },
+    blogPage: {
+      eyebrow: "Hanbiet Blog",
+      title: "Khám phá văn hóa Hàn Quốc",
+      subtitle: "Bài viết về tên Hàn, Saju, ẩm thực, và văn hóa Hàn — viết bằng tiếng Việt cho người Việt yêu Hàn Quốc.",
+      minRead: "phút đọc",
+      backToList: "Tất cả bài viết",
+      related: "Bài viết liên quan",
+      moreComing: "Nhiều bài viết hấp dẫn hơn sắp ra mắt — quay lại sau nhé!",
+    },
     foodPage: {
       eyebrow: "한식 MBTI",
       title: "Bạn hợp với món ăn Hàn Quốc nào?",
@@ -297,6 +308,9 @@ export const dict = {
       foodTitle: "Quiz món ăn Hàn Quốc — bạn hợp món nào?",
       foodDesc:
         "Quiz vui kiểu MBTI 6 câu hỏi — gợi ý 3 món ăn Hàn Quốc hợp với khẩu vị, tính cách và tâm trạng của bạn. Khám phá kimchi, tteokbokki, samgyeopsal và 16 món Hàn nổi tiếng.",
+      blogTitle: "Bài viết về Hàn Quốc — tên, Saju, ẩm thực, văn hóa",
+      blogDesc:
+        "Khám phá văn hóa Hàn Quốc qua các bài viết bằng tiếng Việt — cách đặt tên Hàn, hiểu Saju, công thức món Hàn dễ nấu tại nhà, và nhiều điều thú vị khác.",
       privacyTitle: "Chính sách bảo mật",
       privacyDesc: "Chính sách bảo mật của Hanbiet.",
       termsTitle: "Điều khoản sử dụng",
@@ -321,6 +335,7 @@ export const dict = {
       name: "한국 이름",
       saju: "사주풀이",
       food: "한식 추천",
+      blog: "블로그",
       about: "사이트 소개",
     },
     footer: {
@@ -331,6 +346,7 @@ export const dict = {
       nameLink: "한국 이름 짓기",
       sajuLink: "사주풀이 보기",
       foodLink: "한식 MBTI 퀴즈",
+      blogLink: "한국 문화 블로그",
       aboutLink: "사이트 소개",
       privacyLink: "개인정보처리방침",
       termsLink: "이용약관",
@@ -473,6 +489,15 @@ export const dict = {
       recommendationsTitle: "💡 당신을 위한 조언",
       disclaimer: "* 결과는 참고용이며, 전문 상담을 대체하지 않습니다.",
     },
+    blogPage: {
+      eyebrow: "Hanbiet Blog",
+      title: "한국 문화 이야기",
+      subtitle: "한국 이름·사주·한식·문화에 대한 글 — 한국 사랑하는 베트남 사람들을 위해 베트남어로.",
+      minRead: "분 읽기",
+      backToList: "전체 목록",
+      related: "관련 글",
+      moreComing: "더 많은 흥미로운 글이 곧 추가됩니다 — 자주 들러주세요!",
+    },
     foodPage: {
       eyebrow: "한식 MBTI",
       title: "당신에게 잘 맞는 한국 음식은?",
@@ -599,6 +624,9 @@ export const dict = {
       foodTitle: "한식 MBTI 퀴즈 — 당신에게 맞는 한국 음식은?",
       foodDesc:
         "MBTI 스타일 6문항 퀴즈로 — 당신의 입맛, 성격, 기분에 가장 잘 맞는 한국 음식 3가지를 추천. 김치찌개, 떡볶이, 삼겹살 등 16가지 인기 한식.",
+      blogTitle: "한국 문화 블로그 — 이름·사주·한식·문화",
+      blogDesc:
+        "베트남어로 풀어내는 한국 문화 이야기 — 한국 이름, 사주 풀이, 한식 레시피, 문화 차이까지.",
       privacyTitle: "개인정보처리방침",
       privacyDesc: "Hanbiet 개인정보처리방침.",
       termsTitle: "이용약관",

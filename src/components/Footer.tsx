@@ -21,6 +21,7 @@ export default function Footer({ locale }: { locale: Locale }) {
               <li><Link href={p("/ten-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.nameLink}</Link></li>
               <li><Link href={p("/sau-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.sajuLink}</Link></li>
               <li><Link href={p("/mon-an-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.foodLink}</Link></li>
+              <li><Link href={p("/bai-viet")} className="hover:text-[var(--brand)]">{t.footer.blogLink}</Link></li>
             </ul>
           </div>
           <div>

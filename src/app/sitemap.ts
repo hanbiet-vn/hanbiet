@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
+import { ARTICLES } from "@/lib/articles";
 
 const SITE = "https://hanbiet.com";
 
@@ -8,6 +9,7 @@ const SLUGS = [
   { path: "/ten-han-quoc", priority: 0.9, freq: "weekly" as const },
   { path: "/sau-han-quoc", priority: 0.9, freq: "weekly" as const },
   { path: "/mon-an-han-quoc", priority: 0.9, freq: "weekly" as const },
+  { path: "/bai-viet", priority: 0.8, freq: "weekly" as const },
   { path: "/gioi-thieu", priority: 0.5, freq: "monthly" as const },
   { path: "/chinh-sach-bao-mat", priority: 0.3, freq: "yearly" as const },
   { path: "/dieu-khoan", priority: 0.3, freq: "yearly" as const },
@@ -17,6 +19,8 @@ const SLUGS = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
+
+  // Static pages
   for (const slug of SLUGS) {
     for (const locale of routing.locales) {
       const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;
@@ -29,5 +33,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
   }
+
+  // Articles
+  for (const article of ARTICLES) {
+    for (const locale of routing.locales) {
+      const prefix = locale === routing.defaultLocale ? "" : `/${locale}`;
+      entries.push({
+        url: `${SITE}${prefix}/bai-viet/${article.slug}`,
+        lastModified: new Date(article.publishDate),
+        changeFrequency: "monthly",
+        priority: 0.7,
+      });
+    }
+  }
+
   return entries;
 }
