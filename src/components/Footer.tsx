@@ -20,6 +20,7 @@ export default function Footer({ locale }: { locale: Locale }) {
             <ul className="space-y-1.5">
               <li><Link href={p("/ten-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.nameLink}</Link></li>
               <li><Link href={p("/sau-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.sajuLink}</Link></li>
+              <li><Link href={p("/saju-cap-doi")} className="hover:text-[var(--brand)]">{t.footer.coupleLink}</Link></li>
               <li><Link href={p("/mon-an-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.foodLink}</Link></li>
               <li><Link href={p("/bai-viet")} className="hover:text-[var(--brand)]">{t.footer.blogLink}</Link></li>
             </ul>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { STATEMENTS, recommendFromAnswers, descOf, type FoodResult } from "@/lib/foods";
 import { getDict } from "@/i18n/dict";
@@ -76,13 +77,17 @@ export default function FoodQuiz({ locale }: { locale: Locale }) {
 
         <div className="space-y-4">
           {results.map((r, idx) => (
-            <div key={r.food.id} className={`card ${idx === 0 ? "border-2 border-[var(--brand)] bg-[var(--brand-soft)]/30" : ""}`}>
+            <Link
+              key={r.food.id}
+              href={localizedPath(locale, `/mon-an-han-quoc/${r.food.id}`)}
+              className={`card group block transition hover:shadow-lg ${idx === 0 ? "border-2 border-[var(--brand)] bg-[var(--brand-soft)]/30" : ""}`}
+            >
               <div className="flex items-start gap-4">
                 <div className="text-5xl">{r.food.emoji}</div>
                 <div className="flex-1">
                   <div className="flex items-baseline justify-between gap-3">
                     <div>
-                      <div className="text-2xl font-bold text-zinc-900">
+                      <div className="text-2xl font-bold text-zinc-900 group-hover:text-[var(--brand)]">
                         {r.food.hangul}
                         <span className="ml-2 text-base font-normal text-zinc-500">({r.food.romanized})</span>
                       </div>
@@ -100,9 +105,12 @@ export default function FoodQuiz({ locale }: { locale: Locale }) {
                     </div>
                   </div>
                   <p className="mt-2 text-sm text-zinc-700">{descOf(r.food, locale)}</p>
+                  <span className="mt-3 inline-block text-sm font-semibold text-[var(--brand)] group-hover:underline">
+                    👨‍🍳 {t.foodDetail.viewRecipe} →
+                  </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

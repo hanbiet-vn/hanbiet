@@ -18,9 +18,10 @@ export default function Header({ locale }: { locale: Locale }) {
         </Link>
 
         <div className="flex items-center gap-6">
-          <nav className="hidden gap-5 text-sm font-medium text-zinc-700 sm:flex">
+          <nav className="hidden gap-4 text-sm font-medium text-zinc-700 lg:flex">
             <Link href={p("/ten-han-quoc")} className="hover:text-[var(--brand)]">{t.nav.name}</Link>
             <Link href={p("/sau-han-quoc")} className="hover:text-[var(--brand)]">{t.nav.saju}</Link>
+            <Link href={p("/saju-cap-doi")} className="hover:text-[var(--brand)]">{t.nav.couple}</Link>
             <Link href={p("/mon-an-han-quoc")} className="hover:text-[var(--brand)]">{t.nav.food}</Link>
             <Link href={p("/bai-viet")} className="hover:text-[var(--brand)]">{t.nav.blog}</Link>
             <Link href={p("/gioi-thieu")} className="hover:text-[var(--brand)]">{t.nav.about}</Link>

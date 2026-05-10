@@ -16,6 +16,7 @@ export const dict = {
     nav: {
       name: "Tên Hàn Quốc",
       saju: "Bói Tứ Trụ",
+      couple: "Tương hợp",
       food: "Món ăn",
       blog: "Bài viết",
       about: "Giới thiệu",
@@ -28,6 +29,7 @@ export const dict = {
       nameLink: "Đặt tên tiếng Hàn",
       sajuLink: "Xem bói Tứ Trụ Saju",
       foodLink: "Quiz món ăn Hàn Quốc",
+      coupleLink: "Bói tương hợp cặp đôi",
       blogLink: "Bài viết về Hàn Quốc",
       aboutLink: "Giới thiệu",
       privacyLink: "Chính sách bảo mật",
@@ -171,6 +173,36 @@ export const dict = {
       recommendationsTitle: "💡 Lời khuyên cho bạn",
       disclaimer: "* Kết quả mang tính tham khảo, không thay thế tư vấn chuyên môn.",
     },
+    couple: {
+      eyebrow: "사주 궁합 / 四柱宮合",
+      title: "Bói tương hợp Saju cho cặp đôi",
+      subtitle:
+        "Nhập ngày sinh của hai người — chúng tôi sẽ tính sự tương hợp Nhật chủ, tuổi và Ngũ Hành. Kèm theo Saju riêng của từng người.",
+      formTitle: "Thông tin của hai người",
+      person1: "Người thứ nhất",
+      person2: "Người thứ hai",
+      yearSuffix: "",
+      monthSuffix: "",
+      daySuffix: "",
+      unknownTime: "Không biết giờ chính xác",
+      privacyTitle: "🔒 Quyền riêng tư của hai bạn",
+      privacyNote:
+        "Ngày sinh của cả hai người chỉ được dùng để tính Saju ngay trên trình duyệt của bạn. Chúng tôi KHÔNG gửi, KHÔNG lưu trữ, và KHÔNG chia sẻ thông tin này.",
+      consent: "Cả hai bạn đồng ý cho phép sử dụng ngày sinh để tính tương hợp Saju (chỉ xử lý trên trình duyệt).",
+      consentRequired: "Vui lòng đánh dấu ô đồng ý để tiếp tục.",
+      submit: "💞 Xem tương hợp",
+      overall: "Điểm tương hợp tổng",
+      categoriesTitle: "Phân tích chi tiết",
+      strengths: "Điểm mạnh của cặp đôi",
+      challenges: "Điều cần lưu ý",
+      adviceTitle: "Lời khuyên cho hai bạn",
+      dayMasterShort: "Nhật chủ",
+      aboutTitle: "Về Saju cặp đôi",
+      about1:
+        "Người Hàn rất coi trọng việc xem 궁합 (Cung Hợp — tương hợp Saju) trước khi kết hôn hoặc hợp tác. Phương pháp dựa trên 3 yếu tố: Nhật chủ, tuổi (năm sinh) và sự bổ sung Ngũ Hành.",
+      about2:
+        "Điểm số là tham khảo — quan hệ tốt được xây dựng bằng nỗ lực và sự thấu hiểu, không phải số mệnh. Cặp đôi có điểm thấp vẫn có thể hạnh phúc; cặp điểm cao cũng cần chăm chút mỗi ngày.",
+    },
     blogPage: {
       eyebrow: "Hanbiet Blog",
       title: "Khám phá văn hóa Hàn Quốc",
@@ -189,6 +221,20 @@ export const dict = {
         "Đây là quiz vui kiểu MBTI dựa trên 12 câu hỏi về khẩu vị, tâm trạng và bối cảnh ăn uống. Chúng tôi tính điểm 'hợp gu' với 47 món ăn phổ biến nhất Hàn Quốc và gợi ý top 3.",
       about2:
         "Quiz mang tính giải trí. Hãy thử nhiều lần với những tâm trạng khác nhau — bạn sẽ phát hiện ra mình hợp với nhiều món Hàn ngon hơn bạn tưởng!",
+    },
+    foodDetail: {
+      backToList: "Tất cả món ăn",
+      ingredients: "Nguyên liệu",
+      steps: "Cách làm",
+      difficulty: "Độ khó",
+      time: "Thời gian",
+      minute: "phút",
+      servings: "Khẩu phần",
+      servingsLabel: "người",
+      tipTitle: "Mẹo nhỏ",
+      recipeComing: "Công thức chi tiết sẽ được cập nhật sớm — quay lại sau nhé!",
+      related: "Món khác bạn có thể thích",
+      viewRecipe: "Xem công thức",
     },
     foodQuiz: {
       question: "Câu",
@@ -311,6 +357,12 @@ export const dict = {
       blogTitle: "Bài viết về Hàn Quốc — tên, Saju, ẩm thực, văn hóa",
       blogDesc:
         "Khám phá văn hóa Hàn Quốc qua các bài viết bằng tiếng Việt — cách đặt tên Hàn, hiểu Saju, công thức món Hàn dễ nấu tại nhà, và nhiều điều thú vị khác.",
+      coupleTitle: "Bói tương hợp Saju cặp đôi miễn phí",
+      coupleDesc:
+        "Bói tương hợp Saju cho hai người — phân tích Nhật chủ, tuổi và Ngũ Hành. Kèm Saju riêng của từng người, bằng tiếng Việt.",
+      foodDetailTitle: "Công thức món Hàn Quốc",
+      foodDetailDesc:
+        "Công thức nấu món Hàn Quốc với nguyên liệu, các bước thực hiện và mẹo cho người Việt.",
       privacyTitle: "Chính sách bảo mật",
       privacyDesc: "Chính sách bảo mật của Hanbiet.",
       termsTitle: "Điều khoản sử dụng",
@@ -334,6 +386,7 @@ export const dict = {
     nav: {
       name: "한국 이름",
       saju: "사주풀이",
+      couple: "사주 궁합",
       food: "한식 추천",
       blog: "블로그",
       about: "사이트 소개",
@@ -346,6 +399,7 @@ export const dict = {
       nameLink: "한국 이름 짓기",
       sajuLink: "사주풀이 보기",
       foodLink: "한식 MBTI 퀴즈",
+      coupleLink: "커플 사주 궁합",
       blogLink: "한국 문화 블로그",
       aboutLink: "사이트 소개",
       privacyLink: "개인정보처리방침",
@@ -489,6 +543,36 @@ export const dict = {
       recommendationsTitle: "💡 당신을 위한 조언",
       disclaimer: "* 결과는 참고용이며, 전문 상담을 대체하지 않습니다.",
     },
+    couple: {
+      eyebrow: "사주 궁합 / 四柱宮合",
+      title: "커플 사주 궁합",
+      subtitle:
+        "두 사람의 생년월일을 입력하면 일간 호흡, 띠 궁합, 오행 보완을 분석합니다. 각자의 사주도 함께 확인하실 수 있어요.",
+      formTitle: "두 사람의 정보",
+      person1: "첫 번째 사람",
+      person2: "두 번째 사람",
+      yearSuffix: "년",
+      monthSuffix: "월",
+      daySuffix: "일",
+      unknownTime: "정확한 시간을 모릅니다",
+      privacyTitle: "🔒 두 분의 개인정보 보호",
+      privacyNote:
+        "두 사람의 생년월일은 사주 궁합 계산을 위해서만, 당신의 브라우저 안에서만 사용됩니다. 서버에 전송하지 않고, 저장하지 않으며, 어떤 제3자와도 공유하지 않습니다.",
+      consent: "두 사람의 생년월일을 사주 궁합 계산에 사용하는 데 동의합니다 (브라우저 내 처리, 저장하지 않음).",
+      consentRequired: "계속하려면 동의 항목에 체크해주세요.",
+      submit: "💞 궁합 보기",
+      overall: "전체 궁합 점수",
+      categoriesTitle: "세부 분석",
+      strengths: "이 커플의 강점",
+      challenges: "주의할 점",
+      adviceTitle: "두 분에게 드리는 조언",
+      dayMasterShort: "일간",
+      aboutTitle: "커플 사주에 대해",
+      about1:
+        "한국인은 결혼이나 동업 전에 '궁합(宮合)'을 매우 중요시합니다. 일간 호흡, 띠(연주), 오행 보완 — 이 3가지 요소를 종합해 두 사람의 어울림을 봅니다.",
+      about2:
+        "점수는 참고일 뿐 — 좋은 관계는 노력과 이해로 만드는 것이지 운명이 아닙니다. 점수가 낮은 커플도 행복할 수 있고, 높은 커플도 매일의 정성이 필요해요.",
+    },
     blogPage: {
       eyebrow: "Hanbiet Blog",
       title: "한국 문화 이야기",
@@ -507,6 +591,20 @@ export const dict = {
         "이 퀴즈는 입맛·기분·식사 상황에 대한 12가지 질문을 바탕으로 한 가벼운 MBTI 스타일 진단입니다. 한국에서 가장 인기 있는 47가지 한식과 매칭 점수를 계산해 상위 3개를 추천합니다.",
       about2:
         "재미로 즐기는 퀴즈입니다. 기분이나 상황을 바꿔가며 여러 번 시도해보세요 — 생각보다 더 많은 한식이 당신과 잘 맞을지도 몰라요!",
+    },
+    foodDetail: {
+      backToList: "전체 메뉴",
+      ingredients: "재료",
+      steps: "조리법",
+      difficulty: "난이도",
+      time: "시간",
+      minute: "분",
+      servings: "분량",
+      servingsLabel: "인분",
+      tipTitle: "팁",
+      recipeComing: "상세 레시피가 곧 추가됩니다 — 다시 들러주세요!",
+      related: "이 메뉴도 좋아할 거예요",
+      viewRecipe: "레시피 보기",
     },
     foodQuiz: {
       question: "질문",
@@ -627,6 +725,12 @@ export const dict = {
       blogTitle: "한국 문화 블로그 — 이름·사주·한식·문화",
       blogDesc:
         "베트남어로 풀어내는 한국 문화 이야기 — 한국 이름, 사주 풀이, 한식 레시피, 문화 차이까지.",
+      coupleTitle: "커플 사주 궁합 무료",
+      coupleDesc:
+        "두 사람의 사주 궁합을 무료로 — 일간·띠·오행 분석. 각자의 사주도 함께 확인.",
+      foodDetailTitle: "한식 레시피",
+      foodDetailDesc:
+        "한식 만드는 법 — 재료, 단계별 조리법, 베트남인을 위한 팁까지.",
       privacyTitle: "개인정보처리방침",
       privacyDesc: "Hanbiet 개인정보처리방침.",
       termsTitle: "이용약관",
