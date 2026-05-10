@@ -22,7 +22,10 @@ const notoKr = Noto_Sans_KR({
 });
 
 const SITE_URL = "https://hanbiet.com";
-const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+// AdSense publisher ID is public info (visible in the script tag to all visitors),
+// so we keep a default here and let env var override for dev/forks.
+const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-9235079129033755";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

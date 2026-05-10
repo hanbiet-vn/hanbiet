@@ -4,7 +4,8 @@ import { useEffect, useRef } from "react";
 import { type Locale } from "@/i18n/routing";
 import { getDict } from "@/i18n/dict";
 
-const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-9235079129033755";
 
 type Props = {
   slot?: string;
