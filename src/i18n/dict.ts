@@ -179,7 +179,7 @@ export const dict = {
       disclaimer: "* Kết quả mang tính tham khảo, không thay thế tư vấn chuyên môn.",
     },
     couple: {
-      eyebrow: "사주 궁합 / 四柱宮合",
+      eyebrow: "커플 사주 / 四柱宮合",
       title: "Saju cặp đôi",
       subtitle:
         "Nhập ngày sinh của hai người — chúng tôi sẽ phân tích Saju của từng người và mức độ hợp nhau giữa hai bạn (theo Nhật chủ, tuổi và Ngũ Hành).",
@@ -391,7 +391,7 @@ export const dict = {
     nav: {
       name: "한국 이름",
       saju: "사주풀이",
-      couple: "사주 궁합",
+      couple: "커플 사주",
       food: "한식 추천",
       blog: "블로그",
       about: "사이트 소개",
@@ -404,7 +404,7 @@ export const dict = {
       nameLink: "한국 이름 짓기",
       sajuLink: "사주풀이 보기",
       foodLink: "한식 MBTI 퀴즈",
-      coupleLink: "커플 사주 궁합",
+      coupleLink: "커플 사주",
       blogLink: "한국 문화 블로그",
       aboutLink: "사이트 소개",
       privacyLink: "개인정보처리방침",
@@ -554,8 +554,8 @@ export const dict = {
       disclaimer: "* 결과는 참고용이며, 전문 상담을 대체하지 않습니다.",
     },
     couple: {
-      eyebrow: "사주 궁합 / 四柱宮合",
-      title: "커플 사주 궁합",
+      eyebrow: "커플 사주 / 四柱宮合",
+      title: "커플 사주",
       subtitle:
         "두 사람의 생년월일을 입력하면 일간 호흡, 띠 궁합, 오행 보완을 분석합니다. 각자의 사주도 함께 확인하실 수 있어요.",
       formTitle: "두 사람의 정보",
@@ -567,11 +567,11 @@ export const dict = {
       unknownTime: "정확한 시간을 모릅니다",
       privacyTitle: "🔒 두 분의 개인정보 보호",
       privacyNote:
-        "두 사람의 생년월일은 사주 궁합 계산을 위해서만, 당신의 브라우저 안에서만 사용됩니다. 서버에 전송하지 않고, 저장하지 않으며, 어떤 제3자와도 공유하지 않습니다.",
-      consent: "두 사람의 생년월일을 사주 궁합 계산에 사용하는 데 동의합니다 (브라우저 내 처리, 저장하지 않음).",
+        "두 사람의 생년월일은 커플 사주 계산을 위해서만, 당신의 브라우저 안에서만 사용됩니다. 서버에 전송하지 않고, 저장하지 않으며, 어떤 제3자와도 공유하지 않습니다.",
+      consent: "두 사람의 생년월일을 커플 사주 계산에 사용하는 데 동의합니다 (브라우저 내 처리, 저장하지 않음).",
       consentRequired: "계속하려면 동의 항목에 체크해주세요.",
-      submit: "💞 궁합 보기",
-      overall: "전체 궁합 점수",
+      submit: "💞 커플 사주 보기",
+      overall: "전체 커플 사주 점수",
       categoriesTitle: "세부 분석",
       strengths: "이 커플의 강점",
       challenges: "주의할 점",
@@ -735,9 +735,9 @@ export const dict = {
       blogTitle: "한국 문화 블로그 — 이름·사주·한식·문화",
       blogDesc:
         "베트남어로 풀어내는 한국 문화 이야기 — 한국 이름, 사주 풀이, 한식 레시피, 문화 차이까지.",
-      coupleTitle: "커플 사주 궁합 무료",
+      coupleTitle: "커플 사주 무료",
       coupleDesc:
-        "두 사람의 사주 궁합을 무료로 — 일간·띠·오행 분석. 각자의 사주도 함께 확인.",
+        "두 사람의 커플 사주를 무료로 — 일간·띠·오행 분석. 각자의 사주도 함께 확인.",
       foodDetailTitle: "한식 레시피",
       foodDetailDesc:
         "한식 만드는 법 — 재료, 단계별 조리법, 베트남인을 위한 팁까지.",
