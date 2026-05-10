@@ -256,7 +256,7 @@ export default function CoupleSajuForm({ locale }: { locale: Locale }) {
               text={
                 locale === "ko"
                   ? `💞 우리 커플 사주 궁합 — ${result.overall}/100 (${result.levelLabelKo})! 너희도 해봐 👉`
-                  : `💞 Bói tương hợp Saju của chúng tôi — ${result.overall}/100 (${result.levelLabelVi})! Bạn cũng thử nhé 👉`
+                  : `💞 Saju cặp đôi của chúng tôi — ${result.overall}/100 (${result.levelLabelVi})! Bạn cũng thử nhé 👉`
               }
               url={`${SITE_URL}${localizedPath(locale, "/saju-cap-doi")}`}
               locale={locale}

@@ -16,7 +16,7 @@ export const dict = {
     nav: {
       name: "Tên Hàn Quốc",
       saju: "Bói Tứ Trụ",
-      couple: "Tương hợp",
+      couple: "Saju cặp đôi",
       food: "Món ăn",
       blog: "Bài viết",
       about: "Giới thiệu",
@@ -29,7 +29,7 @@ export const dict = {
       nameLink: "Đặt tên tiếng Hàn",
       sajuLink: "Xem bói Tứ Trụ Saju",
       foodLink: "Quiz món ăn Hàn Quốc",
-      coupleLink: "Bói tương hợp cặp đôi",
+      coupleLink: "Saju cặp đôi",
       blogLink: "Bài viết về Hàn Quốc",
       aboutLink: "Giới thiệu",
       privacyLink: "Chính sách bảo mật",
@@ -175,9 +175,9 @@ export const dict = {
     },
     couple: {
       eyebrow: "사주 궁합 / 四柱宮合",
-      title: "Bói tương hợp Saju cho cặp đôi",
+      title: "Saju cặp đôi",
       subtitle:
-        "Nhập ngày sinh của hai người — chúng tôi sẽ tính sự tương hợp Nhật chủ, tuổi và Ngũ Hành. Kèm theo Saju riêng của từng người.",
+        "Nhập ngày sinh của hai người — chúng tôi sẽ phân tích Saju của từng người và mức độ hợp nhau giữa hai bạn (theo Nhật chủ, tuổi và Ngũ Hành).",
       formTitle: "Thông tin của hai người",
       person1: "Người thứ nhất",
       person2: "Người thứ hai",
@@ -188,10 +188,10 @@ export const dict = {
       privacyTitle: "🔒 Quyền riêng tư của hai bạn",
       privacyNote:
         "Ngày sinh của cả hai người chỉ được dùng để tính Saju ngay trên trình duyệt của bạn. Chúng tôi KHÔNG gửi, KHÔNG lưu trữ, và KHÔNG chia sẻ thông tin này.",
-      consent: "Cả hai bạn đồng ý cho phép sử dụng ngày sinh để tính tương hợp Saju (chỉ xử lý trên trình duyệt).",
+      consent: "Cả hai bạn đồng ý cho phép sử dụng ngày sinh để tính Saju cặp đôi (chỉ xử lý trên trình duyệt).",
       consentRequired: "Vui lòng đánh dấu ô đồng ý để tiếp tục.",
-      submit: "💞 Xem tương hợp",
-      overall: "Điểm tương hợp tổng",
+      submit: "💞 Xem Saju cặp đôi",
+      overall: "Điểm hợp nhau",
       categoriesTitle: "Phân tích chi tiết",
       strengths: "Điểm mạnh của cặp đôi",
       challenges: "Điều cần lưu ý",
@@ -199,7 +199,7 @@ export const dict = {
       dayMasterShort: "Nhật chủ",
       aboutTitle: "Về Saju cặp đôi",
       about1:
-        "Người Hàn rất coi trọng việc xem 궁합 (Cung Hợp — tương hợp Saju) trước khi kết hôn hoặc hợp tác. Phương pháp dựa trên 3 yếu tố: Nhật chủ, tuổi (năm sinh) và sự bổ sung Ngũ Hành.",
+        "Người Hàn rất coi trọng việc xem Saju cặp đôi (gọi là 궁합 — 'Cung Hợp' trong tiếng Hàn) trước khi kết hôn hoặc hợp tác. Phương pháp dựa trên 3 yếu tố: Nhật chủ, tuổi (năm sinh) và sự bổ sung Ngũ Hành.",
       about2:
         "Điểm số là tham khảo — quan hệ tốt được xây dựng bằng nỗ lực và sự thấu hiểu, không phải số mệnh. Cặp đôi có điểm thấp vẫn có thể hạnh phúc; cặp điểm cao cũng cần chăm chút mỗi ngày.",
     },
@@ -357,9 +357,9 @@ export const dict = {
       blogTitle: "Bài viết về Hàn Quốc — tên, Saju, ẩm thực, văn hóa",
       blogDesc:
         "Khám phá văn hóa Hàn Quốc qua các bài viết bằng tiếng Việt — cách đặt tên Hàn, hiểu Saju, công thức món Hàn dễ nấu tại nhà, và nhiều điều thú vị khác.",
-      coupleTitle: "Bói tương hợp Saju cặp đôi miễn phí",
+      coupleTitle: "Saju cặp đôi miễn phí — bạn và người ấy có hợp không?",
       coupleDesc:
-        "Bói tương hợp Saju cho hai người — phân tích Nhật chủ, tuổi và Ngũ Hành. Kèm Saju riêng của từng người, bằng tiếng Việt.",
+        "Saju cặp đôi miễn phí cho hai người — phân tích Nhật chủ, tuổi và Ngũ Hành. Kèm Saju riêng của từng người, bằng tiếng Việt.",
       foodDetailTitle: "Công thức món Hàn Quốc",
       foodDetailDesc:
         "Công thức nấu món Hàn Quốc với nguyên liệu, các bước thực hiện và mẹo cho người Việt.",

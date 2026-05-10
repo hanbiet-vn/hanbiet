@@ -257,7 +257,7 @@ export function calculateCouple(args: {
     {
       key: "zodiac",
       score: zd.score,
-      labelVi: "Tuổi tương hợp",
+      labelVi: "Tuổi hợp nhau",
       labelKo: "띠 궁합",
       textVi: zdText.vi,
       textKo: zdText.ko,
@@ -286,7 +286,7 @@ export function calculateCouple(args: {
     challengesKo.push("일간이 한쪽으로 압박을 주는 형태 — 세심한 소통이 필요해요.");
   }
   if (zd.score >= 85) {
-    strengthsVi.push("Tuổi tương hợp tự nhiên — duyên gặp gỡ rất sâu.");
+    strengthsVi.push("Tuổi hai bạn hợp nhau tự nhiên — duyên gặp gỡ rất sâu.");
     strengthsKo.push("띠가 자연스럽게 잘 맞음 — 인연의 깊이가 느껴져요.");
   } else if (zd.score < 50) {
     challengesVi.push("Tuổi tương xung — dễ tranh luận về vấn đề nhỏ.");
