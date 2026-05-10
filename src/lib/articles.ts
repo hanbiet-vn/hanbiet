@@ -68,19 +68,19 @@ export const ARTICLES: Article[] = [
       {
         type: "p",
         vi:
-          "Bài viết này tổng hợp 30 cái tên đang được yêu thích nhất ở Hàn Quốc 2024–2025, dựa trên thống kê thực tế từ Tòa án Tối cao Hàn Quốc và xu hướng đặt tên hiện đại. Mỗi tên đều có Hangul, Hán tự, và ý nghĩa rõ ràng.",
+          "Bài viết này tổng hợp 30 cái tên đang được yêu thích nhất ở Hàn Quốc 2025–2026, dựa trên thống kê thực tế từ Tòa án Tối cao Hàn Quốc và xu hướng đặt tên hiện đại. Mỗi tên đều có Hangul, Hán tự, và ý nghĩa rõ ràng.",
         ko:
-          "이 글에서는 한국 대법원 통계와 최근 트렌드를 바탕으로, 2024–2025년 가장 사랑받는 30개 이름을 모았어요. 모든 이름에 한글·한자·의미를 함께 정리했습니다.",
+          "이 글에서는 한국 대법원 통계와 최근 트렌드를 바탕으로, 2025–2026년 가장 사랑받는 30개 이름을 모았어요. 모든 이름에 한글·한자·의미를 함께 정리했습니다.",
       },
       {
         type: "h2",
-        vi: "Top 10 — Phong cách hiện đại được yêu thích nhất 2024",
-        ko: "TOP 10 — 2024년 가장 인기 있는 모던 스타일",
+        vi: "Top 10 — Phong cách hiện đại được yêu thích nhất 2026",
+        ko: "TOP 10 — 2026년 가장 인기 있는 모던 스타일",
       },
       {
         type: "ol",
         vi: [
-          "서아 (瑞雅) Seo-ah — Điềm lành & tao nhã. Tên nữ #1 Hàn Quốc 2024.",
+          "서아 (瑞雅) Seo-ah — Điềm lành & tao nhã. Tên nữ #1 Hàn Quốc 2026.",
           "서윤 (瑞潤) Seo-yoon — Điềm lành & óng ả, tươi sáng.",
           "하윤 (夏潤) Ha-yoon — Mùa hè & sự óng ả, ấm áp.",
           "지유 (智裕) Ji-yu — Trí tuệ & sự sung túc.",
@@ -92,7 +92,7 @@ export const ARTICLES: Article[] = [
           "시아 (時雅) Si-ah — Đúng thời điểm & tao nhã.",
         ],
         ko: [
-          "서아 (瑞雅) Seo-ah — 상서로움과 우아함. 2024년 1위 이름.",
+          "서아 (瑞雅) Seo-ah — 상서로움과 우아함. 2026년 1위 이름.",
           "서윤 (瑞潤) Seo-yoon — 상서로움과 윤택함, 빛남.",
           "하윤 (夏潤) Ha-yoon — 여름과 윤택함, 따뜻함.",
           "지유 (智裕) Ji-yu — 지혜와 풍요로움.",
@@ -183,9 +183,9 @@ export const ARTICLES: Article[] = [
       {
         type: "p",
         vi:
-          "Nếu bạn chưa biết tên nào hợp với mình, hãy thử công cụ tạo tên Hàn miễn phí của chúng tôi. Bạn chỉ cần chọn giới tính và phong cách yêu thích — hệ thống sẽ gợi ý 6 tên Hàn 2024-2025 chuẩn, có cả Hán tự và câu chuyện ý nghĩa.",
+          "Nếu bạn chưa biết tên nào hợp với mình, hãy thử công cụ tạo tên Hàn miễn phí của chúng tôi. Bạn chỉ cần chọn giới tính và phong cách yêu thích — hệ thống sẽ gợi ý 6 tên Hàn 2025-2026 chuẩn, có cả Hán tự và câu chuyện ý nghĩa.",
         ko:
-          "어떤 이름이 자신에게 잘 맞는지 모르겠다면, 무료 한국 이름 생성 도구를 써보세요. 성별과 원하는 스타일만 고르면 2024-2025 인기 이름 6개를 한자 의미와 함께 추천해드립니다.",
+          "어떤 이름이 자신에게 잘 맞는지 모르겠다면, 무료 한국 이름 생성 도구를 써보세요. 성별과 원하는 스타일만 고르면 2025-2026 인기 이름 6개를 한자 의미와 함께 추천해드립니다.",
       },
       {
         type: "cta",
@@ -1576,26 +1576,26 @@ export const ARTICLES: Article[] = [
     titleVi: "30 tên Hàn Quốc đẹp cho con trai 2025 — kèm ý nghĩa Hán tự",
     titleKo: "2025년 인기 한국 남자 이름 30선 — 한자 의미 포함",
     descVi:
-      "30 tên tiếng Hàn cho con trai phổ biến nhất 2024-2025 — chia theo phong cách hiện đại, mạnh mẽ, hiền lành, và độc đáo. Kèm Hangul, Hán tự và ý nghĩa.",
+      "30 tên tiếng Hàn cho con trai phổ biến nhất 2025-2026 — chia theo phong cách hiện đại, mạnh mẽ, hiền lành, và độc đáo. Kèm Hangul, Hán tự và ý nghĩa.",
     descKo:
-      "2024-2025년 가장 인기 있는 한국 남자 이름 30선 — 모던·강인·온화·개성별로. 한글, 한자, 의미까지.",
+      "2025-2026년 가장 인기 있는 한국 남자 이름 30선 — 모던·강인·온화·개성별로. 한글, 한자, 의미까지.",
     body: [
       {
         type: "p",
         vi:
-          "Bạn từng để ý K-drama nam chính tên gì không? 도윤, 하준, 지호... — đây đều là tên đang HOT ở Hàn Quốc 2024-2025. Bài này tổng hợp 30 tên con trai được yêu thích nhất, với Hán tự và ý nghĩa rõ ràng.",
+          "Bạn từng để ý K-drama nam chính tên gì không? 도윤, 하준, 지호... — đây đều là tên đang HOT ở Hàn Quốc 2025-2026. Bài này tổng hợp 30 tên con trai được yêu thích nhất, với Hán tự và ý nghĩa rõ ràng.",
         ko:
-          "K-드라마 남주의 이름이 도윤·하준·지호인 거 눈치채셨나요? 모두 2024-2025년 한국에서 가장 인기 있는 이름입니다. 30개 남자 이름을 한자 의미와 함께 정리했어요.",
+          "K-드라마 남주의 이름이 도윤·하준·지호인 거 눈치채셨나요? 모두 2025-2026년 한국에서 가장 인기 있는 이름입니다. 30개 남자 이름을 한자 의미와 함께 정리했어요.",
       },
       {
         type: "h2",
-        vi: "Top 10 — Hiện đại được yêu thích nhất 2024",
-        ko: "TOP 10 — 2024년 가장 사랑받는 모던 이름",
+        vi: "Top 10 — Hiện đại được yêu thích nhất 2026",
+        ko: "TOP 10 — 2026년 가장 사랑받는 모던 이름",
       },
       {
         type: "ol",
         vi: [
-          "도윤 (度允) Do-yoon — Chuẩn mực & chân thật. Tên nam #1 Hàn 2024.",
+          "도윤 (度允) Do-yoon — Chuẩn mực & chân thật. Tên nam #1 Hàn 2026.",
           "하준 (夏俊) Ha-jun — Mùa hè & tuấn tú.",
           "서준 (瑞俊) Seo-jun — Điềm lành & tuấn tú.",
           "시우 (時雨) Si-woo — Mưa đúng lúc (tên thơ).",
@@ -1607,7 +1607,7 @@ export const ARTICLES: Article[] = [
           "건우 (健宇) Geon-woo — Khỏe khoắn & vũ trụ.",
         ],
         ko: [
-          "도윤 (度允) — 도리·진실. 2024년 남자 1위.",
+          "도윤 (度允) — 도리·진실. 2026년 남자 1위.",
           "하준 (夏俊) — 여름·준수함.",
           "서준 (瑞俊) — 상서로움·준수함.",
           "시우 (時雨) — 단비.",
@@ -1711,9 +1711,9 @@ export const ARTICLES: Article[] = [
     titleVi: "K-pop fan guide cho người Việt mới — BTS, BLACKPINK, NewJeans và 'fandom' Hàn Quốc",
     titleKo: "K-팝 입문 가이드 — BTS·BLACKPINK·NewJeans와 한국 팬덤 문화",
     descVi:
-      "Bạn mới yêu K-pop? Hướng dẫn cho người Việt: thuật ngữ fandom, top groups 2024-2025, cách follow idol, và lifestyle K-pop fan ở Việt Nam.",
+      "Bạn mới yêu K-pop? Hướng dẫn cho người Việt: thuật ngữ fandom, top groups 2025-2026, cách follow idol, và lifestyle K-pop fan ở Việt Nam.",
     descKo:
-      "K-팝에 빠진 베트남 입문자를 위한 가이드: 팬덤 용어, 2024-2025 인기 그룹, 아이돌 팔로우 방법, 베트남 K-팝 팬 라이프스타일.",
+      "K-팝에 빠진 베트남 입문자를 위한 가이드: 팬덤 용어, 2025-2026 인기 그룹, 아이돌 팔로우 방법, 베트남 K-팝 팬 라이프스타일.",
     body: [
       {
         type: "p",
@@ -1724,8 +1724,8 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        vi: "Top 10 nhóm K-pop được yêu nhất ở VN 2024-2025",
-        ko: "베트남에서 사랑받는 K-팝 그룹 TOP 10 (2024-2025)",
+        vi: "Top 10 nhóm K-pop được yêu nhất ở VN 2025-2026",
+        ko: "베트남에서 사랑받는 K-팝 그룹 TOP 10 (2025-2026)",
       },
       {
         type: "ol",
