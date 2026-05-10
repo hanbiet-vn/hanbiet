@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro, Noto_Sans_KR } from "next/font/google";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing, type Locale } from "@/i18n/routing";
@@ -69,14 +68,16 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
   return (
     <html lang={locale} className={`${fontClass} h-full antialiased`}>
       <head>
+        {/* Plain script tag (not next/script) so it lands physically inside <head>
+            in the served HTML — required for AdSense's verifier. */}
         {ADSENSE_CLIENT ? (
-          <Script
+          <script
             async
-            strategy="afterInteractive"
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
             crossOrigin="anonymous"
           />
         ) : null}
+        <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
       </head>
       <body className="min-h-full flex flex-col bg-white text-zinc-900">
         <Header locale={typedLocale} />
