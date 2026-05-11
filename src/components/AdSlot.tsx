@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { type Locale } from "@/i18n/routing";
-import { getDict } from "@/i18n/dict";
 
 const ADSENSE_CLIENT =
   process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-9235079129033755";
@@ -34,14 +33,7 @@ export default function AdSlot({
   }, [slot]);
 
   if (!ADSENSE_CLIENT || !slot) {
-    const t = getDict(locale);
-    return (
-      <div
-        className={`flex items-center justify-center rounded-lg border border-dashed border-zinc-300 bg-zinc-50 px-4 py-6 text-xs text-zinc-400 ${className}`}
-      >
-        {t.ad.placeholder}
-      </div>
-    );
+    return null;
   }
 
   return (
