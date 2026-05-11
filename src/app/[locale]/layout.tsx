@@ -7,6 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { getDict } from "@/i18n/dict";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 
 const beVietnam = Be_Vietnam_Pro({
@@ -83,6 +84,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
         <Header locale={typedLocale} />
         <main className="flex-1">{children}</main>
         <Footer locale={typedLocale} />
+        <Analytics />
       </body>
     </html>
   );
