@@ -34,3 +34,6 @@ body { font-family: var(--font-sans); }
 .label {
   @apply mb-1.5 block text-sm font-medium text-zinc-700;
 }
+.font-brush {
+  font-family: var(--font-brush), "Nanum Brush Script", "Caveat", cursive;
+}

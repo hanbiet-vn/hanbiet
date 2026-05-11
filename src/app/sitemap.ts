@@ -11,6 +11,7 @@ const SLUGS = [
   { path: "/sau-han-quoc", priority: 0.9, freq: "weekly" as const },
   { path: "/saju-cap-doi", priority: 0.9, freq: "weekly" as const },
   { path: "/mon-an-han-quoc", priority: 0.9, freq: "weekly" as const },
+  { path: "/joseon-test", priority: 0.9, freq: "weekly" as const },
   { path: "/bai-viet", priority: 0.8, freq: "weekly" as const },
   { path: "/gioi-thieu", priority: 0.5, freq: "monthly" as const },
   { path: "/chinh-sach-bao-mat", priority: 0.3, freq: "yearly" as const },

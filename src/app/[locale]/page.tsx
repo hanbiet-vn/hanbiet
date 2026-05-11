@@ -37,12 +37,13 @@ export default async function Home({
             <Link href={p("/sau-han-quoc")} className="btn-outline">{t.home.ctaSaju}</Link>
             <Link href={p("/saju-cap-doi")} className="btn-outline">{t.home.ctaCouple}</Link>
             <Link href={p("/mon-an-han-quoc")} className="btn-outline">{t.home.ctaFood}</Link>
+            <Link href={p("/joseon-test")} className="btn-outline">{t.home.ctaJoseon}</Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           <Link href={p("/ten-han-quoc")} className="card group transition hover:shadow-md">
             <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--brand-soft)] text-2xl">✨</div>
             <h2 className="text-xl font-bold text-zinc-900">{t.home.cardNameTitle}</h2>
@@ -73,6 +74,14 @@ export default async function Home({
             <p className="mt-2 text-zinc-600">{t.home.cardFoodDesc}</p>
             <span className="mt-4 inline-flex items-center text-sm font-semibold text-[var(--brand)] group-hover:underline">
               {t.home.cardFoodCta}
+            </span>
+          </Link>
+          <Link href={p("/joseon-test")} className="card group transition hover:shadow-md">
+            <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--brand-soft)] text-2xl">🏯</div>
+            <h2 className="text-xl font-bold text-zinc-900">{t.home.cardJoseonTitle}</h2>
+            <p className="mt-2 text-zinc-600">{t.home.cardJoseonDesc}</p>
+            <span className="mt-4 inline-flex items-center text-sm font-semibold text-[var(--brand)] group-hover:underline">
+              {t.home.cardJoseonCta}
             </span>
           </Link>
         </div>

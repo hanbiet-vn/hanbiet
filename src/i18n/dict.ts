@@ -18,6 +18,7 @@ export const dict = {
       saju: "Bói Tứ Trụ",
       couple: "Saju cặp đôi",
       food: "Món ăn",
+      joseon: "Joseon test",
       blog: "Bài viết",
       about: "Giới thiệu",
     },
@@ -30,6 +31,7 @@ export const dict = {
       sajuLink: "Xem bói Tứ Trụ Saju",
       foodLink: "Quiz món ăn Hàn Quốc",
       coupleLink: "Saju cặp đôi",
+      joseonLink: "Joseon test (Tôi thời cổ)",
       blogLink: "Bài viết về Hàn Quốc",
       aboutLink: "Giới thiệu",
       privacyLink: "Chính sách bảo mật",
@@ -46,6 +48,7 @@ export const dict = {
       ctaName: "✨ Đặt tên tiếng Hàn",
       ctaSaju: "🔮 Xem bói Tứ Trụ",
       ctaCouple: "💞 Saju cặp đôi",
+      ctaJoseon: "🏯 Joseon test",
       ctaFood: "🍜 Quiz món ăn Hàn",
       cardNameTitle: "Tên Hàn Quốc cho người Việt",
       cardNameDesc:
@@ -59,6 +62,10 @@ export const dict = {
       cardCoupleDesc:
         "Bạn và người ấy có hợp nhau không? Phân tích Saju của hai người và mức độ hợp nhau theo phong cách Hàn Quốc.",
       cardCoupleCta: "Xem ngay →",
+      cardJoseonTitle: "Nếu sinh thời Joseon, tôi là ai?",
+      cardJoseonDesc:
+        "Test cá tính phong cách K-history — 12 câu hỏi → 1 trong 16 nhân vật Joseon (Sĩ, Vua hậu, Hoạ sĩ, Mật sứ...). Chia sẻ ảnh kết quả siêu hấp dẫn.",
+      cardJoseonCta: "Test ngay →",
       cardFoodTitle: "Bạn hợp món Hàn nào? (Quiz MBTI)",
       cardFoodDesc:
         "12 câu hỏi nhanh — chúng tôi sẽ gợi ý 3 món hợp khẩu vị bạn nhất từ 47 món Hàn Quốc nổi tiếng.",
@@ -227,6 +234,27 @@ export const dict = {
       about2:
         "Quiz mang tính giải trí. Hãy thử nhiều lần với những tâm trạng khác nhau — bạn sẽ phát hiện ra mình hợp với nhiều món Hàn ngon hơn bạn tưởng!",
     },
+    joseon: {
+      eyebrow: "조선시대 MBTI · K-HISTORY",
+      title: "Nếu bạn sinh ra ở thời Joseon, bạn là ai?",
+      subtitle:
+        "Trả lời 12 câu hỏi — chúng tôi sẽ chỉ ra bạn là một trong 16 nhân vật Joseon: Sĩ, Hoàng hậu, Hoạ sĩ cung đình, Mật sứ vua phái... và nhiều nữa.",
+      question: "Câu",
+      back: "Quay lại",
+      youAre: "BẠN LÀ",
+      personality: "Tính cách của bạn",
+      strengths: "Điểm mạnh",
+      watchOut: "Điều cần lưu ý",
+      match: "Nhân vật hợp với bạn",
+      shareCallout: "Bạn bè bạn sẽ là ai? Chia sẻ và rủ họ thử ngay!",
+      retake: "🔄 Làm lại test",
+      disclaimer: "* Test mang tính giải trí dựa trên cảm hứng từ lịch sử Joseon.",
+      aboutTitle: "Về test này",
+      about1:
+        "Đây là test cá tính phong cách MBTI lấy cảm hứng từ thời đại Joseon (1392-1897) của Hàn Quốc — thời kỳ làm nên hầu hết K-drama cổ trang nổi tiếng (Daejanggeum, Hwang Jini, Mr. Sunshine, The Red Sleeve...).",
+      about2:
+        "12 câu hỏi đánh giá 4 trục tính cách (Nội/Ngoại - Văn/Võ - Tập/Độc - Nghĩa/Lợi), từ đó xác định bạn ứng với 1 trong 16 nhân vật. Mỗi nhân vật có hình ảnh con dấu đỏ và phong cách thư pháp truyền thống — chia sẻ Instagram cực hợp!",
+    },
     foodDetail: {
       backToList: "Tất cả món ăn",
       ingredients: "Nguyên liệu",
@@ -365,6 +393,9 @@ export const dict = {
       coupleTitle: "Saju cặp đôi miễn phí — bạn và người ấy có hợp không?",
       coupleDesc:
         "Saju cặp đôi miễn phí cho hai người — phân tích Nhật chủ, tuổi và Ngũ Hành. Kèm Saju riêng của từng người, bằng tiếng Việt.",
+      joseonTitle: "Joseon test — Nếu sinh thời cổ Hàn Quốc, bạn là ai?",
+      joseonDesc:
+        "Test cá tính MBTI phong cách K-history — 12 câu hỏi, 16 nhân vật Joseon. Chia sẻ ảnh kết quả với con dấu đỏ trên Instagram và TikTok.",
       foodDetailTitle: "Công thức món Hàn Quốc",
       foodDetailDesc:
         "Công thức nấu món Hàn Quốc với nguyên liệu, các bước thực hiện và mẹo cho người Việt.",
@@ -393,6 +424,7 @@ export const dict = {
       saju: "사주풀이",
       couple: "커플 사주",
       food: "한식 추천",
+      joseon: "조선시대 나",
       blog: "블로그",
       about: "사이트 소개",
     },
@@ -405,6 +437,7 @@ export const dict = {
       sajuLink: "사주풀이 보기",
       foodLink: "한식 MBTI 퀴즈",
       coupleLink: "커플 사주",
+      joseonLink: "조선시대 나는 누구",
       blogLink: "한국 문화 블로그",
       aboutLink: "사이트 소개",
       privacyLink: "개인정보처리방침",
@@ -421,6 +454,7 @@ export const dict = {
       ctaName: "✨ 한국 이름 짓기",
       ctaSaju: "🔮 사주풀이 보기",
       ctaCouple: "💞 커플 사주",
+      ctaJoseon: "🏯 조선시대 나",
       ctaFood: "🍜 한식 MBTI",
       cardNameTitle: "베트남인을 위한 한국 이름",
       cardNameDesc:
@@ -434,6 +468,10 @@ export const dict = {
       cardCoupleDesc:
         "두 사람의 사주를 함께 분석 — 일간 호흡·띠·오행 보완을 통해 얼마나 잘 맞는지 한국 전통 방식으로 풀어드립니다.",
       cardCoupleCta: "지금 보기 →",
+      cardJoseonTitle: "조선시대에 태어났다면 나는?",
+      cardJoseonDesc:
+        "12문항 사극 MBTI — 16가지 조선시대 인물(선비·중전·암행어사·화공…) 중 당신은 누구? 빨간 도장 결과 카드로 SNS 공유까지.",
+      cardJoseonCta: "지금 테스트 →",
       cardFoodTitle: "당신에게 맞는 한식은? (MBTI 퀴즈)",
       cardFoodDesc:
         "12문항 퀴즈로 — 한국 인기 한식 47가지 중 당신에게 가장 잘 맞는 3가지를 추천해드립니다.",
@@ -602,6 +640,27 @@ export const dict = {
       about2:
         "재미로 즐기는 퀴즈입니다. 기분이나 상황을 바꿔가며 여러 번 시도해보세요 — 생각보다 더 많은 한식이 당신과 잘 맞을지도 몰라요!",
     },
+    joseon: {
+      eyebrow: "조선시대 MBTI · K-HISTORY",
+      title: "조선시대에 태어났다면 나는 누구일까?",
+      subtitle:
+        "12개의 질문으로 알아보는 — 선비, 중전, 화공, 암행어사 등 조선시대 16개 인물 중 당신과 가장 닮은 캐릭터를 찾아드립니다.",
+      question: "질문",
+      back: "이전",
+      youAre: "당신은",
+      personality: "당신의 성격",
+      strengths: "강점",
+      watchOut: "주의할 점",
+      match: "당신과 잘 맞는 인물",
+      shareCallout: "친구는 어떤 인물일까? 공유하고 같이 해봐!",
+      retake: "🔄 테스트 다시 하기",
+      disclaimer: "* 조선시대 인물에 영감을 받은 재미용 성격 테스트입니다.",
+      aboutTitle: "이 테스트에 대해",
+      about1:
+        "한국 사극의 무대인 조선시대(1392-1897) — 대장금, 황진이, 미스터 션샤인, 옷소매 붉은 끝동 등 인기 K-드라마의 배경이 된 시대에서 영감을 받은 MBTI 스타일 성격 테스트입니다.",
+      about2:
+        "12개의 질문으로 4가지 성격 축(內/外, 文/武, 集/獨, 義/利)을 측정해 16개 조선시대 인물 중 하나를 찾아드립니다. 각 결과는 빨간 도장과 한국 전통 캘리그래피 디자인으로 — 인스타그램 공유에 안성맞춤!",
+    },
     foodDetail: {
       backToList: "전체 메뉴",
       ingredients: "재료",
@@ -738,6 +797,9 @@ export const dict = {
       coupleTitle: "커플 사주 무료",
       coupleDesc:
         "두 사람의 커플 사주를 무료로 — 일간·띠·오행 분석. 각자의 사주도 함께 확인.",
+      joseonTitle: "조선시대 MBTI — 너는 누구일까?",
+      joseonDesc:
+        "12문항 사극 성격 테스트 — 16명의 조선시대 인물 중 당신은? 빨간 도장과 한국 전통 디자인의 결과 카드로 SNS 공유까지.",
       foodDetailTitle: "한식 레시피",
       foodDetailDesc:
         "한식 만드는 법 — 재료, 단계별 조리법, 베트남인을 위한 팁까지.",
