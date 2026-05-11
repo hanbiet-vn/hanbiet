@@ -53,18 +53,13 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
     const match = CHARACTERS[c.matchId];
     return (
       <div id="joseon-result" className="space-y-6">
-        {/* Hanji-styled hero */}
-        <div
-          className="relative overflow-hidden rounded-3xl border-2 border-amber-200/60 p-8 text-center text-white shadow-xl sm:p-12"
-          style={{
-            backgroundImage: `radial-gradient(circle at 20% 30%, rgba(255,255,255,0.18) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.15) 0%, transparent 50%), ${c.accent}`,
-          }}
-        >
-          {/* Red stamp */}
-          <div className="absolute right-4 top-4 sm:right-8 sm:top-8">
-            <RedStamp char={c.hanja[0]} />
-          </div>
-          <div className="text-xs font-medium tracking-[0.3em] opacity-80">
+        {/* Hanji-styled hero — white card with accent bar */}
+        <div className="relative overflow-hidden rounded-3xl border-2 border-amber-200/60 bg-white p-8 text-center shadow-xl sm:p-12">
+          <div
+            className="absolute inset-x-0 top-0 h-2"
+            style={{ background: c.accent }}
+          />
+          <div className="text-xs font-medium tracking-[0.3em] text-zinc-500">
             {t.joseon.youAre}
           </div>
           {c.image ? (
@@ -74,20 +69,23 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
                 alt={c.hangul}
                 width={224}
                 height={224}
-                className="h-48 w-48 object-contain drop-shadow-2xl sm:h-56 sm:w-56"
+                className="h-48 w-48 object-contain sm:h-56 sm:w-56"
               />
             </div>
           ) : (
-            <div className="my-3 text-7xl sm:text-8xl drop-shadow-lg">{c.emoji}</div>
+            <div className="my-3 text-7xl sm:text-8xl">{c.emoji}</div>
           )}
-          <h2 className="font-brush text-5xl font-extrabold tracking-tight drop-shadow sm:text-6xl">
+          <h2
+            className="font-brush bg-clip-text text-5xl font-extrabold tracking-tight text-transparent sm:text-6xl"
+            style={{ backgroundImage: c.accent }}
+          >
             {c.hangul}
           </h2>
-          <div className="mt-1 text-lg opacity-80">{c.hanja}</div>
-          <div className="mt-3 text-base font-medium">
+          <div className="mt-1 text-lg text-zinc-500">{c.hanja}</div>
+          <div className="mt-3 text-base font-semibold text-zinc-800">
             {locale === "ko" ? c.roleKo : c.roleVi}
           </div>
-          <p className="mx-auto mt-4 max-w-md text-sm font-medium leading-relaxed opacity-95 sm:text-base">
+          <p className="mx-auto mt-4 max-w-md text-sm font-medium leading-relaxed text-zinc-600 sm:text-base">
             「 {locale === "ko" ? c.taglineKo : c.taglineVi} 」
           </p>
         </div>
@@ -232,32 +230,3 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
   );
 }
 
-// Decorative red seal/stamp SVG — uses single hanja character on red square.
-function RedStamp({ char }: { char: string }) {
-  return (
-    <div className="relative inline-block">
-      <svg
-        viewBox="0 0 80 80"
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-16 w-16 sm:h-20 sm:w-20 drop-shadow-md"
-      >
-        <rect x="2" y="2" width="76" height="76" rx="6" fill="#dc2626" />
-        <rect x="2" y="2" width="76" height="76" rx="6" fill="none" stroke="#7f1d1d" strokeWidth="2" />
-        {/* Decorative cracks for old seal look */}
-        <line x1="20" y1="78" x2="22" y2="65" stroke="#7f1d1d" strokeWidth="0.8" opacity="0.4" />
-        <line x1="60" y1="2" x2="58" y2="15" stroke="#7f1d1d" strokeWidth="0.8" opacity="0.4" />
-        <text
-          x="40"
-          y="55"
-          textAnchor="middle"
-          fontSize="44"
-          fontWeight="900"
-          fill="#fef2f2"
-          fontFamily="'Noto Serif KR', serif"
-        >
-          {char}
-        </text>
-      </svg>
-    </div>
-  );
-}
