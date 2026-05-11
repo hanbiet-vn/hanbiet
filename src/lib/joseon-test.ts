@@ -153,6 +153,7 @@ export type Character = {
   hangul: string;
   hanja: string;
   emoji: string;
+  image?: string;
   // Short role label
   roleVi: string;
   roleKo: string;
@@ -177,7 +178,7 @@ export type Character = {
 export const CHARACTERS: Record<CharacterId, Character> = {
   // === 內 (Introverted) ===
   IWGR: {
-    id: "IWGR", hangul: "중전", hanja: "中殿", emoji: "👸",
+    id: "IWGR", hangul: "중전", hanja: "中殿", emoji: "👸", image: "/joseon/jungjeon.png",
     roleVi: "Trung điện (Hoàng hậu)",
     roleKo: "중전 (中殿)",
     taglineVi: "Người dẫn dắt thầm lặng nhưng đầy uy quyền",
@@ -191,10 +192,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Quá kín đáo dễ bị hiểu lầm", "Áp lực hoàn hảo"],
     watchOutKo: ["너무 닫혀 있으면 오해 받을 수 있어요", "완벽주의 부담"],
     matchId: "OMGR", // 무관
-    accent: "from-rose-500 to-pink-600",
+    accent: "linear-gradient(135deg, #f43f5e, #db2777)",
   },
   IWGU: {
-    id: "IWGU", hangul: "의녀", hanja: "醫女", emoji: "🌿",
+    id: "IWGU", hangul: "의녀", hanja: "醫女", emoji: "🌿", image: "/joseon/uinyeo.png",
     roleVi: "Y nữ (Nữ y sĩ cung đình)",
     roleKo: "의녀 (醫女)",
     taglineVi: "Người chữa lành dịu dàng, luôn nghĩ cho người khác",
@@ -208,10 +209,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Cho đi quá nhiều — nhớ chăm chính mình", "Ngại nói 'không'"],
     watchOutKo: ["너무 많이 주는 편 — 자신도 챙기세요", "'아니오' 말하기 어려움"],
     matchId: "OWGR", // 영의정
-    accent: "from-emerald-500 to-teal-600",
+    accent: "linear-gradient(135deg, #10b981, #0d9488)",
   },
   IWSR: {
-    id: "IWSR", hangul: "풍수사", hanja: "風水師", emoji: "🧭",
+    id: "IWSR", hangul: "풍수사", hanja: "風水師", emoji: "🧭", image: "/joseon/pungsusa.png",
     roleVi: "Phong thủy sư",
     roleKo: "풍수사 (風水師)",
     taglineVi: "Người đọc dòng chảy của vũ trụ",
@@ -225,10 +226,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Cô đơn vì ít chia sẻ", "Khó nhân nhượng"],
     watchOutKo: ["속을 잘 안 보여서 외로울 수 있음", "타협이 어려움"],
     matchId: "OWSU", // 화공
-    accent: "from-violet-500 to-indigo-600",
+    accent: "linear-gradient(135deg, #8b5cf6, #4f46e5)",
   },
   IWSU: {
-    id: "IWSU", hangul: "역관", hanja: "譯官", emoji: "📜",
+    id: "IWSU", hangul: "역관", hanja: "譯官", emoji: "📜", image: "/joseon/yeokgwan.png",
     roleVi: "Dịch quan (Phiên dịch viên triều đình)",
     roleKo: "역관 (譯官)",
     taglineVi: "Cầu nối giữa các thế giới",
@@ -242,10 +243,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Đôi khi 'đu dây' quá", "Ít cảm xúc thật"],
     watchOutKo: ["때로 양쪽에 줄타기 과해요", "진심을 잘 안 보여줌"],
     matchId: "OMSU", // 광대
-    accent: "from-amber-500 to-orange-600",
+    accent: "linear-gradient(135deg, #f59e0b, #ea580c)",
   },
   IMGR: {
-    id: "IMGR", hangul: "상궁", hanja: "尙宮", emoji: "🕯️",
+    id: "IMGR", hangul: "상궁", hanja: "尙宮", emoji: "🕯️", image: "/joseon/sanggung.png",
     roleVi: "Thượng cung (Quan nhất của cung nữ)",
     roleKo: "상궁 (尙宮)",
     taglineVi: "Quản gia thầm lặng giữ trật tự cho cả tổ chức",
@@ -259,10 +260,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Hay 'gồng' — cho phép mình nghỉ", "Khó tha thứ lỗi nhỏ"],
     watchOutKo: ["너무 긴장하는 편 — 쉬세요", "작은 실수도 잘 못 넘김"],
     matchId: "OWGR", // 영의정
-    accent: "from-zinc-500 to-slate-600",
+    accent: "linear-gradient(135deg, #71717a, #475569)",
   },
   IMGU: {
-    id: "IMGU", hangul: "농부", hanja: "農夫", emoji: "🌾",
+    id: "IMGU", hangul: "농부", hanja: "農夫", emoji: "🌾", image: "/joseon/nongbu.png",
     roleVi: "Nông phu",
     roleKo: "농부 (農夫)",
     taglineVi: "Người sống bằng đôi tay, vững như đất mẹ",
@@ -276,10 +277,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Đôi khi quá thầm lặng — hãy lên tiếng cho mình", "Sợ thay đổi"],
     watchOutKo: ["너무 조용해서 손해 볼 때도 — 목소리 내세요", "변화를 두려워함"],
     matchId: "OMSR", // 보부상
-    accent: "from-amber-600 to-yellow-700",
+    accent: "linear-gradient(135deg, #d97706, #a16207)",
   },
   IMSR: {
-    id: "IMSR", hangul: "암행어사", hanja: "暗行御史", emoji: "🕵️",
+    id: "IMSR", hangul: "암행어사", hanja: "暗行御史", emoji: "🕵️", image: "/joseon/amhaengeosa.png",
     roleVi: "Ám hành ngự sử (Mật sứ vua phái)",
     roleKo: "암행어사 (暗行御史)",
     taglineVi: "Người đi tìm sự thật trong bóng tối",
@@ -293,10 +294,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Quá khắt khe với chính mình", "Khó để người khác đến gần"],
     watchOutKo: ["자신에게 너무 엄격함", "사람들이 다가오기 어려워함"],
     matchId: "OMGR", // 포도대장
-    accent: "from-slate-700 to-zinc-800",
+    accent: "linear-gradient(135deg, #334155, #27272a)",
   },
   IMSU: {
-    id: "IMSU", hangul: "도공", hanja: "陶工", emoji: "🏺",
+    id: "IMSU", hangul: "도공", hanja: "陶工", emoji: "🏺", image: "/joseon/dogong.png",
     roleVi: "Đào công (Thợ gốm)",
     roleKo: "도공 (陶工)",
     taglineVi: "Nghệ nhân thầm lặng tạo ra cái đẹp bền lâu",
@@ -310,12 +311,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Khó thương lượng giá", "Hay tự cô lập"],
     watchOutKo: ["흥정에 약해요", "스스로 고립되기 쉬움"],
     matchId: "OWSU", // 화공
-    accent: "from-stone-500 to-amber-700",
+    accent: "linear-gradient(135deg, #78716c, #b45309)",
   },
 
   // === 外 (Extroverted) ===
   OWGR: {
-    id: "OWGR", hangul: "영의정", hanja: "領議政", emoji: "👑",
+    id: "OWGR", hangul: "영의정", hanja: "領議政", emoji: "👑", image: "/joseon/yeonguijeong.png",
     roleVi: "Lĩnh nghị chính (Tể tướng)",
     roleKo: "영의정 (領議政)",
     taglineVi: "Người lãnh đạo bẩm sinh, dung hòa và quyết đoán",
@@ -329,10 +330,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Áp lực 'phải đúng'", "Khó nghỉ ngơi"],
     watchOutKo: ["'올바라야 한다' 압박", "쉬기 어려움"],
     matchId: "IWGU", // 의녀
-    accent: "from-yellow-500 to-amber-600",
+    accent: "linear-gradient(135deg, #eab308, #d97706)",
   },
   OWGU: {
-    id: "OWGU", hangul: "기방행수", hanja: "妓房行首", emoji: "🎭",
+    id: "OWGU", hangul: "기방행수", hanja: "妓房行首", emoji: "🎭", image: "/joseon/gibanghaengsu.png",
     roleVi: "Kỹ phòng hành thủ (Trưởng nhà ca kỹ)",
     roleKo: "기방행수 (妓房行首)",
     taglineVi: "Người dẫn dắt thế giới giải trí với tài năng và mưu lược",
@@ -346,10 +347,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Đôi khi tính toán nhiều", "Khó tin ai 100%"],
     watchOutKo: ["때로 계산이 많음", "누구도 100% 못 믿음"],
     matchId: "OMSU", // 광대
-    accent: "from-pink-500 to-rose-600",
+    accent: "linear-gradient(135deg, #ec4899, #e11d48)",
   },
   OWSR: {
-    id: "OWSR", hangul: "선비", hanja: "士", emoji: "📚",
+    id: "OWSR", hangul: "선비", hanja: "士", emoji: "📚", image: "/joseon/seonbi.png",
     roleVi: "Sĩ (Học giả Nho gia)",
     roleKo: "선비 (士)",
     taglineVi: "Học giả lý tưởng, dám nói thẳng dù trước quyền lực",
@@ -363,10 +364,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Cứng nhắc — cần linh hoạt hơn", "Cô đơn vì 'lý tưởng quá'"],
     watchOutKo: ["고집스러움 — 유연성 필요", "이상이 너무 높아 외로움"],
     matchId: "OMSR", // 보부상
-    accent: "from-blue-600 to-indigo-700",
+    accent: "linear-gradient(135deg, #2563eb, #4338ca)",
   },
   OWSU: {
-    id: "OWSU", hangul: "화공", hanja: "畵工", emoji: "🎨",
+    id: "OWSU", hangul: "화공", hanja: "畵工", emoji: "🎨", image: "/joseon/hwagong.png",
     roleVi: "Hoạ công (Họa sĩ cung đình)",
     roleKo: "화공 (畵工)",
     taglineVi: "Nghệ sĩ tài hoa, sống bằng cái đẹp và sự công nhận",
@@ -380,10 +381,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Cảm xúc thất thường", "Quá nhạy với chê bai"],
     watchOutKo: ["감정 기복", "비판에 예민"],
     matchId: "IWSR", // 풍수사
-    accent: "from-fuchsia-500 to-purple-600",
+    accent: "linear-gradient(135deg, #d946ef, #9333ea)",
   },
   OMGR: {
-    id: "OMGR", hangul: "포도대장", hanja: "捕盜大將", emoji: "🛡️",
+    id: "OMGR", hangul: "포도대장", hanja: "捕盜大將", emoji: "🛡️", image: "/joseon/podaejang.png",
     roleVi: "Bồ đào đại tướng (Tổng quản cảnh sát)",
     roleKo: "포도대장 (捕盜大將)",
     taglineVi: "Người bảo vệ trật tự với sức mạnh và chính nghĩa",
@@ -397,10 +398,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Có thể nóng tính", "Khó tin sự tinh tế"],
     watchOutKo: ["성격이 급할 수 있음", "섬세함을 잘 못 알아봄"],
     matchId: "IMSR", // 암행어사
-    accent: "from-red-600 to-rose-700",
+    accent: "linear-gradient(135deg, #dc2626, #be123c)",
   },
   OMGU: {
-    id: "OMGU", hangul: "무관", hanja: "武官", emoji: "⚔️",
+    id: "OMGU", hangul: "무관", hanja: "武官", emoji: "⚔️", image: "/joseon/mugwan.png",
     roleVi: "Võ quan (Sĩ quan quân đội)",
     roleKo: "무관 (武官)",
     taglineVi: "Chiến binh trung thành, hành động trước nói sau",
@@ -414,10 +415,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Khó diễn đạt cảm xúc", "Đôi khi quá thẳng"],
     watchOutKo: ["감정 표현 어려움", "때로 너무 직설"],
     matchId: "IWGR", // 중전
-    accent: "from-orange-600 to-red-700",
+    accent: "linear-gradient(135deg, #ea580c, #b91c1c)",
   },
   OMSR: {
-    id: "OMSR", hangul: "보부상", hanja: "褓負商", emoji: "🎒",
+    id: "OMSR", hangul: "보부상", hanja: "褓負商", emoji: "🎒", image: "/joseon/bobusang.png",
     roleVi: "Bồ phụ thương (Thương nhân lưu động)",
     roleKo: "보부상 (褓負商)",
     taglineVi: "Người tự do đi mọi nẻo đường, trung thành với cộng đồng",
@@ -431,10 +432,10 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Khó ngồi yên", "Hay đánh đổi sức khỏe vì việc"],
     watchOutKo: ["가만히 있기 어려움", "건강을 일과 바꾸는 경향"],
     matchId: "OWSR", // 선비
-    accent: "from-amber-500 to-yellow-600",
+    accent: "linear-gradient(135deg, #f59e0b, #ca8a04)",
   },
   OMSU: {
-    id: "OMSU", hangul: "광대", hanja: "廣大", emoji: "🎪",
+    id: "OMSU", hangul: "광대", hanja: "廣大", emoji: "🎪", image: "/joseon/gwangdae.png",
     roleVi: "Quảng đại (Nghệ sĩ biểu diễn)",
     roleKo: "광대 (廣大)",
     taglineVi: "Người làm thế giới quên đi nỗi buồn — bằng tài năng và nụ cười",
@@ -448,7 +449,7 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Mệt vì luôn phải 'làm vui'", "Tâm trạng thất thường"],
     watchOutKo: ["계속 즐겁게 해야 한다는 피로감", "감정 기복"],
     matchId: "OWGU", // 기방행수
-    accent: "from-purple-500 to-fuchsia-600",
+    accent: "linear-gradient(135deg, #a855f7, #c026d3)",
   },
 };
 

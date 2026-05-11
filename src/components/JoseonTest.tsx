@@ -55,10 +55,9 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
       <div id="joseon-result" className="space-y-6">
         {/* Hanji-styled hero */}
         <div
-          className={`relative overflow-hidden rounded-3xl border-2 border-amber-200/60 bg-gradient-to-br ${c.accent} p-8 text-center text-white shadow-xl sm:p-12`}
+          className="relative overflow-hidden rounded-3xl border-2 border-amber-200/60 p-8 text-center text-white shadow-xl sm:p-12"
           style={{
-            backgroundImage:
-              "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.12) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.08) 0%, transparent 50%)",
+            backgroundImage: `radial-gradient(circle at 20% 30%, rgba(255,255,255,0.18) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.15) 0%, transparent 50%), ${c.accent}`,
           }}
         >
           {/* Red stamp */}
@@ -68,7 +67,19 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
           <div className="text-xs font-medium tracking-[0.3em] opacity-80">
             {t.joseon.youAre}
           </div>
-          <div className="my-3 text-7xl sm:text-8xl drop-shadow-lg">{c.emoji}</div>
+          {c.image ? (
+            <div className="my-2 flex justify-center">
+              <img
+                src={c.image}
+                alt={c.hangul}
+                width={224}
+                height={224}
+                className="h-48 w-48 object-contain drop-shadow-2xl sm:h-56 sm:w-56"
+              />
+            </div>
+          ) : (
+            <div className="my-3 text-7xl sm:text-8xl drop-shadow-lg">{c.emoji}</div>
+          )}
           <h2 className="font-brush text-5xl font-extrabold tracking-tight drop-shadow sm:text-6xl">
             {c.hangul}
           </h2>
@@ -113,7 +124,17 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
         <div className="card">
           <h3 className="mb-3 font-bold">💞 {t.joseon.match}</h3>
           <div className="flex items-start gap-4">
-            <div className="text-4xl">{match.emoji}</div>
+            {match.image ? (
+              <img
+                src={match.image}
+                alt={match.hangul}
+                width={80}
+                height={80}
+                className="h-20 w-20 shrink-0 object-contain"
+              />
+            ) : (
+              <div className="text-4xl">{match.emoji}</div>
+            )}
             <div>
               <div className="text-lg font-bold text-zinc-900">
                 {match.hangul} <span className="text-sm font-normal text-zinc-500">({match.hanja})</span>
