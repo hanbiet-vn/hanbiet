@@ -36,113 +36,95 @@ export const QUESTIONS: Question[] = [
   // === IO axis (內/外) ===
   {
     id: "io1", axis: "IO",
-    textVi: "Trong một buổi tụ tập với bạn bè, bạn thường...",
-    textKo: "여러 사람 모이는 자리에서 당신은…",
+    textVi: "Bạn của bạn nhắn: 'Tối nay tụ tập đông lắm, đi không?' Phản ứng đầu tiên trong lòng bạn:",
+    textKo: "친구가 갑자기 '오늘 사람들 많이 모이는데 갈래?' 한다. 마음 속 첫 반응은?",
     options: [
-      { letter: "I", textVi: "Lắng nghe nhiều hơn nói", textKo: "주로 듣고 천천히 말해요" },
-      { letter: "O", textVi: "Tạo bầu không khí sôi nổi", textKo: "분위기를 띄우는 편이에요" },
+      { letter: "I", textVi: "'Thôi để mình ở nhà...'", textKo: "'음... 나는 집에 있을게'" },
+      { letter: "O", textVi: "'OK! Ai đến nữa thế?'", textKo: "'좋아! 누구누구 와?'" },
     ],
   },
   {
     id: "io2", axis: "IO",
-    textVi: "Cuối tuần lý tưởng của bạn là...",
-    textKo: "이상적인 주말은…",
+    textVi: "Sáng thứ Hai trên tàu điện đi làm, bạn thường:",
+    textKo: "월요일 아침 출근길 지하철에서 당신은?",
     options: [
-      { letter: "I", textVi: "Ở nhà đọc sách, đi dạo một mình", textKo: "혼자 책 읽거나 산책" },
-      { letter: "O", textVi: "Đi chơi với nhiều người", textKo: "여러 사람과 어울려 놀기" },
+      { letter: "I", textVi: "Đeo tai nghe, đắm chìm vào thế giới của riêng mình", textKo: "이어폰 끼고 혼자만의 세계로" },
+      { letter: "O", textVi: "Chat với bạn, hoặc quan sát mọi người xung quanh", textKo: "친구와 카톡 또는 사람 구경" },
     ],
   },
   {
     id: "io3", axis: "IO",
-    textVi: "Khi bắt đầu việc mới, bạn...",
-    textKo: "새로운 일을 시작할 때…",
+    textVi: "Buổi giới thiệu bản thân tại một nhóm mới, bạn:",
+    textKo: "새 모임에서 자기소개 차례가 왔다",
     options: [
-      { letter: "I", textVi: "Suy nghĩ kỹ rồi mới làm", textKo: "충분히 고민한 뒤 시작" },
-      { letter: "O", textVi: "Cứ làm rồi điều chỉnh", textKo: "일단 부딪쳐 보는 편" },
+      { letter: "I", textVi: "Nói ngắn gọn, muốn nhanh ngồi xuống nghe", textKo: "짧게 말하고 듣는 자리로 빨리 가고 싶다" },
+      { letter: "O", textVi: "Thêm một hai câu đùa, khuấy động không khí", textKo: "농담 한두 마디 섞어 분위기 띄운다" },
     ],
   },
   // === WM axis (文/武) ===
   {
     id: "wm1", axis: "WM",
-    textVi: "Hồi đi học, môn nào bạn yêu thích hơn?",
-    textKo: "학창 시절 더 좋아한 과목은?",
+    textVi: "Bạn được tặng 1 năm tự do làm gì cũng được. Bạn chọn:",
+    textKo: "1년의 완전한 자유시간이 주어진다면?",
     options: [
-      { letter: "W", textVi: "Văn, sử, triết, ngôn ngữ", textKo: "문학·역사·철학·언어" },
-      { letter: "M", textVi: "Thể dục, thực hành, làm thủ công", textKo: "체육·실습·손으로 만드는 것" },
+      { letter: "W", textVi: "Sống trong thư viện lớn nhất thành phố, đọc cho đã", textKo: "전국 최고의 도서관에서 살기" },
+      { letter: "M", textVi: "Đi khắp đất nước, học bằng đôi tay và đôi chân", textKo: "전국 팔도 여행하며 손과 발로 경험하기" },
     ],
   },
   {
     id: "wm2", axis: "WM",
-    textVi: "Trong công việc, bạn tự tin hơn ở...",
-    textKo: "일할 때 더 자신 있는 건…",
+    textVi: "Bạn thân mở quán cà phê mới. Bạn giúp được nhất ở khâu nào?",
+    textKo: "친구가 새 카페를 열었다. 당신이 가장 잘 도울 수 있는 건?",
     options: [
-      { letter: "W", textVi: "Phân tích, ý tưởng, viết lách", textKo: "분석·아이디어·글쓰기" },
-      { letter: "M", textVi: "Thực hiện, chế tác, hành động", textKo: "직접 만들기·실행·활동" },
+      { letter: "W", textVi: "Viết menu, content Instagram, định vị concept", textKo: "메뉴판 카피·인스타 글·컨셉 정리" },
+      { letter: "M", textVi: "Khiêng bàn ghế, sửa nội thất, sắp xếp luồng đi", textKo: "인테리어 손보기·기물 옮기기·동선 잡기" },
     ],
   },
   {
     id: "wm3", axis: "WM",
-    textVi: "Bạn thấy mình tỏa sáng nhất khi...",
-    textKo: "당신이 가장 빛나는 순간은…",
+    textVi: "Buổi tối sau giờ làm, lúc nào bạn cảm thấy thỏa mãn nhất?",
+    textKo: "퇴근 후 가장 만족스러운 시간은?",
     options: [
-      { letter: "W", textVi: "Một ý tưởng hay vừa nảy ra", textKo: "기발한 아이디어가 떠올랐을 때" },
-      { letter: "M", textVi: "Hoàn thành một thứ cụ thể bằng tay", textKo: "직접 무언가를 완성했을 때" },
+      { letter: "W", textVi: "Đắm chìm vào một cuốn sách trong 2 tiếng", textKo: "책 한 권에 푹 빠지는 두 시간" },
+      { letter: "M", textVi: "Tự nấu một bữa ngon, hoặc tập thể thao đẫm mồ hôi", textKo: "직접 요리하거나 운동 후 샤워" },
     ],
   },
   // === GS axis (集/獨) ===
   {
     id: "gs1", axis: "GS",
-    textVi: "Làm dự án, bạn thích...",
-    textKo: "프로젝트할 때 당신은…",
+    textVi: "Trong buổi liên hoan công ty, bạn thường:",
+    textKo: "회식 자리에서 당신은?",
     options: [
-      { letter: "G", textVi: "Cùng đội nhóm, chia sẻ trách nhiệm", textKo: "팀과 함께 진행" },
-      { letter: "S", textVi: "Tự làm một mình, kiểm soát hết", textKo: "혼자 집중해서 끝까지" },
+      { letter: "G", textVi: "Đi vòng quanh, kết nối, quản 'vibe' của bàn", textKo: "사람들 사이를 누비며 분위기 챙긴다" },
+      { letter: "S", textVi: "Ngồi một góc, chỉ chuyện với 1-2 người thân", textKo: "한쪽에서 친한 1-2명이랑만" },
     ],
   },
   {
     id: "gs2", axis: "GS",
-    textVi: "Bữa ăn lý tưởng là...",
-    textKo: "이상적인 식사는…",
+    textVi: "Bạn vừa nhận dự án khó. Bạn an tâm hơn khi:",
+    textKo: "어려운 프로젝트가 떨어졌다. 더 마음 편한 건?",
     options: [
-      { letter: "G", textVi: "Quây quần với người thân", textKo: "사람들과 함께 떠들썩하게" },
-      { letter: "S", textVi: "Yên tĩnh một mình", textKo: "혼자 조용히" },
-    ],
-  },
-  {
-    id: "gs3", axis: "GS",
-    textVi: "Khi nhận trách nhiệm, bạn muốn...",
-    textKo: "책임을 맡으면 당신은…",
-    options: [
-      { letter: "G", textVi: "Chia sẻ với đồng đội, cùng quyết", textKo: "함께 책임지고 결정 공유" },
-      { letter: "S", textVi: "Tự gánh hết, kiểm soát toàn bộ", textKo: "혼자 다 책임지고 통제" },
+      { letter: "G", textVi: "Đồng đội cùng kéo, chia sẻ trách nhiệm", textKo: "팀원들과 함께 끌고 가기" },
+      { letter: "S", textVi: "Mình tự kiểm soát toàn bộ", textKo: "내가 전부 컨트롤하기" },
     ],
   },
   // === RU axis (義/利) ===
   {
     id: "ru1", axis: "RU",
-    textVi: "Thấy bạn thân mình làm sai, bạn sẽ...",
-    textKo: "친한 사람이 잘못한 걸 봤을 때…",
+    textVi: "Có cơ hội kiếm số tiền lớn, nhưng phải hạ thấp danh dự một chút. Bạn:",
+    textKo: "큰돈을 벌 기회. 단, 체면이 좀 깎인다. 당신은?",
     options: [
-      { letter: "R", textVi: "Nói thẳng dù mất lòng", textKo: "솔직히 말해줘요" },
-      { letter: "U", textVi: "Xem tình hình, nói khéo", textKo: "분위기 봐서 적당히" },
+      { letter: "R", textVi: "'Danh dự là trên hết — không làm đâu'", textKo: "'체면이 먼저지 — 안 한다'" },
+      { letter: "U", textVi: "'Danh dự có nuôi cơm đâu — cơ hội phải nắm'", textKo: "'체면이 밥 먹여주나 — 기회는 잡아야지'" },
     ],
   },
   {
     id: "ru2", axis: "RU",
-    textVi: "Khi quyết định lớn, điều quan trọng hơn là...",
-    textKo: "큰 결정을 할 때 더 중요한 건…",
+    textVi: "Bạn thân vừa quyết định một điều rõ ràng là sai. Bạn:",
+    textKo: "친한 친구가 명백히 잘못된 선택을 했다",
     options: [
-      { letter: "R", textVi: "Đúng sai, nguyên tắc", textKo: "옳고 그름·원칙" },
-      { letter: "U", textVi: "Hiệu quả, lợi ích thực tế", textKo: "효율·실리" },
-    ],
-  },
-  {
-    id: "ru3", axis: "RU",
-    textVi: "Bạn sẵn sàng chịu thiệt để giữ điều gì đó?",
-    textKo: "손해를 보더라도 지키고 싶은 게 있나요?",
-    options: [
-      { letter: "R", textVi: "Có — nguyên tắc là nguyên tắc", textKo: "네 — 원칙은 원칙입니다" },
-      { letter: "U", textVi: "Không — quá thiệt thì bỏ", textKo: "아니요 — 손해 보면서까지는…" },
+      { letter: "R", textVi: "Nói thẳng, kể cả khiến bạn ấy buồn", textKo: "솔직히 말해준다, 서운해해도" },
+      { letter: "U", textVi: "Xem tình hình, nói khéo cho dễ nghe", textKo: "분위기 봐서 돌려서 말한다" },
     ],
   },
 ];
@@ -171,7 +153,17 @@ export type Character = {
   watchOutKo: string[];
   // Compatible match (mutual)
   matchId: CharacterId;
-  // Theme color for the character (Tailwind classes)
+  // Incompatible character (clash)
+  antiMatchId: CharacterId;
+  // Rarity percentage (sums to ~100% across all 16)
+  rarity: number;
+  // Punchy one-line destiny (viral share quote)
+  destinyVi: string;
+  destinyKo: string;
+  // 3 modern-day careers
+  modernCareersVi: string[];
+  modernCareersKo: string[];
+  // Theme color — CSS gradient string
   accent: string;
 };
 
@@ -192,6 +184,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Quá kín đáo dễ bị hiểu lầm", "Áp lực hoàn hảo"],
     watchOutKo: ["너무 닫혀 있으면 오해 받을 수 있어요", "완벽주의 부담"],
     matchId: "OMGR", // 무관
+    antiMatchId: "OMSU",
+    rarity: 2.1,
+    destinyKo: "한 마디로 천 명을 움직이는 사람",
+    destinyVi: "Một lời của bạn lay động ngàn người",
+    modernCareersKo: ["비서실장", "PR 디렉터", "종합기획자"],
+    modernCareersVi: ["Chánh văn phòng CEO", "Giám đốc PR", "Quản lý dự án lớn"],
     accent: "linear-gradient(135deg, #f43f5e, #db2777)",
   },
   IWGU: {
@@ -209,6 +207,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Cho đi quá nhiều — nhớ chăm chính mình", "Ngại nói 'không'"],
     watchOutKo: ["너무 많이 주는 편 — 자신도 챙기세요", "'아니오' 말하기 어려움"],
     matchId: "OWGR", // 영의정
+    antiMatchId: "OWSR",
+    rarity: 9.5,
+    destinyKo: "당신의 손길이 누군가의 하루를 구합니다",
+    destinyVi: "Bàn tay bạn cứu rỗi một ngày của ai đó",
+    modernCareersKo: ["간호사", "임상심리사", "약사"],
+    modernCareersVi: ["Y tá", "Tâm lý lâm sàng", "Dược sĩ"],
     accent: "linear-gradient(135deg, #10b981, #0d9488)",
   },
   IWSR: {
@@ -226,6 +230,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Cô đơn vì ít chia sẻ", "Khó nhân nhượng"],
     watchOutKo: ["속을 잘 안 보여서 외로울 수 있음", "타협이 어려움"],
     matchId: "OWSU", // 화공
+    antiMatchId: "OMGR",
+    rarity: 3.2,
+    destinyKo: "남들이 보지 못하는 흐름을 읽는 사람",
+    destinyVi: "Bạn đọc được dòng chảy người khác không thấy",
+    modernCareersKo: ["데이터 분석가", "인테리어 디자이너", "점성술사"],
+    modernCareersVi: ["Nhà phân tích dữ liệu", "Designer nội thất", "Nhà chiêm tinh"],
     accent: "linear-gradient(135deg, #8b5cf6, #4f46e5)",
   },
   IWSU: {
@@ -243,6 +253,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Đôi khi 'đu dây' quá", "Ít cảm xúc thật"],
     watchOutKo: ["때로 양쪽에 줄타기 과해요", "진심을 잘 안 보여줌"],
     matchId: "OMSU", // 광대
+    antiMatchId: "IMSR",
+    rarity: 4.8,
+    destinyKo: "두 세계 사이에서 가장 빛나는 사람",
+    destinyVi: "Bạn tỏa sáng nhất giữa hai thế giới",
+    modernCareersKo: ["동시통역사", "외교관", "글로벌 마케터"],
+    modernCareersVi: ["Phiên dịch song song", "Nhà ngoại giao", "Marketing toàn cầu"],
     accent: "linear-gradient(135deg, #f59e0b, #ea580c)",
   },
   IMGR: {
@@ -260,6 +276,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Hay 'gồng' — cho phép mình nghỉ", "Khó tha thứ lỗi nhỏ"],
     watchOutKo: ["너무 긴장하는 편 — 쉬세요", "작은 실수도 잘 못 넘김"],
     matchId: "OWGR", // 영의정
+    antiMatchId: "OMSU",
+    rarity: 7.2,
+    destinyKo: "당신이 없으면 모든 게 멈추는 사람",
+    destinyVi: "Không có bạn, mọi thứ ngừng trôi",
+    modernCareersKo: ["오피스 매니저", "회계사", "비서팀장"],
+    modernCareersVi: ["Quản lý văn phòng", "Kế toán trưởng", "Trưởng phòng hành chính"],
     accent: "linear-gradient(135deg, #71717a, #475569)",
   },
   IMGU: {
@@ -277,6 +299,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Đôi khi quá thầm lặng — hãy lên tiếng cho mình", "Sợ thay đổi"],
     watchOutKo: ["너무 조용해서 손해 볼 때도 — 목소리 내세요", "변화를 두려워함"],
     matchId: "OMSR", // 보부상
+    antiMatchId: "OWGR",
+    rarity: 12.8,
+    destinyKo: "땅처럼 변하지 않는 사람",
+    destinyVi: "Vững vàng như đất mẹ, không gì thay đổi",
+    modernCareersKo: ["농업인", "정원사", "셰프"],
+    modernCareersVi: ["Nông dân hiện đại", "Người làm vườn", "Đầu bếp"],
     accent: "linear-gradient(135deg, #d97706, #a16207)",
   },
   IMSR: {
@@ -294,6 +322,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Quá khắt khe với chính mình", "Khó để người khác đến gần"],
     watchOutKo: ["자신에게 너무 엄격함", "사람들이 다가오기 어려워함"],
     matchId: "OMGR", // 포도대장
+    antiMatchId: "OWGU",
+    rarity: 1.8,
+    destinyKo: "어둠 속에서 가장 빛나는 사람",
+    destinyVi: "Sáng rực nhất giữa bóng tối",
+    modernCareersKo: ["검사", "감사관", "탐사 기자"],
+    modernCareersVi: ["Công tố viên", "Kiểm toán viên", "Phóng viên điều tra"],
     accent: "linear-gradient(135deg, #334155, #27272a)",
   },
   IMSU: {
@@ -311,6 +345,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Khó thương lượng giá", "Hay tự cô lập"],
     watchOutKo: ["흥정에 약해요", "스스로 고립되기 쉬움"],
     matchId: "OWSU", // 화공
+    antiMatchId: "OMSR",
+    rarity: 5.6,
+    destinyKo: "당신의 손에서 시간이 멈추는 사람",
+    destinyVi: "Thời gian dừng lại trong đôi tay bạn",
+    modernCareersKo: ["도예가", "일러스트레이터", "목공예가"],
+    modernCareersVi: ["Nghệ nhân gốm", "Hoạ sĩ minh hoạ", "Thợ mộc nghệ thuật"],
     accent: "linear-gradient(135deg, #78716c, #b45309)",
   },
 
@@ -330,6 +370,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Áp lực 'phải đúng'", "Khó nghỉ ngơi"],
     watchOutKo: ["'올바라야 한다' 압박", "쉬기 어려움"],
     matchId: "IWGU", // 의녀
+    antiMatchId: "IMSU",
+    rarity: 6.4,
+    destinyKo: "모두가 당신의 한 마디를 기다리는 사람",
+    destinyVi: "Mọi người chờ một lời của bạn",
+    modernCareersKo: ["CEO", "정치인", "컨설팅 파트너"],
+    modernCareersVi: ["CEO doanh nghiệp", "Chính trị gia", "Partner tư vấn cấp cao"],
     accent: "linear-gradient(135deg, #eab308, #d97706)",
   },
   OWGU: {
@@ -347,6 +393,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Đôi khi tính toán nhiều", "Khó tin ai 100%"],
     watchOutKo: ["때로 계산이 많음", "누구도 100% 못 믿음"],
     matchId: "OMSU", // 광대
+    antiMatchId: "IMSR",
+    rarity: 4.2,
+    destinyKo: "한 번 보면 잊을 수 없는 사람",
+    destinyVi: "Một lần gặp, không thể nào quên",
+    modernCareersKo: ["호텔 총지배인", "이벤트 플래너", "인플루언서"],
+    modernCareersVi: ["Tổng quản lý khách sạn", "Nhà tổ chức sự kiện", "Influencer"],
     accent: "linear-gradient(135deg, #ec4899, #e11d48)",
   },
   OWSR: {
@@ -364,6 +416,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Cứng nhắc — cần linh hoạt hơn", "Cô đơn vì 'lý tưởng quá'"],
     watchOutKo: ["고집스러움 — 유연성 필요", "이상이 너무 높아 외로움"],
     matchId: "OMSR", // 보부상
+    antiMatchId: "OWGU",
+    rarity: 10.6,
+    destinyKo: "꺾이지 않는 자만이 시대를 바꿉니다",
+    destinyVi: "Chỉ kẻ không cúi đầu mới thay đổi thời đại",
+    modernCareersKo: ["대학교수", "변호사", "작가"],
+    modernCareersVi: ["Giáo sư đại học", "Luật sư", "Nhà văn"],
     accent: "linear-gradient(135deg, #2563eb, #4338ca)",
   },
   OWSU: {
@@ -381,6 +439,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Cảm xúc thất thường", "Quá nhạy với chê bai"],
     watchOutKo: ["감정 기복", "비판에 예민"],
     matchId: "IWSR", // 풍수사
+    antiMatchId: "OMGR",
+    rarity: 3.5,
+    destinyKo: "당신이 그리는 모든 것이 곧 당신이 됩니다",
+    destinyVi: "Tất cả những gì bạn vẽ trở thành chính bạn",
+    modernCareersKo: ["일러스트레이터", "그래픽 디자이너", "영상 감독"],
+    modernCareersVi: ["Hoạ sĩ minh hoạ", "Graphic designer", "Đạo diễn hình ảnh"],
     accent: "linear-gradient(135deg, #d946ef, #9333ea)",
   },
   OMGR: {
@@ -398,6 +462,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Có thể nóng tính", "Khó tin sự tinh tế"],
     watchOutKo: ["성격이 급할 수 있음", "섬세함을 잘 못 알아봄"],
     matchId: "IMSR", // 암행어사
+    antiMatchId: "OWSU",
+    rarity: 2.7,
+    destinyKo: "당신이 지키는 한 누구도 다치지 않습니다",
+    destinyVi: "Khi bạn canh giữ, không ai bị tổn thương",
+    modernCareersKo: ["경찰 간부", "보안 팀장", "군 장교"],
+    modernCareersVi: ["Sĩ quan cảnh sát", "Trưởng phòng an ninh", "Sĩ quan quân đội"],
     accent: "linear-gradient(135deg, #dc2626, #be123c)",
   },
   OMGU: {
@@ -415,6 +485,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Khó diễn đạt cảm xúc", "Đôi khi quá thẳng"],
     watchOutKo: ["감정 표현 어려움", "때로 너무 직설"],
     matchId: "IWGR", // 중전
+    antiMatchId: "IWSR",
+    rarity: 8.8,
+    destinyKo: "약속한 것은 반드시 지키는 사람",
+    destinyVi: "Đã hứa thì giữ trọn",
+    modernCareersKo: ["군인", "운동선수", "소방관"],
+    modernCareersVi: ["Quân nhân", "Vận động viên", "Lính cứu hoả"],
     accent: "linear-gradient(135deg, #ea580c, #b91c1c)",
   },
   OMSR: {
@@ -432,6 +508,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Khó ngồi yên", "Hay đánh đổi sức khỏe vì việc"],
     watchOutKo: ["가만히 있기 어려움", "건강을 일과 바꾸는 경향"],
     matchId: "OWSR", // 선비
+    antiMatchId: "IMSU",
+    rarity: 12.4,
+    destinyKo: "당신의 발이 닿는 곳이 곧 길이 됩니다",
+    destinyVi: "Nơi nào bạn đặt chân, nơi đó mở đường",
+    modernCareersKo: ["영업 매니저", "무역업자", "자영업자"],
+    modernCareersVi: ["Quản lý sales", "Thương mại quốc tế", "Chủ doanh nghiệp tự do"],
     accent: "linear-gradient(135deg, #f59e0b, #ca8a04)",
   },
   OMSU: {
@@ -449,6 +531,12 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     watchOutVi: ["Mệt vì luôn phải 'làm vui'", "Tâm trạng thất thường"],
     watchOutKo: ["계속 즐겁게 해야 한다는 피로감", "감정 기복"],
     matchId: "OWGU", // 기방행수
+    antiMatchId: "IWGR",
+    rarity: 4.4,
+    destinyKo: "당신이 있는 곳이 곧 축제가 됩니다",
+    destinyVi: "Nơi nào có bạn, nơi đó là lễ hội",
+    modernCareersKo: ["배우", "스탠드업 코미디언", "유튜버"],
+    modernCareersVi: ["Diễn viên", "Stand-up comedy", "YouTuber"],
     accent: "linear-gradient(135deg, #a855f7, #c026d3)",
   },
 };

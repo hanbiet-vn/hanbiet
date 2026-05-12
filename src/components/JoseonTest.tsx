@@ -51,6 +51,7 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
   if (result) {
     const c = getCharacter(result);
     const match = CHARACTERS[c.matchId];
+    const anti = CHARACTERS[c.antiMatchId];
     return (
       <div id="joseon-result" className="space-y-6">
         {/* Hanji-styled hero — white card with accent bar */}
@@ -88,6 +89,36 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
           <p className="mx-auto mt-4 max-w-md text-sm font-medium leading-relaxed text-zinc-600 sm:text-base">
             「 {locale === "ko" ? c.taglineKo : c.taglineVi} 」
           </p>
+          {/* Rarity badge */}
+          <div className="mx-auto mt-5 inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-4 py-1.5 text-xs font-semibold text-amber-800 ring-1 ring-amber-200">
+            <span>✨</span>
+            <span>
+              {locale === "ko"
+                ? `전체의 ${c.rarity}%만 나오는 희귀 유형`
+                : `Chỉ ${c.rarity}% người ra kết quả này`}
+            </span>
+          </div>
+        </div>
+
+        {/* Destiny one-liner */}
+        <div
+          className="rounded-2xl border-2 p-6 text-center"
+          style={{
+            borderColor: "transparent",
+            backgroundImage: `linear-gradient(white, white), ${c.accent}`,
+            backgroundOrigin: "border-box",
+            backgroundClip: "padding-box, border-box",
+          }}
+        >
+          <div className="mb-2 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+            🌸 {t.joseon.destiny}
+          </div>
+          <p
+            className="bg-clip-text text-xl font-extrabold leading-snug text-transparent sm:text-2xl"
+            style={{ backgroundImage: c.accent }}
+          >
+            「 {locale === "ko" ? c.destinyKo : c.destinyVi} 」
+          </p>
         </div>
 
         {/* Description */}
@@ -118,31 +149,77 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
           </div>
         </div>
 
-        {/* Compatible match */}
+        {/* Modern careers */}
         <div className="card">
-          <h3 className="mb-3 font-bold">💞 {t.joseon.match}</h3>
-          <div className="flex items-start gap-4">
-            {match.image ? (
-              <img
-                src={match.image}
-                alt={match.hangul}
-                width={80}
-                height={80}
-                className="h-20 w-20 shrink-0 object-contain"
-              />
-            ) : (
-              <div className="text-4xl">{match.emoji}</div>
-            )}
-            <div>
-              <div className="text-lg font-bold text-zinc-900">
-                {match.hangul} <span className="text-sm font-normal text-zinc-500">({match.hanja})</span>
+          <h3 className="mb-3 font-bold">💼 {t.joseon.modernTitle}</h3>
+          <p className="mb-3 text-sm text-zinc-600">{t.joseon.modernSubtitle}</p>
+          <div className="flex flex-wrap gap-2">
+            {(locale === "ko" ? c.modernCareersKo : c.modernCareersVi).map((career) => (
+              <span
+                key={career}
+                className="rounded-full px-3 py-1.5 text-sm font-semibold text-white"
+                style={{ backgroundImage: c.accent }}
+              >
+                {career}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Compatible match + Anti-match */}
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div className="card">
+            <h3 className="mb-3 font-bold">💞 {t.joseon.match}</h3>
+            <div className="flex items-start gap-4">
+              {match.image ? (
+                <img
+                  src={match.image}
+                  alt={match.hangul}
+                  width={80}
+                  height={80}
+                  className="h-20 w-20 shrink-0 object-contain"
+                />
+              ) : (
+                <div className="text-4xl">{match.emoji}</div>
+              )}
+              <div>
+                <div className="text-lg font-bold text-zinc-900">
+                  {match.hangul} <span className="text-sm font-normal text-zinc-500">({match.hanja})</span>
+                </div>
+                <div className="text-sm text-[var(--brand)]">
+                  {locale === "ko" ? match.roleKo : match.roleVi}
+                </div>
+                <p className="mt-1 text-sm text-zinc-700">
+                  {locale === "ko" ? match.taglineKo : match.taglineVi}
+                </p>
               </div>
-              <div className="text-sm text-[var(--brand)]">
-                {locale === "ko" ? match.roleKo : match.roleVi}
+            </div>
+          </div>
+          <div className="card border-zinc-300/60 bg-zinc-50/50">
+            <h3 className="mb-3 font-bold">💢 {t.joseon.antiMatch}</h3>
+            <div className="flex items-start gap-4">
+              {anti.image ? (
+                <img
+                  src={anti.image}
+                  alt={anti.hangul}
+                  width={80}
+                  height={80}
+                  className="h-20 w-20 shrink-0 object-contain grayscale"
+                />
+              ) : (
+                <div className="text-4xl opacity-60">{anti.emoji}</div>
+              )}
+              <div>
+                <div className="text-lg font-bold text-zinc-700">
+                  {anti.hangul} <span className="text-sm font-normal text-zinc-500">({anti.hanja})</span>
+                </div>
+                <div className="text-sm text-zinc-500">
+                  {locale === "ko" ? anti.roleKo : anti.roleVi}
+                </div>
+                <p className="mt-1 text-sm text-zinc-600">
+                  {locale === "ko" ? anti.taglineKo : anti.taglineVi}
+                </p>
               </div>
-              <p className="mt-1 text-sm text-zinc-700">
-                {locale === "ko" ? match.taglineKo : match.taglineVi}
-              </p>
             </div>
           </div>
         </div>
@@ -156,16 +233,19 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
             title={c.hangul}
             text={
               locale === "ko"
-                ? `🏯 조선시대에 태어났다면, 나는 "${c.hangul} (${c.roleKo})"! 너는 누구일까? 👉`
-                : `🏯 Nếu sinh vào thời Joseon, tôi sẽ là "${c.hangul} - ${c.roleVi}"! Còn bạn? 👉`
+                ? `🏯 조선시대에 태어났다면 나는 "${c.hangul}" (전체의 ${c.rarity}%!)\n「 ${c.destinyKo} 」\n너는 어떤 조선인일까? 👇`
+                : `🏯 Nếu sinh vào thời Joseon, tôi là "${c.hangul}" (chỉ ${c.rarity}%!)\n「 ${c.destinyVi} 」\nCòn bạn? 👇`
             }
             url={`${SITE_URL}${localizedPath(locale, "/joseon-test")}`}
             locale={locale}
           />
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <button onClick={reset} className="btn-primary">
+            {t.joseon.retakeCta}
+          </button>
+          <button onClick={reset} className="btn-outline">
             {t.joseon.retake}
           </button>
         </div>

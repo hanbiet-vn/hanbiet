@@ -238,7 +238,7 @@ export const dict = {
       eyebrow: "조선시대 MBTI · K-HISTORY",
       title: "Nếu bạn sinh ra ở thời Joseon, bạn là ai?",
       subtitle:
-        "Trả lời 12 câu hỏi — chúng tôi sẽ chỉ ra bạn là một trong 16 nhân vật Joseon: Sĩ, Hoàng hậu, Hoạ sĩ cung đình, Mật sứ vua phái... và nhiều nữa.",
+        "Trả lời 10 câu hỏi — chúng tôi sẽ chỉ ra bạn là một trong 16 nhân vật Joseon: Sĩ, Hoàng hậu, Hoạ sĩ cung đình, Mật sứ vua phái... và nhiều nữa.",
       question: "Câu",
       back: "Quay lại",
       youAre: "BẠN LÀ",
@@ -246,14 +246,19 @@ export const dict = {
       strengths: "Điểm mạnh",
       watchOut: "Điều cần lưu ý",
       match: "Nhân vật hợp với bạn",
-      shareCallout: "Bạn bè bạn sẽ là ai? Chia sẻ và rủ họ thử ngay!",
+      antiMatch: "Nhân vật khắc với bạn",
+      destiny: "Một câu định mệnh",
+      modernTitle: "Bạn của thời hiện đại",
+      modernSubtitle: "3 nghề hiện đại hợp với bạn nhất",
+      shareCallout: "Bạn bè bạn sẽ là nhân vật nào? Chia sẻ và so sánh kết quả!",
       retake: "🔄 Làm lại test",
+      retakeCta: "🔄 Bạn của bạn là ai? Thử ngay!",
       disclaimer: "* Test mang tính giải trí dựa trên cảm hứng từ lịch sử Joseon.",
       aboutTitle: "Về test này",
       about1:
         "Đây là test cá tính phong cách MBTI lấy cảm hứng từ thời đại Joseon (1392-1897) của Hàn Quốc — thời kỳ làm nên hầu hết K-drama cổ trang nổi tiếng (Daejanggeum, Hwang Jini, Mr. Sunshine, The Red Sleeve...).",
       about2:
-        "12 câu hỏi đánh giá 4 trục tính cách (Nội/Ngoại - Văn/Võ - Tập/Độc - Nghĩa/Lợi), từ đó xác định bạn ứng với 1 trong 16 nhân vật. Mỗi nhân vật có hình ảnh con dấu đỏ và phong cách thư pháp truyền thống — chia sẻ Instagram cực hợp!",
+        "10 câu hỏi đánh giá 4 trục tính cách (Nội/Ngoại - Văn/Võ - Tập/Độc - Nghĩa/Lợi), từ đó xác định bạn ứng với 1 trong 16 nhân vật. Mỗi nhân vật có ảnh sticker chibi riêng — chia sẻ Instagram cực hợp!",
     },
     foodDetail: {
       backToList: "Tất cả món ăn",
@@ -644,7 +649,7 @@ export const dict = {
       eyebrow: "조선시대 MBTI · K-HISTORY",
       title: "조선시대에 태어났다면 나는 누구일까?",
       subtitle:
-        "12개의 질문으로 알아보는 — 선비, 중전, 화공, 암행어사 등 조선시대 16개 인물 중 당신과 가장 닮은 캐릭터를 찾아드립니다.",
+        "10개의 질문으로 알아보는 — 선비, 중전, 화공, 암행어사 등 조선시대 16개 인물 중 당신과 가장 닮은 캐릭터를 찾아드립니다.",
       question: "질문",
       back: "이전",
       youAre: "당신은",
@@ -652,14 +657,19 @@ export const dict = {
       strengths: "강점",
       watchOut: "주의할 점",
       match: "당신과 잘 맞는 인물",
-      shareCallout: "친구는 어떤 인물일까? 공유하고 같이 해봐!",
+      antiMatch: "당신과 상극인 인물",
+      destiny: "한 줄 운명",
+      modernTitle: "현대의 당신은",
+      modernSubtitle: "당신과 가장 잘 어울리는 현대 직업 3가지",
+      shareCallout: "친구는 어떤 조선인일까? 공유하고 결과 비교해봐!",
       retake: "🔄 테스트 다시 하기",
+      retakeCta: "🔄 친구는 어떤 조선인일까? 같이 해보기",
       disclaimer: "* 조선시대 인물에 영감을 받은 재미용 성격 테스트입니다.",
       aboutTitle: "이 테스트에 대해",
       about1:
         "한국 사극의 무대인 조선시대(1392-1897) — 대장금, 황진이, 미스터 션샤인, 옷소매 붉은 끝동 등 인기 K-드라마의 배경이 된 시대에서 영감을 받은 MBTI 스타일 성격 테스트입니다.",
       about2:
-        "12개의 질문으로 4가지 성격 축(內/外, 文/武, 集/獨, 義/利)을 측정해 16개 조선시대 인물 중 하나를 찾아드립니다. 각 결과는 빨간 도장과 한국 전통 캘리그래피 디자인으로 — 인스타그램 공유에 안성맞춤!",
+        "10개의 질문으로 4가지 성격 축(內/外, 文/武, 集/獨, 義/利)을 측정해 16개 조선시대 인물 중 하나를 찾아드립니다. 각 캐릭터마다 한국 전통 의상의 chibi 스티커가 있어서 — 인스타그램 공유에 안성맞춤!",
     },
     foodDetail: {
       backToList: "전체 메뉴",
