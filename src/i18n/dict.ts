@@ -19,6 +19,7 @@ export const dict = {
       couple: "Saju cặp đôi",
       food: "Món ăn",
       joseon: "Joseon test",
+      hills: "Đồi Seoul",
       blog: "Bài viết",
       about: "Giới thiệu",
     },
@@ -32,6 +33,7 @@ export const dict = {
       foodLink: "Quiz món ăn Hàn Quốc",
       coupleLink: "Saju cặp đôi",
       joseonLink: "Joseon test (Tôi thời cổ)",
+      hillsLink: "Đồi dốc Seoul",
       blogLink: "Bài viết về Hàn Quốc",
       aboutLink: "Giới thiệu",
       privacyLink: "Chính sách bảo mật",
@@ -234,6 +236,39 @@ export const dict = {
       about2:
         "Quiz mang tính giải trí. Hãy thử nhiều lần với những tâm trạng khác nhau — bạn sẽ phát hiện ra mình hợp với nhiều món Hàn ngon hơn bạn tưởng!",
     },
+    hills: {
+      eyebrow: "DU LỊCH SEOUL · ĐỊA HÌNH",
+      title: "Đồi dốc Seoul — Bạn cần biết trước khi đi",
+      subtitle:
+        "Seoul nhiều đồi hơn bạn tưởng! Hướng dẫn 10 điểm tham quan nổi tiếng có dốc — kèm độ khó, lối ra metro đỡ dốc nhất, và phương án thay thế cho người không leo nổi.",
+      warnTitle: "⚠️ Khác với Hà Nội/HCMC!",
+      warnDesc:
+        "Seoul được xây trên 4 ngọn núi, các khu phố cổ đều có đồi dốc. Người Việt từ thành phố bằng phẳng thường bất ngờ và đau chân ngày đầu. Đọc trước, chuẩn bị tốt — đi vui hơn nhiều.",
+      legendTitle: "Thang độ khó",
+      diff1: "Đi dạo",
+      diff2: "Nhẹ",
+      diff3: "Vừa",
+      diff4: "Khó",
+      diff5: "Leo núi",
+      minutesFromSubway: "phút từ metro",
+      elevation: "Cao",
+      subwayLabel: "Metro tốt nhất",
+      tipsLabel: "Mẹo thực tế",
+      alternativeLabel: "Phương án thay thế",
+      generalTitle: "Checklist chung cho người đi Seoul",
+      gear1Title: "Giày",
+      gear1Desc:
+        "Sneakers thoải mái BẮT BUỘC. Không giày cao gót, không sandal hở mũi. Sole dày càng tốt.",
+      gear2Title: "Nước",
+      gear2Desc:
+        "Chai nước 500ml luôn trong túi. Tiệm tiện lợi (GS25, CU, Seven Eleven) khắp nơi, 1,000-1,500 won/chai.",
+      gear3Title: "Taxi khôn ngoan",
+      gear3Desc:
+        "Khi mệt đừng cố — taxi 5,000-10,000 won lên đỉnh đáng đồng tiền. App: Kakao T (có tiếng Anh).",
+      gear4Title: "Bản đồ",
+      gear4Desc:
+        "Naver Map (네이버지도) chính xác hơn Google Maps 10 lần ở Seoul, hiển thị cả độ dốc và bậc thang.",
+    },
     joseon: {
       eyebrow: "조선시대 MBTI · K-HISTORY",
       title: "Nếu bạn sinh ra ở thời Joseon, bạn là ai?",
@@ -401,6 +436,9 @@ export const dict = {
       joseonTitle: "Joseon test — Nếu sinh thời cổ Hàn Quốc, bạn là ai?",
       joseonDesc:
         "Test cá tính MBTI phong cách K-history — 12 câu hỏi, 16 nhân vật Joseon. Chia sẻ ảnh kết quả với con dấu đỏ trên Instagram và TikTok.",
+      hillsTitle: "Đồi dốc Seoul — Hướng dẫn 10 điểm tham quan có dốc",
+      hillsDesc:
+        "Seoul nhiều đồi hơn bạn tưởng. Hướng dẫn 10 điểm du lịch nổi tiếng có dốc — Bukchon, Namsan, Naksan, Itaewon... kèm độ khó và phương án taxi/cáp treo.",
       foodDetailTitle: "Công thức món Hàn Quốc",
       foodDetailDesc:
         "Công thức nấu món Hàn Quốc với nguyên liệu, các bước thực hiện và mẹo cho người Việt.",
@@ -430,6 +468,7 @@ export const dict = {
       couple: "커플 사주",
       food: "한식 추천",
       joseon: "조선시대 나",
+      hills: "서울 언덕",
       blog: "블로그",
       about: "사이트 소개",
     },
@@ -443,6 +482,7 @@ export const dict = {
       foodLink: "한식 MBTI 퀴즈",
       coupleLink: "커플 사주",
       joseonLink: "조선시대 나는 누구",
+      hillsLink: "서울 언덕 가이드",
       blogLink: "한국 문화 블로그",
       aboutLink: "사이트 소개",
       privacyLink: "개인정보처리방침",
@@ -645,6 +685,39 @@ export const dict = {
       about2:
         "재미로 즐기는 퀴즈입니다. 기분이나 상황을 바꿔가며 여러 번 시도해보세요 — 생각보다 더 많은 한식이 당신과 잘 맞을지도 몰라요!",
     },
+    hills: {
+      eyebrow: "서울 관광 · 지형",
+      title: "서울의 언덕 — 베트남 관광객 가이드",
+      subtitle:
+        "서울이 생각보다 언덕이 많다는 사실! 주요 관광지 10곳의 언덕 정보 — 난이도, 덜 가파른 지하철 출구, 못 걷는 사람을 위한 대체 수단까지.",
+      warnTitle: "⚠️ 하노이·호치민과 매우 다릅니다!",
+      warnDesc:
+        "서울은 4개 산 위에 세워진 도시 — 옛 관광지는 거의 다 언덕 위. 평평한 도시에서 온 베트남 분들이 첫날 깜짝 놀라 다리 아프는 경우가 많아요. 미리 알고 준비하면 훨씬 즐거운 여행.",
+      legendTitle: "난이도 척도",
+      diff1: "산책 수준",
+      diff2: "가벼움",
+      diff3: "보통",
+      diff4: "힘듦",
+      diff5: "등산 수준",
+      minutesFromSubway: "분 (지하철에서)",
+      elevation: "고도",
+      subwayLabel: "가장 좋은 지하철",
+      tipsLabel: "실전 팁",
+      alternativeLabel: "대체 수단",
+      generalTitle: "서울 여행자 공통 체크리스트",
+      gear1Title: "신발",
+      gear1Desc:
+        "편한 운동화 필수. 구두·하이힐 절대 금물, 발가락 노출 샌들 비추. 밑창이 두꺼울수록 좋음.",
+      gear2Title: "물",
+      gear2Desc:
+        "500ml 생수 항상 가방에. 편의점(GS25·CU·세븐일레븐) 곳곳에 있고 1,000-1,500원.",
+      gear3Title: "현명한 택시 사용",
+      gear3Desc:
+        "지치면 무리 마세요 — 정상까지 5,000-10,000원이면 값어치 충분. 앱: 카카오T (영어 지원).",
+      gear4Title: "지도",
+      gear4Desc:
+        "서울에선 네이버지도가 구글지도보다 10배 정확. 경사도와 계단까지 표시해줘요.",
+    },
     joseon: {
       eyebrow: "조선시대 MBTI · K-HISTORY",
       title: "조선시대에 태어났다면 나는 누구일까?",
@@ -810,6 +883,9 @@ export const dict = {
       joseonTitle: "조선시대 MBTI — 너는 누구일까?",
       joseonDesc:
         "12문항 사극 성격 테스트 — 16명의 조선시대 인물 중 당신은? 빨간 도장과 한국 전통 디자인의 결과 카드로 SNS 공유까지.",
+      hillsTitle: "서울의 언덕 — 베트남 관광객을 위한 10곳 가이드",
+      hillsDesc:
+        "서울은 생각보다 언덕이 많아요. 북촌·남산·낙산·이태원 등 주요 관광지 10곳의 언덕 난이도와 택시·케이블카 대체 수단까지 정리.",
       foodDetailTitle: "한식 레시피",
       foodDetailDesc:
         "한식 만드는 법 — 재료, 단계별 조리법, 베트남인을 위한 팁까지.",
