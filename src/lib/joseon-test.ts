@@ -206,7 +206,7 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     strengthsKo: ["섬세한 배려심", "손재주", "현실 감각", "신뢰감"],
     watchOutVi: ["Cho đi quá nhiều — nhớ chăm chính mình", "Ngại nói 'không'"],
     watchOutKo: ["너무 많이 주는 편 — 자신도 챙기세요", "'아니오' 말하기 어려움"],
-    matchId: "OWGR", // 영의정
+    matchId: "OWGR", // 왕
     antiMatchId: "OWSR",
     rarity: 9.5,
     destinyKo: "당신의 손길이 누군가의 하루를 구합니다",
@@ -275,7 +275,7 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     strengthsKo: ["꼼꼼함", "관리력", "기억력", "충성심"],
     watchOutVi: ["Hay 'gồng' — cho phép mình nghỉ", "Khó tha thứ lỗi nhỏ"],
     watchOutKo: ["너무 긴장하는 편 — 쉬세요", "작은 실수도 잘 못 넘김"],
-    matchId: "OWGR", // 영의정
+    matchId: "OWGR", // 왕
     antiMatchId: "OMSU",
     rarity: 7.2,
     destinyKo: "당신이 없으면 모든 게 멈추는 사람",
@@ -285,26 +285,26 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     accent: "linear-gradient(135deg, #71717a, #475569)",
   },
   IMGU: {
-    id: "IMGU", hangul: "농부", hanja: "農夫", emoji: "🌾", image: "/joseon/nongbu.png",
-    roleVi: "Nông phu",
-    roleKo: "농부 (農夫)",
-    taglineVi: "Người sống bằng đôi tay, vững như đất mẹ",
-    taglineKo: "땅처럼 든든하게 손으로 사는 사람",
+    id: "IMGU", hangul: "백정", hanja: "白丁", emoji: "🪓",
+    roleVi: "Bạch đinh (Người làm nghề mổ thịt)",
+    roleKo: "백정 (白丁)",
+    taglineVi: "Người làm những việc xã hội cần nhưng ngại nhìn — đôi tay khỏe, lòng tự hào im lặng",
+    taglineKo: "사회가 필요로 하지만 외면하는 일을 묵묵히 해내는 강한 손",
     descVi:
-      "Bạn không nói nhiều, nhưng làm việc cực hiệu quả. Tin vào sự đều đặn và lao động chân tay. Gia đình và cộng đồng là tất cả — bạn không cần danh vọng để hạnh phúc.",
+      "Bạn là loại người 'không có thì xã hội ngừng quay'. Mọi người tránh né những việc nặng nề, bẩn thỉu — nhưng không có bạn, mọi người sẽ đói. Đôi tay khỏe, ít nói nhưng giữ lời, và một lòng tự hào im lặng mà người ngoài không thấy.",
     descKo:
-      "당신은 말은 적지만 일은 확실히 해요. 꾸준함과 손노동의 가치를 믿어요. 가족과 동네가 전부 — 명예 같은 거 없이도 충분히 행복한 사람.",
-    strengthsVi: ["Kiên nhẫn", "Bền bỉ", "Tự túc", "Hiếm khi nổi giận"],
-    strengthsKo: ["인내심", "끈기", "자급자족", "온화함"],
-    watchOutVi: ["Đôi khi quá thầm lặng — hãy lên tiếng cho mình", "Sợ thay đổi"],
-    watchOutKo: ["너무 조용해서 손해 볼 때도 — 목소리 내세요", "변화를 두려워함"],
-    matchId: "OMSR", // 보부상
+      "당신은 '없으면 세상이 안 돌아가는' 류의 사람이에요. 모두가 무겁고 더러운 일을 피하지만, 당신이 없으면 다들 굶죠. 강한 손, 말 적지만 약속은 지키고, 남들이 못 보는 조용한 자긍심을 품고 살아가는 사람.",
+    strengthsVi: ["Sức bền thân thể", "Tay nghề thật", "Trung thành", "Tự hào im lặng"],
+    strengthsKo: ["체력과 끈기", "진짜 손기술", "충성심", "조용한 자긍심"],
+    watchOutVi: ["Bị xã hội xem nhẹ — đừng để định nghĩa mình", "Ít chia sẻ cảm xúc thật"],
+    watchOutKo: ["사회의 시선 — 그게 당신을 정의하지 못해요", "진짜 감정을 잘 안 드러냄"],
+    matchId: "OMSR", // 보부상 (백정과 보부상은 둘 다 길에서 사는 사람)
     antiMatchId: "OWGR",
-    rarity: 12.8,
-    destinyKo: "땅처럼 변하지 않는 사람",
-    destinyVi: "Vững vàng như đất mẹ, không gì thay đổi",
-    modernCareersKo: ["농업인", "정원사", "셰프"],
-    modernCareersVi: ["Nông dân hiện đại", "Người làm vườn", "Đầu bếp"],
+    rarity: 2.0,
+    destinyKo: "당신의 손이 멈추면 세상이 굶습니다",
+    destinyVi: "Khi tay bạn dừng, cả thế giới đói",
+    modernCareersKo: ["정육 명장", "응급구조사", "재난 구호 전문가"],
+    modernCareersVi: ["Chuyên gia thịt", "Nhân viên cấp cứu", "Cứu hộ thảm họa"],
     accent: "linear-gradient(135deg, #d97706, #a16207)",
   },
   IMSR: {
@@ -356,26 +356,26 @@ export const CHARACTERS: Record<CharacterId, Character> = {
 
   // === 外 (Extroverted) ===
   OWGR: {
-    id: "OWGR", hangul: "영의정", hanja: "領議政", emoji: "👑", image: "/joseon/yeonguijeong.png",
-    roleVi: "Lĩnh nghị chính (Tể tướng)",
-    roleKo: "영의정 (領議政)",
-    taglineVi: "Người lãnh đạo bẩm sinh, dung hòa và quyết đoán",
-    taglineKo: "타고난 리더 — 조율과 결단을 모두 갖춤",
+    id: "OWGR", hangul: "왕", hanja: "王", emoji: "👑",
+    roleVi: "Vương (Quân vương)",
+    roleKo: "왕 (王)",
+    taglineVi: "Người sinh ra để gánh vác cả thiên hạ",
+    taglineKo: "천하를 짊어지도록 태어난 사람",
     descVi:
-      "Bạn có sức ảnh hưởng tự nhiên. Người ta tin bạn vì bạn cân bằng được giữa lý tưởng và thực tế. Lúc nguy cấp, bạn là người đưa ra quyết định mà không ai dám đảm nhận.",
+      "Bạn có sức ảnh hưởng tự nhiên mà người khác phải công nhận. Khi mọi người dao động, bạn vẫn giữ một tầm nhìn. Lãnh đạo với bạn không phải là khoe quyền lực — mà là biết khi nào lùi, khi nào quyết.",
     descKo:
-      "당신은 자연스러운 영향력이 있어요. 이상과 현실 사이에서 균형을 잘 잡기 때문에 사람들이 당신을 믿어요. 위기 상황에서 아무도 못 내리는 결정을 내리는 사람.",
-    strengthsVi: ["Lãnh đạo", "Tầm nhìn lớn", "Dung hòa", "Trách nhiệm"],
-    strengthsKo: ["리더십", "큰 그림", "조율 능력", "책임감"],
-    watchOutVi: ["Áp lực 'phải đúng'", "Khó nghỉ ngơi"],
-    watchOutKo: ["'올바라야 한다' 압박", "쉬기 어려움"],
+      "당신에겐 누구도 부정할 수 없는 자연스러운 영향력이 있어요. 모두가 흔들릴 때 당신은 한 시야를 지키죠. 리더십은 권력을 과시하는 게 아니라 언제 물러나고 언제 결단할지 아는 것 — 이걸 본능적으로 압니다.",
+    strengthsVi: ["Lãnh đạo bẩm sinh", "Tầm nhìn xa", "Trách nhiệm tối thượng", "Quyết đoán dưới áp lực"],
+    strengthsKo: ["타고난 리더십", "원대한 비전", "최고의 책임감", "압박 속 결단"],
+    watchOutVi: ["Cô đơn trên đỉnh cao", "Khó tin ai 100%"],
+    watchOutKo: ["꼭대기는 외로워요", "누구도 완전히 믿기 어려움"],
     matchId: "IWGU", // 의녀
-    antiMatchId: "IMSU",
-    rarity: 6.4,
-    destinyKo: "모두가 당신의 한 마디를 기다리는 사람",
-    destinyVi: "Mọi người chờ một lời của bạn",
-    modernCareersKo: ["CEO", "정치인", "컨설팅 파트너"],
-    modernCareersVi: ["CEO doanh nghiệp", "Chính trị gia", "Partner tư vấn cấp cao"],
+    antiMatchId: "IMGU",
+    rarity: 1.5,
+    destinyKo: "당신의 한 마디가 천하의 흐름을 바꿉니다",
+    destinyVi: "Một lời của bạn đổi cả dòng chảy thiên hạ",
+    modernCareersKo: ["대기업 회장", "정치 지도자", "재단 이사장"],
+    modernCareersVi: ["Chủ tịch tập đoàn", "Lãnh đạo chính trị", "Chủ tịch quỹ"],
     accent: "linear-gradient(135deg, #eab308, #d97706)",
   },
   OWGU: {

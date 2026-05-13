@@ -1,6 +1,22 @@
 import type { Locale } from "@/i18n/routing";
 
-export type ArticleCategory = "name" | "saju" | "food" | "culture" | "language";
+export type ArticleCategory =
+  | "trend"
+  | "name"
+  | "saju"
+  | "food"
+  | "culture"
+  | "language";
+
+// Display order for the blog index — newest/most engaging on top
+export const CATEGORY_ORDER: ArticleCategory[] = [
+  "trend",
+  "culture",
+  "name",
+  "saju",
+  "food",
+  "language",
+];
 
 export type Block =
   | { type: "p"; vi: string; ko: string }
@@ -26,18 +42,39 @@ export type Article = {
 
 export const CATEGORY_LABEL: Record<Locale, Record<ArticleCategory, string>> = {
   vi: {
-    name: "Tên Hàn",
+    trend: "Hàn Quốc bây giờ",
+    name: "Đặt tên Hàn",
     saju: "Bói Tứ Trụ",
     food: "Ẩm thực",
-    culture: "Văn hóa",
-    language: "Tiếng Hàn",
+    culture: "Văn hóa Hàn",
+    language: "Học tiếng Hàn",
   },
   ko: {
-    name: "한국 이름",
-    saju: "사주",
+    trend: "요즘 한국",
+    name: "한국 이름 짓기",
+    saju: "사주·운세",
     food: "한식",
     culture: "한국 문화",
-    language: "한국어",
+    language: "한국어 학습",
+  },
+};
+
+export const CATEGORY_DESC: Record<Locale, Record<ArticleCategory, string>> = {
+  vi: {
+    trend: "Thời tiết, địa điểm hot, món ăn trending — Hàn Quốc đang thay đổi từng tuần",
+    name: "Tên đẹp 2025-2026, ý nghĩa Hán tự, cách phát âm chuẩn",
+    saju: "Tứ Trụ, ngũ hành, tuổi hợp xung — văn hóa số mệnh Đông Á",
+    food: "Công thức nấu món Hàn tại nhà, mẹo gọi món ở Hàn",
+    culture: "Hanbok, cưới hỏi, K-pop, café — phong tục và lối sống",
+    language: "Hangul, câu chào, phát âm — học tiếng Hàn từ đầu",
+  },
+  ko: {
+    trend: "한국의 요즘 날씨·핫플·트렌드 음식 — 매주 바뀌는 한국 소식",
+    name: "2025-2026 인기 이름, 한자 의미, 정확한 발음 가이드",
+    saju: "사주팔자, 오행, 띠 궁합 — 동아시아 운명학 문화",
+    food: "한식 집에서 만들기, 한국 식당 주문 팁",
+    culture: "한복·결혼·K-pop·카페 — 한국 풍습과 라이프스타일",
+    language: "한글, 인사말, 발음 — 한국어 처음부터",
   },
 };
 
@@ -1931,6 +1968,469 @@ export const ARTICLES: Article[] = [
         href: "/bai-viet",
         vi: "📖 Đọc thêm về văn hóa Hàn Quốc",
         ko: "📖 한국 문화 글 더 읽기",
+      },
+    ],
+  },
+
+  // ============================================================
+  // 16. TREND — 요즘 한국 날씨 (5~6월 봄→초여름)
+  // ============================================================
+  {
+    slug: "thoi-tiet-han-quoc-thang-5-2026",
+    emoji: "🌸",
+    category: "trend",
+    publishDate: "2026-05-12",
+    readMinutes: 6,
+    titleVi: "Thời tiết Hàn Quốc tháng 5-6/2026 — Hướng dẫn mặc đồ & lưu ý",
+    titleKo: "2026년 5-6월 한국 날씨 — 옷차림 가이드와 주의사항",
+    descVi:
+      "Cập nhật thời tiết Hàn Quốc tháng 5-6/2026 — nhiệt độ ban ngày/đêm, độ ẩm, bụi mịn, hoa nở, cách mặc đồ phù hợp cho người Việt sang Hàn vào mùa xuân muộn.",
+    descKo:
+      "2026년 5-6월 한국 날씨 정리 — 낮밤 기온, 습도, 미세먼지, 꽃 시즌, 늦봄 한국을 방문하는 베트남인을 위한 옷차림 가이드.",
+    body: [
+      {
+        type: "p",
+        vi:
+          "Tháng 5-6 là thời điểm Hàn Quốc đẹp nhất trong năm — không khí khô mát, hoa vẫn nở rộ ở miền Bắc, và chưa bước vào mùa mưa. Nhưng đối với người Việt quen với khí hậu nhiệt đới, có vài điều rất khác cần biết.",
+        ko:
+          "5-6월은 한국에서 1년 중 가장 좋은 시기 — 공기가 건조하고 시원하며, 북부 지역엔 꽃이 아직 한창이고 장마도 시작 전. 그런데 열대 기후에 익숙한 베트남인에겐 꽤 다른 점들이 있어요.",
+      },
+      {
+        type: "h2",
+        vi: "1. Nhiệt độ tháng 5-6/2026",
+        ko: "1. 2026년 5-6월 기온",
+      },
+      {
+        type: "ul",
+        vi: [
+          "Đầu tháng 5: ban ngày 18-23°C, ban đêm 10-14°C",
+          "Cuối tháng 5: ban ngày 22-26°C, ban đêm 14-17°C",
+          "Tháng 6: ban ngày 24-28°C, ban đêm 17-20°C",
+          "Chênh lệch ngày-đêm: 8-10°C (cao hơn nhiều so với TP.HCM hoặc Hà Nội)",
+        ],
+        ko: [
+          "5월 초: 낮 18-23°C, 밤 10-14°C",
+          "5월 말: 낮 22-26°C, 밤 14-17°C",
+          "6월: 낮 24-28°C, 밤 17-20°C",
+          "일교차: 8-10°C (호치민이나 하노이보다 훨씬 큼)",
+        ],
+      },
+      {
+        type: "callout",
+        vi:
+          "💡 Cú sốc văn hóa #1: Chênh lệch ngày-đêm rất lớn. Sáng ra khỏi nhà mặc áo khoác mỏng, trưa cởi ra, tối mặc lại. Người Việt sang Hàn lần đầu hay bị cảm vì điều này.",
+        ko:
+          "💡 문화충격 1위: 일교차가 매우 큼. 아침엔 가벼운 자켓 입고 나갔다가 점심엔 벗고, 저녁에 다시 입어야 함. 처음 한국 오는 베트남인이 이걸로 감기 잘 걸려요.",
+      },
+      {
+        type: "h2",
+        vi: "2. Mặc đồ thế nào",
+        ko: "2. 옷차림 어떻게",
+      },
+      {
+        type: "h3",
+        vi: "Layering (xếp lớp) là chìa khóa",
+        ko: "레이어링이 핵심",
+      },
+      {
+        type: "ul",
+        vi: [
+          "Lớp trong: áo thun cotton ngắn tay",
+          "Lớp giữa: áo dài tay mỏng (cardigan, áo len mỏng)",
+          "Lớp ngoài: jacket nhẹ (gió, bomber, denim)",
+          "Quần: jean, kaki dài (không nên short)",
+          "Giày: sneakers + tất (mặt đường lạnh hơn Việt Nam buổi sáng)",
+        ],
+        ko: [
+          "안: 면 반팔",
+          "중간: 얇은 긴팔 (가디건, 얇은 니트)",
+          "겉: 가벼운 자켓 (바람막이, 봄버, 데님)",
+          "바지: 청바지, 카키 긴바지 (반바지 비추)",
+          "신발: 운동화 + 양말 (베트남보다 아침 노면이 차가움)",
+        ],
+      },
+      {
+        type: "h2",
+        vi: "3. Bụi mịn (미세먼지) — chú ý đặc biệt",
+        ko: "3. 미세먼지 — 특별 주의",
+      },
+      {
+        type: "p",
+        vi:
+          "Tháng 5-6 vẫn còn ngày bụi mịn ở mức 'xấu' do gió Bắc Trung Quốc. Kiểm tra app 'Air Visual' hoặc 'AirKorea' trước khi ra ngoài. Khi chỉ số PM2.5 > 75, nên đeo khẩu trang KF94 (bán khắp tiệm tiện lợi GS25, CU).",
+        ko:
+          "5-6월에도 중국발 황사로 인해 '나쁨' 수준 미세먼지 날이 있어요. 외출 전 'Air Visual' 또는 'AirKorea' 앱 확인. PM2.5 75 이상이면 KF94 마스크 착용 권장 (GS25, CU 어디든 판매).",
+      },
+      {
+        type: "h2",
+        vi: "4. Hoa & cây cảnh tháng 5-6",
+        ko: "4. 5-6월 꽃·식물",
+      },
+      {
+        type: "ul",
+        vi: [
+          "Đầu tháng 5: hoa anh đào (벚꽃) đã rụng ở Seoul, nhưng còn nhiều ở Gangwon-do",
+          "Cuối tháng 5: hoa hồng (장미) khắp Seoul Forest, Olympic Park",
+          "Tháng 6: hoa cẩm tú cầu (수국) — Geoje, Jeju, Tongyeong",
+          "Tháng 6: hoa oải hương (라벤더) — Goseong, Gangwon",
+        ],
+        ko: [
+          "5월 초: 서울 벚꽃은 졌지만 강원도엔 아직 남음",
+          "5월 말: 서울숲·올림픽공원 장미 절정",
+          "6월: 수국 — 거제, 제주, 통영",
+          "6월: 라벤더 — 고성(강원)",
+        ],
+      },
+      {
+        type: "h2",
+        vi: "5. Vài điều người Việt hay bất ngờ",
+        ko: "5. 베트남인이 자주 놀라는 점",
+      },
+      {
+        type: "ul",
+        vi: [
+          "Không khí khô — môi dễ nứt, mũi khô. Mang theo son dưỡng + chai xịt nước",
+          "Tia UV mạnh hơn tưởng tượng (kể cả khi mát). Kem chống nắng SPF 50",
+          "Mưa đột ngột có thể có (tháng 6 đầu mùa mưa). Ô gấp luôn trong túi",
+          "Tối lạnh hơn nhiều người tưởng — nhất là đi dạo Hangang ban đêm",
+        ],
+        ko: [
+          "공기 건조 — 입술·코 잘 트임. 립밤 + 수분 미스트 휴대",
+          "자외선 의외로 강함 (시원해 보여도). 자외선 차단제 SPF 50",
+          "갑작스러운 비 가능 (6월부터 우기 시작). 접이식 우산 필수",
+          "밤이 생각보다 추움 — 한강 야간 산책 시 특히",
+        ],
+      },
+      {
+        type: "callout",
+        vi:
+          "🎒 Checklist gọn: áo khoác mỏng, áo dài tay 2-3 cái, jean, sneakers, ô gấp, son dưỡng, kem chống nắng, khẩu trang KF94. Đủ cho 1 tuần ở Hàn tháng 5-6.",
+        ko:
+          "🎒 간단 체크리스트: 얇은 자켓, 긴팔 2-3장, 청바지, 운동화, 접이식 우산, 립밤, 자외선 차단제, KF94 마스크. 5-6월 한국 1주일 여행 충분.",
+      },
+      {
+        type: "cta",
+        href: "/bai-viet",
+        vi: "📖 Đọc thêm về 'Hàn Quốc bây giờ'",
+        ko: "📖 '요즘 한국' 글 더 읽기",
+      },
+    ],
+  },
+
+  // ============================================================
+  // 17. TREND — 2026년 한국 핫플레이스 TOP 10
+  // ============================================================
+  {
+    slug: "han-quoc-hot-spots-2026",
+    emoji: "📍",
+    category: "trend",
+    publishDate: "2026-05-08",
+    readMinutes: 8,
+    titleVi: "10 địa điểm hot nhất Hàn Quốc 2026 — Seoul, Busan và xu hướng mới",
+    titleKo: "2026년 한국 핫플레이스 TOP 10 — 서울·부산 + 새 트렌드",
+    descVi:
+      "Tổng hợp 10 địa điểm đang được người Hàn check-in nhiều nhất 2026 — từ Seongsu-dong concept café, đến Busan Songdo, và những spot mới nổi mà Instagram đang sôi sục.",
+    descKo:
+      "2026년 한국인들이 가장 많이 인증샷 올리는 핫플 10곳 — 성수동 컨셉카페부터 부산 송도, 인스타가 들끓는 새 스팟까지.",
+    body: [
+      {
+        type: "p",
+        vi:
+          "Hàn Quốc thay đổi cực nhanh — chỗ năm ngoái 'hot' năm nay đã hết người. Dưới đây là 10 spot đang lên ngôi 2026, dựa trên dữ liệu Instagram, Naver Map, và xu hướng K-influencer.",
+        ko:
+          "한국은 정말 빠르게 변해요 — 작년에 핫했던 곳이 올해 한산해지죠. 2026년 인스타·네이버지도·인플루언서 트렌드 기준 진짜 뜨고 있는 10곳 정리.",
+      },
+      {
+        type: "h2",
+        vi: "🥇 1. Seongsu-dong (성수동) — 'Brooklyn của Seoul'",
+        ko: "🥇 1. 성수동 — '서울의 브루클린'",
+      },
+      {
+        type: "p",
+        vi:
+          "Xưởng dệt cũ thành showroom + concept café. Mỗi thương hiệu lớn (Tamburins, Gentle Monster, LCDC) đều có pop-up ở đây. Đi metro đường 2 hoặc Suin-Bundang, ga Seongsu hoặc Ttukseom. Đi bộ chân không nghỉ.",
+        ko:
+          "옛 공장단지가 쇼룸 + 컨셉카페로 전환. 탬버린즈, 젠틀몬스터, LCDC 등 모든 핫 브랜드 팝업이 여기. 2호선 or 수인분당선 성수역/뚝섬역. 발 아플 각오.",
+      },
+      {
+        type: "h2",
+        vi: "🥈 2. Hannam-dong (한남동) — Cao cấp & nghệ thuật",
+        ko: "🥈 2. 한남동 — 럭셔리 + 예술",
+      },
+      {
+        type: "p",
+        vi:
+          "Khu giàu nhất Seoul + bảo tàng Leeum Samsung + Comme des Garçons flagship. Café hipster nhưng đắt (10,000-15,000원/ly). Đi metro 6, ga Hangangjin.",
+        ko:
+          "서울 부촌 + 리움미술관 + 꼼데가르송 플래그십. 힙스터 카페지만 비쌈 (커피 1만~1.5만원). 6호선 한강진역.",
+      },
+      {
+        type: "h2",
+        vi: "🥉 3. Ikseon-dong (익선동) — Hanok modern",
+        ko: "🥉 3. 익선동 — 모던 한옥",
+      },
+      {
+        type: "p",
+        vi:
+          "Phố hanok 100 năm tuổi được biến thành café & nhà hàng modern. Đẹp nhất buổi tối khi đèn hanok bật lên. Đi metro 1,3,5, ga Jongno 3-ga.",
+        ko:
+          "100년 된 한옥 골목이 모던 카페·식당으로 변신. 한옥 조명 켜지는 저녁이 절경. 1·3·5호선 종로3가역.",
+      },
+      {
+        type: "h2",
+        vi: "4. Yeonnam-dong (연남동) — Indie & vintage",
+        ko: "4. 연남동 — 인디 + 빈티지",
+      },
+      {
+        type: "p",
+        vi:
+          "Gần ga Hongik, nhưng yên hơn Hongdae. Quán vinyl, vintage shop, café Nhật. Phù hợp người thích chậm rãi. Phố 연트럴파크 (Yeontral Park) là biểu tượng.",
+        ko:
+          "홍대 옆이지만 홍대보다 조용. LP바, 빈티지샵, 일본식 카페. 천천히 걷고 싶은 사람 추천. '연트럴파크'가 상징.",
+      },
+      {
+        type: "h2",
+        vi: "5. Mangwon-dong (망원동) — Local food paradise",
+        ko: "5. 망원동 — 로컬 맛집 천국",
+      },
+      {
+        type: "p",
+        vi:
+          "Không có brand quốc tế, toàn quán nhỏ do người Hàn trẻ mở. Đi chợ Mangwon Market ăn 떡볶이 và 김말이. Mùa hè đi dạo Hangang Park ngay cạnh.",
+        ko:
+          "글로벌 브랜드 없고 한국 젊은이가 연 작은 가게뿐. 망원시장에서 떡볶이·김말이. 여름엔 망원한강공원 산책.",
+      },
+      {
+        type: "h2",
+        vi: "6. Busan — Songdo Skywalk & Yeongdo",
+        ko: "6. 부산 — 송도 스카이워크 & 영도",
+      },
+      {
+        type: "p",
+        vi:
+          "Songdo Beach có cáp treo + skywalk kính. Yeongdo (영도) cũ kĩ nhưng mới chuyển hóa thành 'Brooklyn của Busan' — café view biển, hanok hostel. Phải đến nếu thích biển.",
+        ko:
+          "송도해수욕장 케이블카 + 스카이워크. 영도는 낡았다가 '부산의 브루클린'으로 변신 — 바다뷰 카페, 한옥 호스텔. 바다 좋아하면 필수.",
+      },
+      {
+        type: "h2",
+        vi: "7. Jeju — Trừ những spot du khách quá đông",
+        ko: "7. 제주 — 관광객 과밀 지역 제외",
+      },
+      {
+        type: "p",
+        vi:
+          "Đừng đến Hyeopjae Beach mùa cao điểm — quá đông. Thay vào đó: Geomunoreum lava tube, Aewol coastal trail, Gimnyeong beach buổi sáng sớm.",
+        ko:
+          "성수기 협재해수욕장은 너무 붐벼요. 대신: 거문오름 용암동굴, 애월 해안산책로, 김녕해수욕장 이른 아침.",
+      },
+      {
+        type: "h2",
+        vi: "8. Gangneung — K-drama 'Goblin' 한 잔의 커피",
+        ko: "8. 강릉 — K드라마 도깨비 '한잔의 커피'",
+      },
+      {
+        type: "p",
+        vi:
+          "Cách Seoul 2 tiếng KTX. Anmok Beach có 'phố café' nổi tiếng + Jumunjin bến cá ăn hải sản tươi. Mùa hè người Hàn đổ về đây tránh nóng Seoul.",
+        ko:
+          "서울에서 KTX 2시간. 안목해변 '커피거리' + 주문진항 신선 해산물. 여름엔 서울 더위 피해 한국인들이 몰림.",
+      },
+      {
+        type: "h2",
+        vi: "9. Pop-up stores (팝업스토어) — Hiện tượng 2026",
+        ko: "9. 팝업스토어 — 2026 현상",
+      },
+      {
+        type: "p",
+        vi:
+          "Trend lớn nhất 2026 — không có địa chỉ cố định mà thương hiệu (Stray Kids, Ditto, Olive Young...) mở pop-up vài tuần ở Seongsu/Hannam rồi đóng. Check Instagram @popup_store_kr trước khi đi.",
+        ko:
+          "2026 최대 트렌드 — 고정 주소 없이 브랜드(스트레이 키즈, 디토, 올리브영...)가 성수·한남에 몇 주 팝업 열고 닫음. 가기 전 @popup_store_kr 체크.",
+      },
+      {
+        type: "h2",
+        vi: "🔟 10. Hanoi-mok cafés ngoại thành — Trend mới nhất",
+        ko: "🔟 10. 교외 한옥 카페 — 최신 트렌드",
+      },
+      {
+        type: "p",
+        vi:
+          "Người Hàn chán café Seoul, lái xe 1-2 tiếng ra 양평/포천/가평 — café khổng lồ trong rừng, có cả ao cá Koi, view núi. Tên 'Terarosa', '카페 어쩌고' đầy Instagram.",
+        ko:
+          "서울 카페에 질린 사람들이 1-2시간 운전해서 양평·포천·가평으로 — 숲속 대형카페, 잉어연못, 산뷰. '테라로사', '카페 어쩌고' 인스타에 가득.",
+      },
+      {
+        type: "callout",
+        vi:
+          "📱 Mẹo: Dùng Naver Map (지도) thay vì Google Maps khi ở Hàn — chính xác hơn 10x. Cài app 'Visit Korea' để cập nhật event 2026.",
+        ko:
+          "📱 팁: 한국에선 구글지도 말고 네이버지도. 'Visit Korea' 앱으로 2026 이벤트 확인.",
+      },
+      {
+        type: "cta",
+        href: "/bai-viet",
+        vi: "📖 Đọc thêm về 'Hàn Quốc bây giờ'",
+        ko: "📖 '요즘 한국' 글 더 읽기",
+      },
+    ],
+  },
+
+  // ============================================================
+  // 18. TREND — 2026년 한국 트렌드 음식
+  // ============================================================
+  {
+    slug: "mon-an-hot-han-quoc-2026",
+    emoji: "🍡",
+    category: "trend",
+    publishDate: "2026-05-05",
+    readMinutes: 7,
+    titleVi: "Món ăn đang HOT ở Hàn Quốc 2026 — Yakgwa, Dubai chocolate và 8 món khác",
+    titleKo: "2026년 한국에서 핫한 음식 — 약과, 두바이 초콜릿 등 10가지",
+    descVi:
+      "10 món ăn người Hàn đang phát cuồng năm 2026 — từ bánh truyền thống Yakgwa hồi sinh, đến Dubai chocolate, mì cay mới và trends Cooking show 'Black & White Chef'.",
+    descKo:
+      "2026년 한국인들이 푹 빠진 10가지 음식 — 부활한 전통 디저트 약과부터 두바이 초콜릿, 새 매운라면, '흑백요리사' 효과까지.",
+    body: [
+      {
+        type: "p",
+        vi:
+          "Hàn Quốc là thị trường ăn uống thay đổi nhanh nhất châu Á — trend mới mỗi 2-3 tháng. Đây là 10 món đang được người trẻ Hàn Quốc tìm kiếm nhiều nhất hiện tại (5/2026).",
+        ko:
+          "한국은 아시아에서 음식 트렌드가 가장 빨리 바뀌는 나라 — 2-3개월마다 새 유행. 2026년 5월 현재 한국 젊은이들이 가장 많이 찾는 10가지 음식.",
+      },
+      {
+        type: "h2",
+        vi: "🥇 1. Yakgwa (약과) — Bánh ngọt truyền thống 'tái sinh'",
+        ko: "🥇 1. 약과 — 부활한 전통 디저트",
+      },
+      {
+        type: "p",
+        vi:
+          "Bánh mật ong + dầu vừng từ thời Joseon, từng bị quên lãng — giờ là dessert hottest. Hỗn hợp 'old & new': Yakgwa cream cheese, Yakgwa croffle, Yakgwa latte. Tiệm 'Sukrae' và 'Honey of Bee' xếp hàng 1 tiếng cuối tuần.",
+        ko:
+          "조선시대 꿀+참기름 과자. 한동안 잊혀졌다가 지금은 가장 핫한 디저트. 'old & new' 믹스: 약과 크림치즈, 약과 크로플, 약과 라떼. '숙레', 'Honey of Bee' 주말엔 1시간 줄.",
+      },
+      {
+        type: "h2",
+        vi: "🥈 2. Dubai Chocolate (두바이 초콜릿)",
+        ko: "🥈 2. 두바이 초콜릿",
+      },
+      {
+        type: "p",
+        vi:
+          "Chocolate phủ Knafeh + pistachio cream — viral toàn cầu, Hàn cũng phát cuồng. Lotte, Shilla, GS25 đều ra phiên bản riêng. Giá 5,000-25,000원/thanh tùy hãng.",
+        ko:
+          "크나페 + 피스타치오 크림 초콜릿 — 전 세계 바이럴, 한국도 푹 빠짐. 롯데·신라·GS25 모두 자체 버전 출시. 5,000~25,000원.",
+      },
+      {
+        type: "h2",
+        vi: "🥉 3. 흑백요리사 (Black & White Chef) effect",
+        ko: "🥉 3. 흑백요리사 효과",
+      },
+      {
+        type: "p",
+        vi:
+          "Show cook Netflix Hàn 2024 viral lại 2026 — quán của các chef (Edward Lee, Triple Star, Napoli Matfia...) chật cứng. Reservation 2-3 tháng. Trend 'fine dining nhưng accessible' đang định hình lại ẩm thực Hàn.",
+        ko:
+          "2024 넷플릭스 '흑백요리사' 2026년 재바이럴 — 출연 셰프(에드워드 리, 트리플스타, 나폴리 맛피아...)들 가게 만석. 2-3개월 예약. '파인 다이닝이지만 접근 가능한' 트렌드가 한식을 재정의 중.",
+      },
+      {
+        type: "h2",
+        vi: "4. Tanghulu (탕후루) — Đã hạ nhiệt nhưng vẫn còn",
+        ko: "4. 탕후루 — 식었지만 아직 살아있음",
+      },
+      {
+        type: "p",
+        vi:
+          "Trend 2023-2024 đã qua đỉnh, nhưng vẫn nhiều tiệm. Phiên bản mới: tanghulu kết hợp soju, tanghulu mochi. Người Hàn trẻ đã chán, học sinh cấp 2 vẫn mê.",
+        ko:
+          "2023-24 정점 지났지만 가게는 여전. 신버전: 탕후루 소주, 탕후루 모찌. 한국 젊은이는 질렸지만 중학생들은 여전히 좋아함.",
+      },
+      {
+        type: "h2",
+        vi: "5. Maratang → Mara Xiang Guo (마라샹궈)",
+        ko: "5. 마라탕 → 마라샹궈",
+      },
+      {
+        type: "p",
+        vi:
+          "Maratang (mì cay TQ) đã thành mainstream. Giờ là Mara Xiang Guo — phiên bản xào (không nước dùng). Đặc biệt phổ biến ở khu sinh viên (Daehakno, Sinchon). Giá 12,000-20,000원.",
+        ko:
+          "마라탕은 이제 메인스트림. 새 유행은 마라샹궈 — 국물 없이 볶음. 대학로·신촌 등 대학가에서 특히 인기. 12,000~20,000원.",
+      },
+      {
+        type: "h2",
+        vi: "6. Bánh sandwich Hàn (한식 샌드위치)",
+        ko: "6. 한식 샌드위치",
+      },
+      {
+        type: "p",
+        vi:
+          "Cũ: ham + trứng. Mới 2026: bulgogi sandwich, kimchi grilled cheese, gochujang chicken bagel. 'Eggdrop' và 'Isaac Toast' vẫn dẫn đầu, nhưng tiệm độc lập như 'Sandwich Apartment' đang vượt mặt.",
+        ko:
+          "옛날: 햄+계란. 2026 신: 불고기 샌드위치, 김치 그릴드 치즈, 고추장 치킨 베이글. '에그드랍'·'이삭토스트' 여전히 강자지만 '샌드위치 아파트' 같은 독립 매장이 추격 중.",
+      },
+      {
+        type: "h2",
+        vi: "7. Healthy dessert — Protein, low-carb, low-sugar",
+        ko: "7. 헬시 디저트 — 단백질·저탄수·저당",
+      },
+      {
+        type: "p",
+        vi:
+          "Trend lớn 2025-2026: dessert mà không tăng cân. Protein bar Hàn, sữa chua đậu nành, bánh không đường. Brand 'Lemona Healthy', 'Body Snack' bùng nổ. Người Hàn 20-30 tuổi rất khắt khe về dinh dưỡng.",
+        ko:
+          "2025-26 큰 트렌드: 살 안 찌는 디저트. 단백질 바, 두유 요거트, 무설탕 빵. '레모나 헬시', '바디스낵' 폭발. 20-30대 한국인은 영양 매우 까다로움.",
+      },
+      {
+        type: "h2",
+        vi: "8. Korean Caviar Toast (캐비어 토스트)",
+        ko: "8. 캐비어 토스트",
+      },
+      {
+        type: "p",
+        vi:
+          "Trend từ Mỹ về — toast bơ + caviar nhỏ + lemon zest. Café cao cấp Hannam-dong, Cheongdam-dong bán 25,000-45,000원/đĩa. 'Affordable luxury' cho thế hệ 'small indulgence'.",
+        ko:
+          "미국에서 건너온 트렌드 — 버터 토스트 + 캐비어 + 레몬 제스트. 한남·청담 고급 카페 25,000~45,000원. '작은 사치' 세대를 위한 'affordable luxury'.",
+      },
+      {
+        type: "h2",
+        vi: "9. Naengmyeon kiểu mới (새 냉면)",
+        ko: "9. 새로운 냉면",
+      },
+      {
+        type: "p",
+        vi:
+          "Mì lạnh cổ điển + topping mới: naengmyeon hàu, naengmyeon kimchi mango, naengmyeon truffle. Tiệm 'Hanwoorim', 'Naengmyeon Studio' (Gangnam) lead trend. Mùa hè 2026 sẽ bùng nổ.",
+        ko:
+          "전통 냉면 + 새 토핑: 굴 냉면, 김치 망고 냉면, 트러플 냉면. '한우림', '냉면스튜디오'(강남) 선두. 2026 여름 폭발할 듯.",
+      },
+      {
+        type: "h2",
+        vi: "🔟 10. Drink trend — Café gia vị (스파이스 라떼)",
+        ko: "🔟 10. 음료 트렌드 — 스파이스 라떼",
+      },
+      {
+        type: "p",
+        vi:
+          "Café + ginger / cinnamon / cardamom / saffron. Trend 'tea culture' 2024 đã chuyển sang café. 'Maison de la Cardamome' (Itaewon) dẫn đầu. Giá 7,500-9,500원/ly.",
+        ko:
+          "커피 + 생강/계피/카다멈/사프란. 2024 '티 컬처' 트렌드가 커피로 이동. '메종 드 라 카다맘'(이태원) 선두. 7,500~9,500원.",
+      },
+      {
+        type: "callout",
+        vi:
+          "🛒 Mẹo: Trends Hàn Quốc thay đổi nhanh — cái HOT năm nay năm sau có thể đã 'old'. Theo dõi Instagram @koreatrend hoặc YouTube 'Foodie Korea' để cập nhật.",
+        ko:
+          "🛒 팁: 한국 트렌드는 빨리 바뀜 — 올해 HOT이 내년엔 '구식'. @koreatrend 인스타, '푸디 코리아' 유튜브로 업데이트.",
+      },
+      {
+        type: "cta",
+        href: "/mon-an-han-quoc",
+        vi: "🍜 Xem 47 món Hàn cơ bản",
+        ko: "🍜 한식 47가지 보기",
       },
     ],
   },
