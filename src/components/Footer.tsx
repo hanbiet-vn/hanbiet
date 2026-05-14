@@ -18,11 +18,10 @@ export default function Footer({ locale }: { locale: Locale }) {
           <div>
             <div className="mb-2 font-semibold text-zinc-900">{t.footer.services}</div>
             <ul className="space-y-1.5">
-              <li><Link href={p("/ten-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.nameLink}</Link></li>
+              <li><Link href={p("/joseon-test")} className="hover:text-[var(--brand)]">{t.footer.joseonLink}</Link></li>
               <li><Link href={p("/sau-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.sajuLink}</Link></li>
               <li><Link href={p("/saju-cap-doi")} className="hover:text-[var(--brand)]">{t.footer.coupleLink}</Link></li>
               <li><Link href={p("/mon-an-han-quoc")} className="hover:text-[var(--brand)]">{t.footer.foodLink}</Link></li>
-              <li><Link href={p("/joseon-test")} className="hover:text-[var(--brand)]">{t.footer.joseonLink}</Link></li>
               <li><Link href={p("/doc-seoul")} className="hover:text-[var(--brand)]">{t.footer.hillsLink}</Link></li>
               <li><Link href={p("/bai-viet")} className="hover:text-[var(--brand)]">{t.footer.blogLink}</Link></li>
             </ul>

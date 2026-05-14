@@ -7,11 +7,10 @@ const SITE = "https://hanbiet.com";
 
 const SLUGS = [
   { path: "", priority: 1, freq: "weekly" as const },
-  { path: "/ten-han-quoc", priority: 0.9, freq: "weekly" as const },
+  { path: "/joseon-test", priority: 1, freq: "weekly" as const },
   { path: "/sau-han-quoc", priority: 0.9, freq: "weekly" as const },
   { path: "/saju-cap-doi", priority: 0.9, freq: "weekly" as const },
   { path: "/mon-an-han-quoc", priority: 0.9, freq: "weekly" as const },
-  { path: "/joseon-test", priority: 0.9, freq: "weekly" as const },
   { path: "/doc-seoul", priority: 0.8, freq: "monthly" as const },
   { path: "/bai-viet", priority: 0.8, freq: "weekly" as const },
   { path: "/gioi-thieu", priority: 0.5, freq: "monthly" as const },

@@ -21,6 +21,7 @@ export default async function Home({
 
   return (
     <div>
+      {/* Hero — Joseon test forward */}
       <section className="bg-gradient-to-b from-[var(--brand-soft)] to-white">
         <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:py-28">
           <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-[var(--brand)]/20 bg-white px-4 py-1.5 text-xs font-medium text-[var(--brand)]">
@@ -33,25 +34,48 @@ export default async function Home({
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-600">{t.home.desc}</p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Link href={p("/ten-han-quoc")} className="btn-primary">{t.home.ctaName}</Link>
+            <Link href={p("/joseon-test")} className="btn-primary">🏯 {t.home.ctaJoseon}</Link>
             <Link href={p("/sau-han-quoc")} className="btn-outline">{t.home.ctaSaju}</Link>
             <Link href={p("/saju-cap-doi")} className="btn-outline">{t.home.ctaCouple}</Link>
             <Link href={p("/mon-an-han-quoc")} className="btn-outline">{t.home.ctaFood}</Link>
-            <Link href={p("/joseon-test")} className="btn-outline">{t.home.ctaJoseon}</Link>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-          <Link href={p("/ten-han-quoc")} className="card group transition hover:shadow-md">
-            <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--brand-soft)] text-2xl">✨</div>
-            <h2 className="text-xl font-bold text-zinc-900">{t.home.cardNameTitle}</h2>
-            <p className="mt-2 text-zinc-600">{t.home.cardNameDesc}</p>
-            <span className="mt-4 inline-flex items-center text-sm font-semibold text-[var(--brand)] group-hover:underline">
-              {t.home.cardNameCta}
-            </span>
-          </Link>
+        {/* FEATURED: Joseon test — full-width hero card */}
+        <Link
+          href={p("/joseon-test")}
+          className="group relative mb-8 block overflow-hidden rounded-3xl border-2 border-amber-200/70 p-8 shadow-md transition hover:shadow-xl sm:p-10"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 20% 30%, rgba(255,200,150,0.18) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(180,80,50,0.10) 0%, transparent 50%), linear-gradient(135deg, #fff7ed, #fef3c7)",
+          }}
+        >
+          <div className="absolute right-6 top-6 inline-flex items-center gap-1.5 rounded-full bg-rose-100 px-3 py-1 text-xs font-bold text-rose-700 ring-1 ring-rose-200">
+            🔥 {t.home.featuredBadge}
+          </div>
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-8">
+            <div className="text-7xl drop-shadow-md sm:text-8xl">🏯</div>
+            <div className="flex-1">
+              <div className="text-xs font-bold uppercase tracking-[0.2em] text-amber-800/80">
+                {t.home.featuredEyebrow}
+              </div>
+              <h2 className="mt-2 text-2xl font-extrabold text-amber-900 sm:text-3xl">
+                {t.home.cardJoseonTitle}
+              </h2>
+              <p className="mt-3 max-w-xl text-amber-900/85 leading-relaxed">
+                {t.home.cardJoseonDesc}
+              </p>
+              <span className="mt-5 inline-flex items-center gap-2 rounded-full bg-amber-900 px-5 py-2.5 text-sm font-bold text-white shadow group-hover:bg-amber-800">
+                {t.home.cardJoseonCta} →
+              </span>
+            </div>
+          </div>
+        </Link>
+
+        {/* 3 secondary cards */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <Link href={p("/sau-han-quoc")} className="card group transition hover:shadow-md">
             <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--brand-soft)] text-2xl">🔮</div>
             <h2 className="text-xl font-bold text-zinc-900">{t.home.cardSajuTitle}</h2>
@@ -74,14 +98,6 @@ export default async function Home({
             <p className="mt-2 text-zinc-600">{t.home.cardFoodDesc}</p>
             <span className="mt-4 inline-flex items-center text-sm font-semibold text-[var(--brand)] group-hover:underline">
               {t.home.cardFoodCta}
-            </span>
-          </Link>
-          <Link href={p("/joseon-test")} className="card group transition hover:shadow-md">
-            <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--brand-soft)] text-2xl">🏯</div>
-            <h2 className="text-xl font-bold text-zinc-900">{t.home.cardJoseonTitle}</h2>
-            <p className="mt-2 text-zinc-600">{t.home.cardJoseonDesc}</p>
-            <span className="mt-4 inline-flex items-center text-sm font-semibold text-[var(--brand)] group-hover:underline">
-              {t.home.cardJoseonCta}
             </span>
           </Link>
         </div>

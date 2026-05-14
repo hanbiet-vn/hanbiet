@@ -149,6 +149,56 @@ export default function JoseonTest({ locale }: { locale: Locale }) {
           </div>
         </div>
 
+        {/* "This is YOU" scenes */}
+        <div className="card border-2 border-amber-200/60 bg-gradient-to-br from-amber-50/50 to-white">
+          <h3 className="mb-2 text-lg font-extrabold text-zinc-900">
+            🎬 {t.joseon.scenesTitle}
+          </h3>
+          <p className="mb-4 text-sm text-zinc-500">{t.joseon.scenesSubtitle}</p>
+          <ul className="space-y-3">
+            {(locale === "ko" ? c.scenesKo : c.scenesVi).map((s, i) => (
+              <li key={i} className="flex gap-3">
+                <span
+                  className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+                  style={{ background: c.accent }}
+                >
+                  {i + 1}
+                </span>
+                <span className="pt-0.5 text-zinc-800 leading-relaxed">{s}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Stress + Love */}
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div className="card">
+            <h3 className="mb-3 font-bold">😤 {t.joseon.stressTitle}</h3>
+            <p className="text-sm leading-relaxed text-zinc-700">
+              {locale === "ko" ? c.stressKo : c.stressVi}
+            </p>
+          </div>
+          <div className="card">
+            <h3 className="mb-3 font-bold">💞 {t.joseon.loveTitle}</h3>
+            <p className="text-sm leading-relaxed text-zinc-700">
+              {locale === "ko" ? c.loveKo : c.loveVi}
+            </p>
+          </div>
+        </div>
+
+        {/* Celebrity match */}
+        <div className="card flex items-center gap-3 bg-zinc-50">
+          <span className="text-2xl">🌟</span>
+          <div className="flex-1">
+            <div className="text-xs font-bold uppercase tracking-wider text-zinc-500">
+              {t.joseon.celebrityTitle}
+            </div>
+            <p className="mt-1 text-sm font-semibold text-zinc-800">
+              {locale === "ko" ? c.celebrityKo : c.celebrityVi}
+            </p>
+          </div>
+        </div>
+
         {/* Modern careers */}
         <div className="card">
           <h3 className="mb-3 font-bold">💼 {t.joseon.modernTitle}</h3>

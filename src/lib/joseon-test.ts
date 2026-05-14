@@ -163,6 +163,18 @@ export type Character = {
   // 3 modern-day careers
   modernCareersVi: string[];
   modernCareersKo: string[];
+  // "This is YOU" — 3 specific everyday scenes that make people nod
+  scenesVi: string[];
+  scenesKo: string[];
+  // What you do under stress
+  stressVi: string;
+  stressKo: string;
+  // Your love language / dating style
+  loveVi: string;
+  loveKo: string;
+  // Korean celebrities with this vibe (fun cultural anchor)
+  celebrityVi: string;
+  celebrityKo: string;
   // Theme color — CSS gradient string
   accent: string;
 };
@@ -190,6 +202,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Một lời của bạn lay động ngàn người",
     modernCareersKo: ["비서실장", "PR 디렉터", "종합기획자"],
     modernCareersVi: ["Chánh văn phòng CEO", "Giám đốc PR", "Quản lý dự án lớn"],
+    scenesKo: [
+      "회의에서 끝까지 듣다가 한 마디 했는데, 그 한 마디가 결정이 됨",
+      "친한 친구는 5명, 나머지는 정확한 거리 유지",
+      "속이 폭발해도 표정은 그대로. 며칠 뒤 혼자서 다 정리",
+    ],
+    scenesVi: [
+      "Trong cuộc họp im lặng nghe đến cuối — nói một câu là quyết định luôn",
+      "Bạn thân chỉ 5 người, người khác giữ khoảng cách rõ ràng",
+      "Bên trong bùng nổ nhưng mặt vẫn bình thường, vài ngày sau tự xử lý",
+    ],
+    stressKo: "주변과 거리를 둡니다. 말 적어지고 잠 많아짐. 혼자만의 시간이 곧 회복.",
+    stressVi: "Giữ khoảng cách với mọi người. Nói ít hẳn, ngủ nhiều. Thời gian một mình = hồi phục.",
+    loveKo: "표현은 드물지만 깊고 한결같음. 사랑하는 사람을 위해 조용히 길을 만들어줘요.",
+    loveVi: "Hiếm khi thể hiện nhưng sâu và bền. Âm thầm mở đường cho người mình yêu.",
+    celebrityKo: "송혜교 · 아이유 · 김지원 스타일 (조용한 카리스마)",
+    celebrityVi: "Phong cách Song Hye-kyo · IU · Kim Ji-won (carisma trầm)",
     accent: "linear-gradient(135deg, #f43f5e, #db2777)",
   },
   IWGU: {
@@ -213,6 +241,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Bàn tay bạn cứu rỗi một ngày của ai đó",
     modernCareersKo: ["간호사", "임상심리사", "약사"],
     modernCareersVi: ["Y tá", "Tâm lý lâm sàng", "Dược sĩ"],
+    scenesKo: [
+      "친구 컨디션을 본인이 먼저 알아챔: \"오늘 좀 안 좋아 보이는데?\"",
+      "약속 시간보다 10분 일찍 와서 자리 잡아둠",
+      "남의 생일은 다 기억하는데, 본인 생일은 가끔 외로움",
+    ],
+    scenesVi: [
+      "Nhận ra bạn không khoẻ trước cả bạn: \"Cậu hôm nay sao thế?\"",
+      "Đến trước hẹn 10 phút để giữ chỗ",
+      "Nhớ sinh nhật mọi người, nhưng sinh nhật mình thì cô đơn",
+    ],
+    stressKo: "더 다른 사람을 돌봐요. 본인은 늘 마지막. 결국 몸이 먼저 신호를 보내면 그제야 쉬는 타입.",
+    stressVi: "Càng chăm sóc người khác. Bản thân luôn cuối cùng. Cơ thể báo trước thì mới chịu nghỉ.",
+    loveKo: "사랑 = 디테일. 그 사람이 좋아하는 커피, 우산 챙겨주기, 약속 시간 외워주기.",
+    loveVi: "Yêu = chi tiết. Cà phê người đó thích, mang ô, nhớ giờ hẹn của họ.",
+    celebrityKo: "박보영 · 김태리 · 임수정 스타일 (다정한 치유자)",
+    celebrityVi: "Phong cách Park Bo-young · Kim Tae-ri · Im Soo-jung (người chữa lành dịu dàng)",
     accent: "linear-gradient(135deg, #10b981, #0d9488)",
   },
   IWSR: {
@@ -236,6 +280,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Bạn đọc được dòng chảy người khác không thấy",
     modernCareersKo: ["데이터 분석가", "인테리어 디자이너", "점성술사"],
     modernCareersVi: ["Nhà phân tích dữ liệu", "Designer nội thất", "Nhà chiêm tinh"],
+    scenesKo: [
+      "사람들이 못 본 패턴을 봐서 가끔 무서워함: \"저 사람들 곧 헤어질 듯\"",
+      "집·자리·동선에 민감. 가구 배치를 계속 바꿈",
+      "친구의 새 연인 얘기를 듣자마자 결말이 보임",
+    ],
+    scenesVi: [
+      "Thấy pattern người khác không thấy, đôi khi đáng sợ: \"Cặp đó sắp chia tay\"",
+      "Nhạy về nhà cửa, vị trí, luồng đi — bố trí lại đồ đạc liên tục",
+      "Bạn kể chuyện người yêu mới — bạn đã thấy kết cục",
+    ],
+    stressKo: "더 안으로 들어가요. 사람보다 책·자연·혼자 걷기로 풀어요. 한 달 잠수 가능.",
+    stressVi: "Càng rút vào trong. Sách, thiên nhiên, đi bộ một mình thay vì gặp người. Có thể \"mất tích\" cả tháng.",
+    loveKo: "한 번에 깊게 빠짐. 알아본 사람 외엔 흥미 없어요. 사랑하면 평생.",
+    loveVi: "Yêu sâu một lần. Nhận ra ai rồi thì khác hẳn, yêu là cả đời.",
+    celebrityKo: "박해일 · 이병헌 · 김혜수 스타일 (속이 깊은 통찰자)",
+    celebrityVi: "Phong cách Park Hae-il · Lee Byung-hun · Kim Hye-soo (người sâu sắc)",
     accent: "linear-gradient(135deg, #8b5cf6, #4f46e5)",
   },
   IWSU: {
@@ -259,6 +319,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Bạn tỏa sáng nhất giữa hai thế giới",
     modernCareersKo: ["동시통역사", "외교관", "글로벌 마케터"],
     modernCareersVi: ["Phiên dịch song song", "Nhà ngoại giao", "Marketing toàn cầu"],
+    scenesKo: [
+      "여러 외국어를 조금씩 다 함. 어느 하나 완벽하진 않음",
+      "낯선 장소에서도 빨리 적응. 메뉴를 봐도 직관으로 골라요",
+      "친구마다 보여주는 모습이 살짝 다름 — 본인도 알고 있음",
+    ],
+    scenesVi: [
+      "Biết nhiều ngoại ngữ chút chút, không hoàn hảo cái nào",
+      "Thích nghi nhanh ở nơi lạ. Nhìn menu là chọn được bằng trực giác",
+      "Mỗi bạn thấy một mặt khác của bạn — và bạn biết điều đó",
+    ],
+    stressKo: "더 많은 사람을 만나거나 새 환경으로 도망. 한 곳에 오래 있으면 답답해해요.",
+    stressVi: "Gặp nhiều người hơn hoặc trốn vào môi trường mới. Ở một chỗ lâu là ngột ngạt.",
+    loveKo: "처음엔 호기심, 알수록 진심. 표현은 자연스럽고 능숙해요.",
+    loveVi: "Đầu tò mò, càng biết càng thật. Biểu hiện tự nhiên, khéo léo.",
+    celebrityKo: "공유 · 이종석 · 고민시 스타일 (코스모폴리탄)",
+    celebrityVi: "Phong cách Gong Yoo · Lee Jong-suk · Go Min-si (linh hoạt đa văn hoá)",
     accent: "linear-gradient(135deg, #f59e0b, #ea580c)",
   },
   IMGR: {
@@ -282,6 +358,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Không có bạn, mọi thứ ngừng trôi",
     modernCareersKo: ["오피스 매니저", "회계사", "비서팀장"],
     modernCareersVi: ["Quản lý văn phòng", "Kế toán trưởng", "Trưởng phòng hành chính"],
+    scenesKo: [
+      "가족 단톡방의 일정 다 챙기는 사람이 바로 본인",
+      "친구가 잊은 약속을 기억해서 다시 알려주는데, 그래도 가끔 서운함",
+      "물건 자리 바뀌면 즉시 알아챔. 사람도 마찬가지",
+    ],
+    scenesVi: [
+      "Chính bạn là người nhớ hết lịch trong group chat gia đình",
+      "Nhắc bạn về cuộc hẹn họ quên — nhưng đôi khi vẫn tủi",
+      "Đồ đạc đổi chỗ là biết ngay. Người cũng vậy",
+    ],
+    stressKo: "더 통제하려고 해요. 청소·정리·체크리스트로 마음을 다잡음. 가까운 사람한테는 까칠해질 수 있음.",
+    stressVi: "Càng muốn kiểm soát. Dọn dẹp, sắp xếp, lập checklist. Người thân có thể bị nói thẳng hơn.",
+    loveKo: "행동으로 사랑함. 챙겨주고 정리해줌. \"사랑해\" 말하기는 어려워해요.",
+    loveVi: "Yêu bằng hành động. Chăm sóc và sắp xếp. Khó nói \"anh/em yêu\".",
+    celebrityKo: "전도연 · 이영애 · 문근영 스타일 (절제된 단단함)",
+    celebrityVi: "Phong cách Jeon Do-yeon · Lee Young-ae · Moon Geun-young (mềm mà cứng)",
     accent: "linear-gradient(135deg, #71717a, #475569)",
   },
   IMGU: {
@@ -305,6 +397,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Khi tay bạn dừng, cả thế giới đói",
     modernCareersKo: ["정육 명장", "응급구조사", "재난 구호 전문가"],
     modernCareersVi: ["Chuyên gia thịt", "Nhân viên cấp cứu", "Cứu hộ thảm họa"],
+    scenesKo: [
+      "약속한 건 무조건 함. \"안 한다\"고 한 적이 한 번도 없음",
+      "친구 이사하면 진짜 박스 들러 나타나는 사람",
+      "본인 SNS는 비공개 또는 거의 안 함. 표현보다 살아내는 게 먼저",
+    ],
+    scenesVi: [
+      "Đã hứa là làm. Chưa bao giờ nói \"không\"",
+      "Bạn chuyển nhà — bạn thực sự đến khiêng thùng",
+      "SNS riêng tư hoặc gần như không dùng. Sống quan trọng hơn nói",
+    ],
+    stressKo: "더 일에 몰두함. 운동·손 쓰는 일·술 한 잔으로 풀어요. 잘 말 안 함.",
+    stressVi: "Càng vùi đầu vào việc. Thể thao, làm bằng tay, một ly rượu. Ít nói.",
+    loveKo: "표현 안 함. 매일 옆에 있어줌. 어느 날 깨달으면 이미 깊이 사랑하는 중.",
+    loveVi: "Không nói. Ngày nào cũng ở bên. Nhận ra thì đã yêu sâu rồi.",
+    celebrityKo: "정우성 · 황정민 · 이성민 스타일 (조용한 강함)",
+    celebrityVi: "Phong cách Jung Woo-sung · Hwang Jung-min · Lee Sung-min (mạnh thầm lặng)",
     accent: "linear-gradient(135deg, #d97706, #a16207)",
   },
   IMSR: {
@@ -328,6 +436,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Sáng rực nhất giữa bóng tối",
     modernCareersKo: ["검사", "감사관", "탐사 기자"],
     modernCareersVi: ["Công tố viên", "Kiểm toán viên", "Phóng viên điều tra"],
+    scenesKo: [
+      "부당한 일을 보면 속이 끓어요. 하루 종일 그 생각만",
+      "사람을 한 번 믿으면 다 줌. 배신은 영원히 못 잊음",
+      "혼자 영화 보고 혼자 식당 가는 거 자연스러움",
+    ],
+    scenesVi: [
+      "Thấy bất công là máu sôi cả ngày, không thoát khỏi suy nghĩ đó",
+      "Tin ai là cho hết. Phản bội thì nhớ mãi mãi",
+      "Đi xem phim một mình, ăn một mình — tự nhiên",
+    ],
+    stressKo: "더 강박적으로 추적해요. 부당한 상황을 끝까지 봐야 마음 풀려요. 사람들과 더 멀어짐.",
+    stressVi: "Càng truy đến cùng. Phải thấy chuyện bất công kết thúc mới yên. Càng xa người.",
+    loveKo: "깊게 한 사람만. 표현은 적지만 행동은 절대적. 사랑하는 사람 위해 위험도 감수.",
+    loveVi: "Yêu sâu một người. Ít nói nhưng hành động tuyệt đối. Dám đối mặt nguy hiểm vì người yêu.",
+    celebrityKo: "송강호 · 이정재 · 하정우 스타일 (어둠의 정의)",
+    celebrityVi: "Phong cách Song Kang-ho · Lee Jung-jae · Ha Jung-woo (chính nghĩa trong bóng tối)",
     accent: "linear-gradient(135deg, #334155, #27272a)",
   },
   IMSU: {
@@ -351,6 +475,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Thời gian dừng lại trong đôi tay bạn",
     modernCareersKo: ["도예가", "일러스트레이터", "목공예가"],
     modernCareersVi: ["Nghệ nhân gốm", "Hoạ sĩ minh hoạ", "Thợ mộc nghệ thuật"],
+    scenesKo: [
+      "작업이나 취미 하나에 빠지면 시간 가는 줄 모름",
+      "본인 작업물에 까다로움. 90% 완성도면 시작도 안 함",
+      "친구 모임 한 번 빠지면 며칠 더 안 가도 OK",
+    ],
+    scenesVi: [
+      "Đắm chìm vào việc hoặc sở thích là quên thời gian",
+      "Khắt khe với sản phẩm mình làm. Dưới 90% hoàn thiện không bắt đầu",
+      "Bỏ một buổi gặp bạn — vài ngày sau cũng không sao",
+    ],
+    stressKo: "더 손에 몰두함. 만들고 또 만듦. 사람과 거의 단절. 결과물로 마음을 비워요.",
+    stressVi: "Càng đắm vào việc làm bằng tay. Làm rồi làm. Gần như cắt người. Xả qua sản phẩm.",
+    loveKo: "사랑하는 사람을 위해 직접 무언가를 만들어 줌. 말 대신 손으로.",
+    loveVi: "Tự tay làm gì đó cho người mình yêu. Bằng tay thay vì lời.",
+    celebrityKo: "박찬욱 · 차은우 · V(BTS) 스타일 (몰입형 장인)",
+    celebrityVi: "Phong cách Park Chan-wook · Cha Eun-woo · V(BTS) (nghệ nhân chìm đắm)",
     accent: "linear-gradient(135deg, #78716c, #b45309)",
   },
 
@@ -376,6 +516,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Một lời của bạn đổi cả dòng chảy thiên hạ",
     modernCareersKo: ["대기업 회장", "정치 지도자", "재단 이사장"],
     modernCareersVi: ["Chủ tịch tập đoàn", "Lãnh đạo chính trị", "Chủ tịch quỹ"],
+    scenesKo: [
+      "모임에서 자연스럽게 중심이 됨. 본인도 모르게 모두가 의견을 물음",
+      "책임이 무거워도 \"내가 할게\"가 자동으로 나옴",
+      "사람들 앞에선 약한 모습 절대 안 보임. 혼자 있을 때만",
+    ],
+    scenesVi: [
+      "Tự nhiên thành trung tâm các buổi gặp. Ai cũng hỏi ý kiến bạn",
+      "Trách nhiệm nặng nhưng \"tôi làm\" bật ra tự động",
+      "Trước mặt mọi người không bao giờ tỏ ra yếu — chỉ khi một mình",
+    ],
+    stressKo: "혼자 짊어지려고 해요. 약한 모습 안 보임. 결국 몸 또는 정신이 먼저 무너짐.",
+    stressVi: "Tự gánh hết. Không cho ai thấy yếu. Cuối cùng cơ thể hoặc tinh thần sụp trước.",
+    loveKo: "사랑하는 사람을 지키려는 본능이 강해요. 모든 걸 통제하려 해서 가끔 숨막힐 수 있음.",
+    loveVi: "Bản năng bảo vệ người yêu rất mạnh. Muốn kiểm soát mọi thứ — đôi khi ngột ngạt.",
+    celebrityKo: "현빈 · 송중기 · 김희애 스타일 (책임의 무게)",
+    celebrityVi: "Phong cách Hyun Bin · Song Joong-ki · Kim Hee-ae (sức nặng trách nhiệm)",
     accent: "linear-gradient(135deg, #eab308, #d97706)",
   },
   OWGU: {
@@ -399,6 +555,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Một lần gặp, không thể nào quên",
     modernCareersKo: ["호텔 총지배인", "이벤트 플래너", "인플루언서"],
     modernCareersVi: ["Tổng quản lý khách sạn", "Nhà tổ chức sự kiện", "Influencer"],
+    scenesKo: [
+      "처음 만난 사람도 30분이면 친구. 깊게 친해지는 사람은 적음",
+      "SNS·인맥·이벤트 — 사람을 다루는 본능이 있음",
+      "분위기를 읽어요. 누가 누구를 좋아하는지, 누가 화났는지 즉시 감지",
+    ],
+    scenesVi: [
+      "Người mới gặp 30 phút là thành bạn. Nhưng thân sâu thì ít",
+      "SNS, mối quan hệ, sự kiện — bản năng dắt người",
+      "Đọc không khí. Ai thích ai, ai đang giận — cảm được ngay",
+    ],
+    stressKo: "더 많은 사람을 만나거나, 정반대로 갑자기 잠수. 양극단을 오갑니다.",
+    stressVi: "Càng gặp nhiều người, hoặc ngược lại đột nhiên \"biến mất\". Hai cực.",
+    loveKo: "매력 발산은 자연스럽지만 진심 보이는 데 시간 걸림. 누가 진짜인지 신중하게 골라요.",
+    loveVi: "Quyến rũ tự nhiên nhưng cần thời gian để mở lòng. Chọn kỹ ai là thật.",
+    celebrityKo: "화사 · 제니 · 정유미 스타일 (매혹의 카리스마)",
+    celebrityVi: "Phong cách Hwasa · Jennie · Jung Yu-mi (carisma quyến rũ)",
     accent: "linear-gradient(135deg, #ec4899, #e11d48)",
   },
   OWSR: {
@@ -422,6 +594,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Chỉ kẻ không cúi đầu mới thay đổi thời đại",
     modernCareersKo: ["대학교수", "변호사", "작가"],
     modernCareersVi: ["Giáo sư đại học", "Luật sư", "Nhà văn"],
+    scenesKo: [
+      "친구 잘못은 즉시 지적. 미움 받아도 어쩔 수 없다 생각",
+      "책·신문·뉴스 — 항상 뭔가 읽고 있음",
+      "잘 모르는 분야엔 \"잘 모릅니다\" 하고 입을 닫음. 거짓말 못함",
+    ],
+    scenesVi: [
+      "Bạn sai là chỉ ra ngay. Bị ghét cũng đành chịu",
+      "Sách, báo, tin tức — luôn đang đọc gì đó",
+      "Không biết là \"tôi không biết\" rồi im. Không bịa được",
+    ],
+    stressKo: "더 책에 빠지거나 더 강하게 의견을 내요. 융통성이 더 떨어집니다.",
+    stressVi: "Càng vùi vào sách hoặc càng nói thẳng. Càng cứng nhắc hơn.",
+    loveKo: "표현은 서툴지만 한 번 사랑하면 평생. 거짓말이나 흔들림 없어요.",
+    loveVi: "Biểu hiện vụng nhưng yêu là cả đời. Không lừa, không lay.",
+    celebrityKo: "박보검 · 유아인 · 이병헌 스타일 (곧은 신념)",
+    celebrityVi: "Phong cách Park Bo-gum · Yoo Ah-in · Lee Byung-hun (niềm tin thẳng)",
     accent: "linear-gradient(135deg, #2563eb, #4338ca)",
   },
   OWSU: {
@@ -445,6 +633,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Tất cả những gì bạn vẽ trở thành chính bạn",
     modernCareersKo: ["일러스트레이터", "그래픽 디자이너", "영상 감독"],
     modernCareersVi: ["Hoạ sĩ minh hoạ", "Graphic designer", "Đạo diễn hình ảnh"],
+    scenesKo: [
+      "혼자 카페에서 한 곡을 30분 동안 들음",
+      "사진 폴더에 같은 풍경 50장. 한 장만 골랐어야 함",
+      "비 오는 날 굳이 우산 안 쓰고 걷고 싶어함",
+    ],
+    scenesVi: [
+      "Một mình quán café nghe một bài 30 phút",
+      "Folder ảnh có 50 tấm cùng cảnh — đáng lẽ chọn một",
+      "Trời mưa cố tình không cầm ô để đi bộ",
+    ],
+    stressKo: "혼자 잠수. 며칠 연락 안 됨. 그리고 갑자기 새 작품 들고 나타남.",
+    stressVi: "Mất tích. Không liên lạc vài ngày. Rồi bất ngờ xuất hiện với tác phẩm mới.",
+    loveKo: "사랑은 시처럼. 사랑하는 사람의 옆모습을 몰래 스케치하는 타입.",
+    loveVi: "Yêu như thơ. Lén ký hoạ phía nghiêng người yêu.",
+    celebrityKo: "아이유 · 박재범 · 태양 스타일 (몽환적 창작자)",
+    celebrityVi: "Phong cách IU · Jay Park · Taeyang (nghệ sĩ mơ màng)",
     accent: "linear-gradient(135deg, #d946ef, #9333ea)",
   },
   OMGR: {
@@ -468,6 +672,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Khi bạn canh giữ, không ai bị tổn thương",
     modernCareersKo: ["경찰 간부", "보안 팀장", "군 장교"],
     modernCareersVi: ["Sĩ quan cảnh sát", "Trưởng phòng an ninh", "Sĩ quan quân đội"],
+    scenesKo: [
+      "친구가 위협 받으면 본능적으로 앞에 서요",
+      "운동 매일 함. 자기 관리 강박",
+      "화 안 내려고 했는데 정의감 발동하면 멈출 수 없음",
+    ],
+    scenesVi: [
+      "Bạn bị đe doạ — theo bản năng bạn đứng trước",
+      "Tập thể thao hằng ngày. Tự quản khắt khe",
+      "Cố không nổi nóng nhưng máu chính nghĩa lên là không dừng",
+    ],
+    stressKo: "운동량 두 배. 헬스장·복싱·달리기로 풀어요. 말은 더 줄고 행동은 더 강해집니다.",
+    stressVi: "Tập thể thao gấp đôi. Gym, boxing, chạy. Càng ít nói, càng hành động mạnh.",
+    loveKo: "표현은 직접적이고 단순. \"내 사람\" 컨셉. 사랑하는 사람을 위해 모든 걸 함.",
+    loveVi: "Biểu hiện thẳng và đơn giản. \"Người của tôi\". Làm mọi thứ vì người yêu.",
+    celebrityKo: "마동석 · 정해인 · 박서준 스타일 (든든한 수호자)",
+    celebrityVi: "Phong cách Ma Dong-seok · Jung Hae-in · Park Seo-jun (vệ sĩ vững chãi)",
     accent: "linear-gradient(135deg, #dc2626, #be123c)",
   },
   OMGU: {
@@ -491,6 +711,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Đã hứa thì giữ trọn",
     modernCareersKo: ["군인", "운동선수", "소방관"],
     modernCareersVi: ["Quân nhân", "Vận động viên", "Lính cứu hoả"],
+    scenesKo: [
+      "약속한 시간 절대 안 늦음. 5분 일찍 도착 default",
+      "친구가 \"도와줘\" 하면 묻지도 따지지도 않고 등판",
+      "본인 감정은 표현 잘 못함. 행동으로 다 말함",
+    ],
+    scenesVi: [
+      "Hẹn là không bao giờ trễ. Đến sớm 5 phút mặc định",
+      "Bạn nói \"giúp tớ\" — không hỏi gì, có mặt ngay",
+      "Cảm xúc bản thân khó nói. Hành động nói thay",
+    ],
+    stressKo: "운동·잠·맥주 한 잔. 말 적어지고 행동만. 자기 사람 곁엔 무조건 있음.",
+    stressVi: "Thể thao, ngủ, một ly bia. Ít nói, chỉ hành động. Người của mình thì luôn ở bên.",
+    loveKo: "일관됨. 한결같음. 화려한 이벤트는 없지만 매일 옆에 있음. 안정 그 자체.",
+    loveVi: "Một chiều, kiên định. Không event lộng lẫy nhưng ngày nào cũng ở bên. Bình yên thuần khiết.",
+    celebrityKo: "이민호 · 임시완 · 소지섭 스타일 (충직한 무인)",
+    celebrityVi: "Phong cách Lee Min-ho · Im Si-wan · So Ji-sub (chiến binh trung thành)",
     accent: "linear-gradient(135deg, #ea580c, #b91c1c)",
   },
   OMSR: {
@@ -514,6 +750,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Nơi nào bạn đặt chân, nơi đó mở đường",
     modernCareersKo: ["영업 매니저", "무역업자", "자영업자"],
     modernCareersVi: ["Quản lý sales", "Thương mại quốc tế", "Chủ doanh nghiệp tự do"],
+    scenesKo: [
+      "새 도시 가면 그날 안에 동선 다 파악. 길눈이 천재 수준",
+      "인맥이 분야별로 골고루. 누구한테 부탁해야 할지 본능",
+      "한 곳에 6개월 이상 있으면 답답해요",
+    ],
+    scenesVi: [
+      "Đến thành phố mới — trong ngày là rành đường. Cảm giác phương hướng thiên tài",
+      "Mối quan hệ trải đều khắp lĩnh vực. Biết nên nhờ ai",
+      "Ở một chỗ quá 6 tháng là ngột ngạt",
+    ],
+    stressKo: "새 장소로 떠나거나 새 사람을 만남. 가만히 있으면 더 힘들어해요.",
+    stressVi: "Đi nơi mới hoặc gặp người mới. Đứng yên thì càng khó chịu.",
+    loveKo: "만나는 사람마다 진심. 다만 한 곳에 오래 묶이는 건 어려워해요. 자유 보장이 사랑의 조건.",
+    loveVi: "Mỗi người gặp đều thật lòng. Nhưng khó bị buộc một chỗ lâu. Tự do là điều kiện yêu.",
+    celebrityKo: "차태현 · 이서진 · 박해진 스타일 (떠도는 마음)",
+    celebrityVi: "Phong cách Cha Tae-hyun · Lee Seo-jin · Park Hae-jin (trái tim phiêu lưu)",
     accent: "linear-gradient(135deg, #f59e0b, #ca8a04)",
   },
   OMSU: {
@@ -537,6 +789,22 @@ export const CHARACTERS: Record<CharacterId, Character> = {
     destinyVi: "Nơi nào có bạn, nơi đó là lễ hội",
     modernCareersKo: ["배우", "스탠드업 코미디언", "유튜버"],
     modernCareersVi: ["Diễn viên", "Stand-up comedy", "YouTuber"],
+    scenesKo: [
+      "사람들이 우울하면 본인도 우울. 분위기 띄우는 책임을 자기가 매김",
+      "즐거워 보이지만 혼자 있을 때 갑자기 텅 빔",
+      "SNS 화려, 실생활도 화려. 하지만 진짜 친구 5명 외엔 다 가면",
+    ],
+    scenesVi: [
+      "Mọi người buồn — bạn cũng buồn. Tự gánh trách nhiệm khuấy động",
+      "Trông vui mà một mình thì đột nhiên trống rỗng",
+      "SNS rực rỡ, đời thường cũng rực rỡ. Nhưng ngoài 5 bạn thật, đều là mặt nạ",
+    ],
+    stressKo: "더 즐겁게 꾸미려고 해요. 가장 웃을 때가 가장 힘들 때. 혼자 있는 시간이 절대적으로 필요.",
+    stressVi: "Càng cố vui vẻ. Cười nhiều nhất = mệt nhất. Cần thời gian một mình tuyệt đối.",
+    loveKo: "사랑할 때 가장 본인다워요. 표현은 화려하지만 결국 한 사람만 깊게 사랑.",
+    loveVi: "Yêu là lúc bạn thật nhất. Biểu hiện hoành tráng nhưng cuối cùng yêu sâu một người.",
+    celebrityKo: "J-Hope(BTS) · 박나래 · 유재석 스타일 (빛의 광대)",
+    celebrityVi: "Phong cách J-Hope(BTS) · Park Na-rae · Yoo Jae-suk (ánh sáng vũ đài)",
     accent: "linear-gradient(135deg, #a855f7, #c026d3)",
   },
 };
